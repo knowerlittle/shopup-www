@@ -1,0 +1,83 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Hero /> renders correctly 1`] = `
+<Segment
+  inverted={true}
+  style={
+    Object {
+      "minHeight": "700px",
+      "padding": "1em 0em",
+    }
+  }
+  textAlign="center"
+  vertical={true}
+>
+  <Container>
+    <Menu
+      inverted={true}
+      pointing={true}
+      secondary={true}
+      size="large"
+    >
+      <MenuItem
+        as={[Function]}
+        to="/"
+      >
+        <Button
+          as="button"
+          primary={true}
+          size="huge"
+        >
+          List popin
+        </Button>
+      </MenuItem>
+      <MenuItem
+        position="right"
+      >
+        <Button
+          as={[Function]}
+          inverted={true}
+          to="/signup"
+        >
+          Sign Up
+        </Button>
+        <Button
+          as={[Function]}
+          inverted={true}
+          style={
+            Object {
+              "marginLeft": "0.5em",
+            }
+          }
+          to="/login"
+        >
+          Log in
+        </Button>
+      </MenuItem>
+    </Menu>
+  </Container>
+  <Container
+    text={true}
+  >
+    <Header
+      as="h1"
+      content="Bringing your creation to the real world"
+      inverted={true}
+      style={
+        Object {
+          "fontSize": "3em",
+          "fontWeight": "normal",
+          "margin": "4em 0 2em",
+        }
+      }
+    />
+    <Button
+      as="button"
+      primary={true}
+      size="huge"
+    >
+      Get Started
+    </Button>
+  </Container>
+</Segment>
+`;
