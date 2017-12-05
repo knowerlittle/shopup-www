@@ -12,56 +12,15 @@ exports[`<Hero /> renders correctly 1`] = `
   textAlign="center"
   vertical={true}
 >
-  <Container>
-    <Menu
-      inverted={true}
-      pointing={true}
-      secondary={true}
-      size="large"
-    >
-      <MenuItem
-        as={[Function]}
-        to="/"
-      >
-        <Button
-          as="button"
-          primary={true}
-          size="huge"
-        >
-          List popin
-        </Button>
-      </MenuItem>
-      <MenuItem
-        position="right"
-      >
-        <Button
-          as={[Function]}
-          inverted={true}
-          to="/signup"
-        >
-          Sign Up
-        </Button>
-        <Button
-          as={[Function]}
-          inverted={true}
-          style={
-            Object {
-              "marginLeft": "0.5em",
-            }
-          }
-          to="/login"
-        >
-          Log in
-        </Button>
-      </MenuItem>
-    </Menu>
-  </Container>
+  <Nav
+    inverted={true}
+  />
   <Container
     text={true}
   >
     <Header
       as="h1"
-      content="Bringing your creation to the real world"
+      content=" Discover space for you and your brand"
       inverted={true}
       style={
         Object {
