@@ -1,6 +1,6 @@
 import React from 'react';
 // import {connect} from 'react-redux'
-import { fetchFacebookAuth } from '../../reducers/auth'
+// import { fetchFacebookAuth } from '../../reducers/auth'
 import { Segment, Grid, Button, Icon, Header} from 'semantic-ui-react';
 
 const Options = () => {
