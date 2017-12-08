@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Hero /> renders correctly 1`] = `
+<Segment
+  inverted={true}
+  style={
+    Object {
+      "minHeight": "700px",
+      "padding": "1em 0em",
+    }
+  }
+  textAlign="center"
+  vertical={true}
+>
+  <Nav
+    inverted={true}
+  />
+  <Container
+    text={true}
+  >
+    <Header
+      as="h1"
+      content=" Discover space for you and your brand"
+      inverted={true}
+      style={
+        Object {
+          "fontSize": "3em",
+          "fontWeight": "normal",
+          "margin": "4em 0 2em",
+        }
+      }
+    />
+    <Button
+      as="button"
+      primary={true}
+      size="huge"
+    >
+      Get Started
+    </Button>
+  </Container>
+</Segment>
+`;

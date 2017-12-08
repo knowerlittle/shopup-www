@@ -1,0 +1,13 @@
+div#app {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+footer {
+    flex: 1;
+    display: flex;
+}
+footer > div {
+    width: 100%;
+}

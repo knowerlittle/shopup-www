@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Nav /> renders correctly 1`] = `
+<Container>
+  <Menu
+    secondary={true}
+    size="large"
+  >
+    <MenuItem
+      as={[Function]}
+      to="/"
+    >
+      <Button
+        as="button"
+        circular={true}
+        primary={true}
+        size="huge"
+      >
+        Post a Popin
+      </Button>
+    </MenuItem>
+    <MenuMenu
+      position="right"
+    >
+      <MenuItem
+        as={[Function]}
+        to="/signup"
+      >
+        Sign Up
+      </MenuItem>
+      <MenuItem
+        as={[Function]}
+        style={
+          Object {
+            "marginLeft": "0.5em",
+          }
+        }
+        to="/login"
+      >
+        Log in
+      </MenuItem>
+    </MenuMenu>
+  </Menu>
+</Container>
+`;
