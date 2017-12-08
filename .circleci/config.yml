@@ -39,7 +39,7 @@ jobs:
     steps:
       - run:  
           name: digital-ocean deployment
-          command: ssh -o "StrictHostKeyChecking no" deploy@139.59.162.197 "cd ~/API; git pull origin staging; npm install; npm run build; npm run restart"
+          command: ssh -o "StrictHostKeyChecking no" deploy@139.59.162.197 "cd ~/FRONT-END; git pull origin staging; npm install; npm run build; npm run restart"
 
 workflows:
   version: 2
