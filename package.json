@@ -7,7 +7,8 @@
     "restart": "pm2 restart all",
     "dev": "node scripts/start.js",
     "build": "node scripts/build.js",
-    "test": "node scripts/test.js --env=jsdom"
+    "test": "node scripts/test.js --env=jsdom",
+    "test-circleci": "node scripts/test.js --env=jsdom --coverage --updateSnapshot"
   },
   "jest": {
     "setupTestFrameworkScriptFile": "<rootDir>/config/jest/enzyme-test-setup",

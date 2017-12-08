@@ -20,19 +20,16 @@ exports[`<Nav /> renders correctly 1`] = `
       </Button>
     </MenuItem>
     <MenuMenu
-      inverted={true}
       position="right"
     >
       <MenuItem
         as={[Function]}
-        circular={true}
         to="/signup"
       >
         Sign Up
       </MenuItem>
       <MenuItem
         as={[Function]}
-        circular={true}
         style={
           Object {
             "marginLeft": "0.5em",
