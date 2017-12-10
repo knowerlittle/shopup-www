@@ -1,0 +1,23 @@
+nav {
+    .wrapper {
+        display: flex;
+    }
+    .logo-container,
+    .menu-container {
+        width: 50%;
+    }
+    .logo-container {
+        display: flex;
+        justify-content: flex-started;
+    }
+    .menu-container,
+    .menu-container ul {
+        display: flex;
+        justify-content: flex-end;
+    }
+    .menu-container{
+        li{
+            margin: 0 20px;
+        }
+    }
+}

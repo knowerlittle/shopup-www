@@ -1,0 +1,7 @@
+footer {
+    flex: 1;
+    display: flex;
+}
+footer > div {
+    width: 100%;
+}

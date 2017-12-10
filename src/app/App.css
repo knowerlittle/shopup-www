@@ -1,13 +1,25 @@
+@import 'variables';
 div#app {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
 }
+div#app > div{
+    height: 100vh;
+}
 
-footer {
-    flex: 1;
-    display: flex;
+a {
+    text-decoration: none;
+    color: inherit;
 }
-footer > div {
-    width: 100%;
+
+li {
+    list-style: none;
 }
+
+.wrapper {
+    max-width: $maxwidth;
+    margin: 0 auto;
+    padding: 20px;
+}
+

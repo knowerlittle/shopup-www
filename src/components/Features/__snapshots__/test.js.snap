@@ -4,7 +4,7 @@ exports[`Feature component tests <Feature /> renders correctly 1`] = `
 <Segment
   style={
     Object {
-      "padding": "8em 0em",
+      'padding': '8em 0em',
     }
   }
   vertical={true}
@@ -12,17 +12,17 @@ exports[`Feature component tests <Feature /> renders correctly 1`] = `
   <Grid
     container={true}
     stackable={true}
-    verticalAlign="middle"
+    verticalAlign='middle'
   >
     <GridRow>
       <GridColumn
         width={8}
       >
         <Header
-          as="h3"
+          as='h3'
           style={
             Object {
-              "fontSize": "2em",
+              'fontSize': '2em',
             }
           }
         >
@@ -31,17 +31,17 @@ exports[`Feature component tests <Feature /> renders correctly 1`] = `
         <p
           style={
             Object {
-              "fontSize": "1.33em",
+              'fontSize': '1.33em',
             }
           }
         >
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis, saepe sapiente qui natus voluptates itaque quaerat magnam recusandae aliquid ut asperiores.
         </p>
         <Header
-          as="h3"
+          as='h3'
           style={
             Object {
-              "fontSize": "2em",
+              'fontSize': '2em',
             }
           }
         >
@@ -50,7 +50,7 @@ exports[`Feature component tests <Feature /> renders correctly 1`] = `
         <p
           style={
             Object {
-              "fontSize": "1.33em",
+              'fontSize': '1.33em',
             }
           }
         >
@@ -58,15 +58,15 @@ exports[`Feature component tests <Feature /> renders correctly 1`] = `
         </p>
       </GridColumn>
       <GridColumn
-        floated="right"
+        floated='right'
         width={6}
       >
         <Image
-          as="img"
+          as='img'
           bordered={true}
           rounded={true}
-          size="large"
-          src="http://via.placeholder.com/700x550"
+          size='large'
+          src='http://via.placeholder.com/700x550'
           ui={true}
         />
       </GridColumn>
