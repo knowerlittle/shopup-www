@@ -31,12 +31,12 @@ export default class Signin extends Component {
   }
   render() {
     return (
-      <div>
+      <div className="wrapper">
         <SocialButton
           provider="facebook"
           appId="149261575830134"
           onLoginSuccess={this.onLoginSuccess}
-          onLoginFailure={this.onLoginSuccess}
+          onLoginFailure={this.onLoginFailure}
         >
           Login with Facebook
         </SocialButton>
