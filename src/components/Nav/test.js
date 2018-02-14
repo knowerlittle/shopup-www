@@ -5,7 +5,7 @@ import toJson from 'enzyme-to-json';
 
 test('<Nav /> renders correctly', () => {
   const tree = shallow(
-    <Nav />
+    <Nav nav="home"/>
   );
   expect(toJson(tree)).toMatchSnapshot();
 });
