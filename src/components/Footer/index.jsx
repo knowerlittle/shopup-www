@@ -1,19 +1,23 @@
-import PropTypes from 'prop-types';
 import React from 'react';
-import Home from './types/Home';
-import './index.css';
+import Logo from '../Global/Logo';
+// import './index.css';
 
-const Footer = (props) => {
-  switch (props.nav) {
-    case 'home':
-      return <Home />;
-    default:
-      return <Home />;
-  }
-};
+const Footer = () => (
+  <nav>
+    <div className="wrapper">
+      <div className="logo-container">
+        <h1><Logo /></h1>
+      </div>
+      <div className="menu-container">
+        <ul>
+          <li>PRODUCT</li>
+          <li>COMPANY</li>
+          <li>INFO</li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+);
 
-Footer.propTypes = {
-  nav: PropTypes.string.isRequired,
-};
 
 export default Footer;

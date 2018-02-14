@@ -8,9 +8,6 @@ const HomeFooter = () => (
       <div className="logo-container">
         <h1><Logo /></h1>
       </div> 
-      <div>
-      
-      </div>
     </div>
   </nav>
 );

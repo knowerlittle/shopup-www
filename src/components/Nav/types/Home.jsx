@@ -1,6 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import Logo from '../../Global/Logo';
+// import '../index.scss';
 
 const HomeNav = () => (
   <nav>

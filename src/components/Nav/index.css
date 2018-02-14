@@ -2,9 +2,9 @@ nav {
     .wrapper {
         display: flex;
     }
-    .logo-container,
+    .logoContainer,
     .menu-container {
-        width: 50%;
+        width: 100%;
     }
     .logo-container {
         display: flex;
