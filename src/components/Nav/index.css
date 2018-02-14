@@ -3,19 +3,19 @@ nav {
         display: flex;
     }
     .logoContainer,
-    .menu-container {
+    .menuContainer {
         width: 100%;
     }
-    .logo-container {
+    .logoContainer {
         display: flex;
         justify-content: flex-started;
     }
-    .menu-container,
-    .menu-container ul {
+    .menuContainer,
+    .menuContainer ul {
         display: flex;
         justify-content: flex-end;
     }
-    .menu-container{
+    .menuContainer{
         li{
             margin: 0 20px;
         }

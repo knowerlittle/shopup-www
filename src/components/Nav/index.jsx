@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Home from './types/Home';
 import SignUp from './types/SignUp';
-import './index.css';
 
 const options = {
   home: <Home />,

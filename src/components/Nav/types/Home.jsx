@@ -1,15 +1,15 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import Logo from '../../Global/Logo';
-// import '../index.scss';
+import styles from '../index.css';
 
 const HomeNav = () => (
   <nav>
-    <div className="wrapper">
-      <div className="logo-container">
+    <div className={styles.wrapper}>
+      <div className={styles.logoContainer}>
         <h1><Logo /></h1>
       </div>
-      <div className="menu-container">
+      <div className={styles.menuContainer}>
         <ul>
           <li>
             <NavLink to="/help" activeClassName="current">

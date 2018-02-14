@@ -1,25 +1,27 @@
 @import 'variables';
-div#app {
+
+:global(div#app) {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
     font-family: $globalFont;
     font-size: $globalFontSize;
 }
-div#app > div{
+
+:global(div#app > div){
     height: 100vh;
 }
 
-a {
+:global(a) {
     text-decoration: none;
     color: inherit;
 }
 
-li {
+:global(li) {
     list-style: none;
 }
 
-.wrapper {
+:global(.wrapper) {
     max-width: $maxwidth;
     margin: 0 auto;
     padding: 20px;
