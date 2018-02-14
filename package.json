@@ -26,7 +26,6 @@
     "eslint-config-react-app": "^2.0.1",
     "eslint-loader": "1.9.0",
     "eslint-plugin-flowtype": "2.39.1",
-    "eslint-plugin-import": "2.8.0",
     "eslint-plugin-jsx-a11y": "5.1.1",
     "eslint-plugin-react": "7.4.0",
     "express": "^4.16.2",
@@ -66,10 +65,13 @@
     "whatwg-fetch": "2.0.3"
   },
   "devDependencies": {
+    "babel-plugin-module-resolver": "^3.1.0",
     "enzyme": "^3.2.0",
     "enzyme-adapter-react-16": "^1.1.0",
     "enzyme-to-json": "^3.2.2",
     "eslint-config-airbnb": "^16.1.0",
+    "eslint-import-resolver-babel-module": "^4.0.0",
+    "eslint-plugin-import": "^2.8.0",
     "jest-cli": "^21.2.1"
   },
   "jest": {
@@ -110,6 +112,11 @@
   "babel": {
     "presets": [
       "react-app"
+    ],
+    "plugins": [
+      ["module-resolver", {
+        "root": ["./src"]
+      }]
     ]
   },
   "eslintConfig": {
@@ -117,6 +124,11 @@
       "react-app",
       "airbnb"
     ],
+    "settings": {
+      "import/resolver": {
+        "babel-module": {}
+      }
+    },
     "rules": {
       "jsx-a11y/anchor-is-valid": [
         "error",
