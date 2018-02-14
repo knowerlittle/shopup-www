@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import Logo from '../../Global/Logo';
+import Logo from 'components/Global/Logo';
 
 const SignUpNav = () => (
   <nav>

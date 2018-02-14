@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Home from './types/Home';
-import SignUp from './types/SignUp';
+import Home from 'components/Nav/types/Home';
+import SignUp from 'components/Nav/types/SignUp';
 
 const options = {
   home: <Home />,

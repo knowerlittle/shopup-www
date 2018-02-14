@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import Logo from '../../Global/Logo';
-import styles from '../index.css';
+import Logo from 'components/Global/Logo';
+import styles from 'components/Nav/index.css';
 
 const HomeNav = () => (
   <nav>

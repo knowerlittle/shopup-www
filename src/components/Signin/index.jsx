@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import SocialButton from '../SocialButton/index';
+import SocialButton from 'components/SocialButton/index';
 
 const handleSocialLogin = (user) => {
   const profile = Object.assign(user.profile, { provider: user.provider });

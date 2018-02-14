@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { NavLink } from 'react-router-dom';
-import logo from '../../assets/images/popin_logo_red.png';
+import logo from 'assets/images/popin_logo_red.png';
 
 const Logo = props => (
   <div>
