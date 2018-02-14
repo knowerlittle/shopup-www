@@ -3,7 +3,8 @@ import Nav from '../../components/Nav/index';
 
 const Signup = () => (
   <div className="Signup">
-    <Nav nav="home" />
+    <Nav nav="signup" />
+    <h1>Get Started Page</h1>
   </div>
 );
 
