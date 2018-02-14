@@ -5,11 +5,11 @@ exports[`<Hero /> renders correctly 1`] = `
   inverted={true}
   style={
     Object {
-      "minHeight": "700px",
-      "padding": "1em 0em",
+      'minHeight': '700px',
+      'padding': '1em 0em',
     }
   }
-  textAlign="center"
+  textAlign='center'
   vertical={true}
 >
   <Nav
@@ -19,21 +19,21 @@ exports[`<Hero /> renders correctly 1`] = `
     text={true}
   >
     <Header
-      as="h1"
-      content=" Discover space for you and your brand"
+      as='h1'
+      content=' Discover space for you and your brand'
       inverted={true}
       style={
         Object {
-          "fontSize": "3em",
-          "fontWeight": "normal",
-          "margin": "4em 0 2em",
+          'fontSize': '3em',
+          'fontWeight': 'normal',
+          'margin': '4em 0 2em',
         }
       }
     />
     <Button
-      as="button"
+      as='button'
       primary={true}
-      size="huge"
+      size='huge'
     >
       Get Started
     </Button>

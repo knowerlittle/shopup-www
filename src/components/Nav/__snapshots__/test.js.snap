@@ -4,27 +4,27 @@ exports[`<Nav /> renders correctly 1`] = `
 <Container>
   <Menu
     secondary={true}
-    size="large"
+    size='large'
   >
     <MenuItem
       as={[Function]}
-      to="/"
+      to='/'
     >
       <Button
-        as="button"
+        as='button'
         circular={true}
         primary={true}
-        size="huge"
+        size='huge'
       >
         Post a Popin
       </Button>
     </MenuItem>
     <MenuMenu
-      position="right"
+      position='right'
     >
       <MenuItem
         as={[Function]}
-        to="/signup"
+        to='/signup'
       >
         Sign Up
       </MenuItem>
@@ -32,10 +32,10 @@ exports[`<Nav /> renders correctly 1`] = `
         as={[Function]}
         style={
           Object {
-            "marginLeft": "0.5em",
+            'marginLeft': '0.5em',
           }
         }
-        to="/login"
+        to='/login'
       >
         Log in
       </MenuItem>
