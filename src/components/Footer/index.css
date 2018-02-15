@@ -1,0 +1,79 @@
+.wrapper {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.wrapper > * {
+  padding: 10px;
+  flex: 1 100%;
+}
+
+.header {
+  background: tomato;
+  text-align: center;
+}
+
+.ul {
+  padding: 0;
+}
+
+.li {
+  margin: 10px 0;
+}
+
+.footer {
+  text-align: center;
+  background: lightgreen;
+}
+
+.main {
+  background: deepskyblue;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.aside1 {
+  background: gold;
+  text-align: center
+}
+
+.logoWrapper {
+  padding: 15px 0px;
+}
+
+.aside2 { 
+  background: hotpink;
+  text-align: center;
+}
+
+.icon {
+  padding: 0 20px;
+}
+
+@media all and (min-width: 600px) {
+  .aside { flex: 1 0%; }
+}
+
+@media all and (min-width: 800px) {
+  .main { flex: 2 0px }
+  .aside1 { order: 1; }
+  .main { order: 2; }
+  .aside2 { order: 3; }
+  .footer { order: 4; }
+}
+
+.footerNav {
+  text-align: center;
+  justify-content: space-between;
+  flex: 1 1 130px;
+}
+
+/* We rely on source order for mobile-first approach
+ * in this case:
+ * 1. header
+ * 2. article
+ * 3. aside 1
+ * 4. aside 2
+ * 5. footer
+ */
+

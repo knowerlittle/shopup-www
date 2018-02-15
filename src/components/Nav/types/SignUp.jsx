@@ -1,20 +1,21 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import Logo from 'components/Global/Logo';
+import styles from 'components/Nav/index.css';
 
 const SignUpNav = () => (
   <nav>
-    <div className="wrapper">
-      <div className="logo-container">
+    <div className={styles.wrapper}>
+      <div className={styles.logoContainer}>
         <h1><Logo /></h1>
       </div>
-      <div className="menu-container">
+      <div className={styles.menuContainer}>
         <ul>
           <li>
             Have an account?
           </li>
           <li>
-            <NavLink to="/signin" activeClassName="current">
+            <NavLink to="/signin" activeClassName={styles.current}>
             Sign in
             </NavLink>
           </li>

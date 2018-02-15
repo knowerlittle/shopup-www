@@ -5,11 +5,9 @@ import logo from 'assets/images/popin_logo_red.png';
 
 const Logo = props => (
   <div>
-    <div>
-      <NavLink to="/" activeClassName="current">
-        <img src={logo} alt="Logo" width={props.width} />
-      </NavLink>
-    </div>
+    <NavLink to="/" activeClassName="current">
+      <img src={logo} alt="Logo" width={props.width} />
+    </NavLink>
   </div>
 );
 

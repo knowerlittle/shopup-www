@@ -1,12 +1,12 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-// import styles from './index.css';
+import styles from 'components/Hero/index.css';
 
 const Hero = () => (
-  <div className="hero-container">
+  <div className={styles.heroContainer}>
     <h1>Home page title</h1>
     <button>
-      <NavLink to="/signup" activeClassName="current">
+      <NavLink to="/signup">
         Get Started
       </NavLink>
     </button>
