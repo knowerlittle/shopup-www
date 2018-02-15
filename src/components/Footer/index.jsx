@@ -7,37 +7,36 @@ import instagram from 'assets/icons/instagram.png';
 
 const Footer = () => (
   <div className={styles.wrapper}>
-    <header className={styles.header} />
-
+    <header />
     <article className={styles.main}>
 
       <div className={styles.footerNav}>
         <p className={styles.titleFont}>PRODUCT</p>
-        <ul className={styles.ul}>
-          <li className={styles.li}>Popular</li>
-          <li className={styles.li}>Trending</li>
-          <li className={styles.li}>Catalog</li>
-          <li className={styles.li}>Features</li>
+        <ul>
+          <li>Popular</li>
+          <li>Trending</li>
+          <li>Catalog</li>
+          <li>Features</li>
         </ul>
       </div>
 
       <div className={styles.footerNav}>
         <p className={styles.titleFont}>COMPANY</p>
-        <ul className={styles.ul}>
-          <li className={styles.li}>Popular</li>
-          <li className={styles.li}>Trending</li>
-          <li className={styles.li}>Catalog</li>
-          <li className={styles.li}>Features</li>
+        <ul>
+          <li>Popular</li>
+          <li>Trending</li>
+          <li>Catalog</li>
+          <li>Features</li>
         </ul>
       </div>
 
       <div className={styles.footerNav}>
         <p className={styles.titleFont}>INFO</p>
-        <ul className={styles.ul}>
-          <li className={styles.li}>Popular</li>
-          <li className={styles.li}>Trending</li>
-          <li className={styles.li}>Catalog</li>
-          <li className={styles.li}>Features</li>
+        <ul>
+          <li>Popular</li>
+          <li>Trending</li>
+          <li>Catalog</li>
+          <li>Features</li>
         </ul>
       </div>
 

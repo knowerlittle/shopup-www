@@ -1,24 +1,16 @@
 .wrapper {
   display: flex;
   flex-flow: row wrap;
+
+  header {
+    text-align: center;
+    background: red;
+  }
 }
 
 .wrapper > * {
   padding: 10px;
   flex: 1 100%;
-}
-
-.header {
-  text-align: center;
-}
-
-.ul {
-  padding: 0;
-}
-
-.li {
-  margin: 25px 0;
-  color: 	rgba(30, 30, 30, 0.600);
 }
 
 .footer {
@@ -65,12 +57,21 @@
   text-align: center;
   justify-content: space-between;
   flex: 1 1 130px;
+
+  li {
+    margin: 25px 0;
+    color: 	rgba(30, 30, 30, 0.600);
+  }
+
+  ul {
+    padding: 0;
+  }
 }
 
 .titleFont {
   height: 15px;
   color: #292929;	
-  letter-spacing: 3px;	
+  letter-spacing: 3px;
 }
 /* We rely on source order for mobile-first approach
  * in this case:
