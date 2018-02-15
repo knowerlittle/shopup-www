@@ -51,13 +51,13 @@ const Footer = () => (
     <aside className={`${styles.aside} ${styles.aside2}`}>
       <p className={styles.titleFont}>FOLLOW US</p>
       <p>
-        <a href="//facebook.com/popin">
+        <a href="//facebook.com/popin" target="_blank" rel="noopener noreferrer">
           <img className={styles.icon} src={facebook} alt="facebook" width="30" />
         </a>
-        <a href="//twitter.com/popin">
+        <a href="//twitter.com/popin" target="_blank" rel="noopener noreferrer">
           <img className={styles.icon} src={twitter} alt="twitter" width="30" />
         </a>
-        <a href="//instagram.com/popin">
+        <a href="//instagram.com/popin" target="_blank" rel="noopener noreferrer">
           <img className={styles.icon} src={instagram} alt="instagram" width="30" />
         </a>
       </p>
