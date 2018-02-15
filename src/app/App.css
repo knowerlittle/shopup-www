@@ -8,6 +8,10 @@
     font-size: $globalFontSize;
 }
 
+:global(body) {
+    margin: 0px;
+}
+
 :global(div#app > div){
     height: 100vh;
 }

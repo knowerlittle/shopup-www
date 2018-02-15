@@ -4,13 +4,13 @@ import Logo from 'components/Global/Logo';
 import styles from 'components/Nav/index.css';
 
 const HomeNav = () => (
-  <nav>
+  <nav className={styles.nav}>
     <div className={styles.wrapper}>
       <div className={styles.logoContainer}>
-        <h1><Logo /></h1>
+        <h1><Logo logo="white" /></h1>
       </div>
       <div className={styles.menuContainer}>
-        <ul>
+        <ul className={styles.ul}>
           <li>
             <NavLink to="/help" activeClassName={styles.current}>
              Mission
