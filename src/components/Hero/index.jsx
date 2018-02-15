@@ -4,7 +4,7 @@ import styles from 'components/Hero/index.css';
 
 const HeroComp = () => (
   <div>
-    <div className={styles.heroContainer}>
+    <section className={styles.heroContainer}>
       <h1>Home page title</h1>
       <p>
         <button>
@@ -13,10 +13,10 @@ const HeroComp = () => (
           </NavLink>
         </button>
       </p>
-    </div>
-    <div className={styles.featureContainer}>
+    </section>
+    <section className={styles.featureContainer}>
       <h2>Feature Container</h2>
-    </div>
+    </section>
   </div>
 );
 

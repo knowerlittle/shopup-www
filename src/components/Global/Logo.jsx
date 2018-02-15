@@ -12,12 +12,17 @@ const logo = {
   black,
 };
 
+const propsShadow = color => (color === 'red'
+  ? styles.redShadow
+  : styles.blackShadow
+);
+
 const Logo = props => (
   <div>
     <NavLink to="/" activeClassName="current">
       <div>
         <img
-          className={styles.image}
+          className={propsShadow(props.shadow)}
           src={logo[props.logo]}
           alt="Logo"
           width={props.width}
@@ -30,11 +35,13 @@ const Logo = props => (
 Logo.propTypes = {
   width: PropTypes.string,
   logo: PropTypes.string,
+  shadow: PropTypes.string,
 };
 
 Logo.defaultProps = {
   width: '140',
   logo: 'red',
+  shadow: 'black',
 };
 
 export default Logo;

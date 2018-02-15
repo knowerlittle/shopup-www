@@ -32,3 +32,7 @@
   font-weight: bold;
   margin: -1.5px;
 }
+
+.menuLink:hover {
+  text-shadow: 1px 1px 1px rgba(34, 34, 34, 0.6);
+}

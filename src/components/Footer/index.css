@@ -9,7 +9,6 @@
 }
 
 .header {
-  background: tomato;
   text-align: center;
 }
 
@@ -18,22 +17,23 @@
 }
 
 .li {
-  margin: 20px 0;
+  margin: 25px 0;
+  color: 	rgba(30, 30, 30, 0.600);
 }
 
 .footer {
+  border-top: 1px solid rgba(0, 0, 0, 0.100);
   text-align: center;
-  background: lightgreen;
+  color: rgba(108,108,108,0.5);
+  font-size: 12px;
 }
 
 .main {
-  background: deepskyblue;
   display: flex;
   flex-wrap: wrap;
 }
 
 .aside1 {
-  background: gold;
   text-align: center
 }
 
@@ -42,7 +42,6 @@
 }
 
 .aside2 { 
-  background: hotpink;
   text-align: center;
 }
 
@@ -54,7 +53,7 @@
   .aside { flex: 1 0%; }
 }
 
-@media all and (min-width: 800px) {
+@media all and (min-width: 850px) {
   .main { flex: 2 0px }
   .aside1 { order: 1; }
   .main { order: 2; }
@@ -68,6 +67,11 @@
   flex: 1 1 130px;
 }
 
+.titleFont {
+  height: 15px;
+  color: #292929;	
+  letter-spacing: 3px;	
+}
 /* We rely on source order for mobile-first approach
  * in this case:
  * 1. header
