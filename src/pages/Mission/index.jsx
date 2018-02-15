@@ -1,14 +1,14 @@
 import React from 'react';
 import Nav from 'components/Nav/index';
-import HeroComp from 'components/Hero/index';
+import MissionComp from 'components/Mission/index';
 import Footer from 'components/Footer/index';
 
-const Home = () => (
-  <div className="Home">
+const MissionPage = () => (
+  <div className="Mission">
     <Nav nav="home" />
-    <HeroComp />
+    <MissionComp />
     <Footer />
   </div>
 );
 
-export default Home;
+export default MissionPage;

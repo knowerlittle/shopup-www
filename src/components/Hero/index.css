@@ -1,6 +1,6 @@
 .heroContainer{
    height: 80vh;
-   display:flex;
+   display: flex;
    justify-content: center;
    align-items: center;
    background: red;

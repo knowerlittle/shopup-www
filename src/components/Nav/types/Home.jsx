@@ -12,7 +12,7 @@ const HomeNav = () => (
       <div className={styles.menuContainer}>
         <ul className={styles.ul}>
           <li>
-            <NavLink to="/help" activeClassName={styles.current}>
+            <NavLink to="/mission" activeClassName={styles.current}>
              Mission
             </NavLink>
           </li>

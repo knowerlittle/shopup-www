@@ -2,7 +2,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import styles from 'components/Hero/index.css';
 
-const Hero = () => (
+const HeroComp = () => (
   <div>
     <div className={styles.heroContainer}>
       <h1>Home page title</h1>
@@ -20,4 +20,4 @@ const Hero = () => (
   </div>
 );
 
-export default Hero;
+export default HeroComp;
