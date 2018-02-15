@@ -54,58 +54,9 @@ const Footer = () => (
     </aside>
 
     <footer className={styles.footer}>
-      Popin 2018. All rights reserved.
+      <p>Popin 2018. All rights reserved.</p>
     </footer>
   </div>
 );
 
 export default Footer;
-
-/* <div className={styles.section}>
-
-<div className={`${styles.row} w-row`}>
-  <div className={`${styles.column} w-col-3`}>
-    <div className={styles.textBlock5}><Logo width="200" /></div>
-  </div>
-
-  <div className={`${styles.column3} w-col w-col-6`}>
-    <div className={`${styles.row2} w-row`}>
-      <div className="w-col w-col-4">
-        <div className={styles.textBlock}><strong>PRODUCT</strong></div>
-        <ul className={`${styles.unorderedList} w-list-unstyled`}>
-          <li className={styles.listItem}>Popular</li>
-          <li className={styles.listItem}>Trending</li>
-          <li className={styles.listItem}>Catalog</li>
-        </ul>
-      </div>
-
-      <div className="w-col w-col-4">
-        <div className={styles.textBlock}><strong>PRODUCT</strong></div>
-        <div className={`${styles.unorderedList} w-list-unstyled`}>
-          <li className={styles.listItem}>Popular</li>
-          <li className={styles.listItem}>Trending</li>
-          <li className={styles.listItem}>Catalog</li>
-        </div>
-      </div>
-
-      <div className="w-col w-col-4">
-        <div className={styles.textBlock}><strong>PRODUCT</strong></div>
-        <div className={`${styles.unorderedList} w-list-unstyled`}>
-          <li className={styles.listItem}>Popular</li>
-          <li className={styles.listItem}>Trending</li>
-          <li className={styles.listItem}>Catalog</li>
-        </div>
-      </div>
-      <div className={styles.divBlock2}>Popin 2018. All rights reserved</div>
-    </div>
-
-    <div className={`${styles.column2} w-col 2-col-3`}>
-      <div className={styles.textBlock4}><strong>Follow Us</strong></div>
-      <div className={styles.divBlock}>
-        <div className={styles.textBlock6}><strong>Follow Us</strong></div>
-      </div>
-    </div>
-
-  </div>
-</div>
-</div> */
