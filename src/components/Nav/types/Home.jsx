@@ -12,18 +12,18 @@ const HomeNav = () => (
       <div className={styles.menuContainer}>
         <ul>
           <li>
-            <NavLink to="/help" activeClassName="current">
+            <NavLink to="/help" activeClassName={styles.current}>
              Mission
             </NavLink>
           </li>
           <li>
-            <NavLink to="/signin" activeClassName="current">
+            <NavLink to="/signin" activeClassName={styles.current}>
               Sign in
             </NavLink>
           </li>
           <li>
             <button>
-              <NavLink to="/signup" activeClassName="current">
+              <NavLink to="/signup" activeClassName={styles.current}>
                SIGN UP
               </NavLink>
             </button>
