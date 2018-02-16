@@ -1,7 +1,7 @@
 import React from 'react';
+import SocialButton from 'components/Signin/SocialButton';
 import handleFacebookLogin from 'api/auth/facebook';
 import handleSocialLoginFailure from 'api/auth/handleSocialLoginFailure';
-import SocialButton from 'components/Signin/SocialButton/index';
 
 const FacebookButton = () => (
   <div>
