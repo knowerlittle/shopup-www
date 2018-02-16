@@ -1,0 +1,31 @@
+.signinButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;	
+  height: 61px;	
+  width: 300px;	
+  border: 1px solid #FFC80A;	
+  background: #FFFFFF;
+  border-radius: 30px;
+
+  p {
+    color: black;
+    height: 15px;
+    color: #292929;	
+    letter-spacing: 1px;
+    font-weight: bold;
+  }
+}
+
+.signinButton:hover {
+  cursor: pointer;
+  background: #8D76BE;
+  border: 1px solid #8D76BE;
+  
+  p {
+    color: white;
+  }
+}
+
+

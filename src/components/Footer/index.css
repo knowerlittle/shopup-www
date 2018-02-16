@@ -4,7 +4,7 @@
 
   header {
     text-align: center;
-    background: red;
+    border-top: 1px solid rgba(0, 0, 0, 0.100);
   }
 }
 
