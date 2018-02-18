@@ -76,6 +76,7 @@ function getClientEnvironment(publicUrl) {
         PUBLIC_URL: publicUrl,
         FACEBOOK_APP_ID: process.env.FACEBOOK_APP_ID,
         GOOGLE_APP_ID: process.env.GOOGLE_APP_ID,
+        API_URL: process.env.API_URL,
         PORT: process.env.PORT
       }
     );
