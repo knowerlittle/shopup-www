@@ -2,12 +2,12 @@ import jsonHeaders from 'api/utils/jsonHeaders';
 import createJsonProfile from 'api/utils/createJsonProfile';
 import fetchLogin from 'api/utils/fetchLogin';
 
-const AUTH_FACEBOOK_URL = 'http://localhost:8000/auth/facebook';
+const AUTH_GOOGLE_URL = 'http://localhost:8000/auth/google';
 
-const handleFacebookLogin = (user) => {
+const handleGoogleLogin = (user) => {
   const jsonProfile = createJsonProfile(user);
   const requestObject = {
-    path: AUTH_FACEBOOK_URL,
+    path: AUTH_GOOGLE_URL,
     method: 'POST',
     headers: jsonHeaders,
     body: jsonProfile,
@@ -15,4 +15,4 @@ const handleFacebookLogin = (user) => {
   fetchLogin(requestObject);
 };
 
-export default handleFacebookLogin;
+export default handleGoogleLogin;
