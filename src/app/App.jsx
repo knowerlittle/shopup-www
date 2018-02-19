@@ -2,8 +2,8 @@ import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import MissionPage from 'pages/Mission';
 import Home from 'pages/Home';
-import Login from 'pages/Login';
 import Signup from 'pages/Signup';
+import Signin from 'pages/Signin';
 import 'app/App.css';
 
 const App = () => (
@@ -11,7 +11,7 @@ const App = () => (
     <Router>
       <Switch>
         <Route exact path="/" component={Home} />
-        <Route path="/signin" component={Login} />
+        <Route path="/signin" component={Signin} />
         <Route path="/signup" component={Signup} />
         <Route path="/mission" component={MissionPage} />
       </Switch>

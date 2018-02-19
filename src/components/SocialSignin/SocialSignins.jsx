@@ -1,5 +1,5 @@
 import React from 'react';
-import SocialButton from 'components/Signin/SocialButton';
+import SocialButton from 'components/SocialSignin/SocialButton';
 import handleSocialLoginSuccess from 'api/auth/handleSocialLoginSuccess';
 import handleSocialLoginFailure from 'api/auth/handleSocialLoginFailure';
 

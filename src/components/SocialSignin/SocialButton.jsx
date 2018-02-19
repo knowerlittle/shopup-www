@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import SocialLogin from 'react-social-login';
-import styles from 'components/Signin/index.css';
+import styles from 'components/SocialSignin/index.css';
 
 class Button extends React.PureComponent {
   static propTypes = {
