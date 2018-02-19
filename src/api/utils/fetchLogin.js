@@ -11,6 +11,7 @@ const fetchLogin = ({
   })
     .then(res => res.json())
     .then((data) => {
+      // To be removed
       console.log(`fetchLogin ${path}`, data);
     })
     .catch(err => console.log('err', err));

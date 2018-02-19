@@ -1,10 +1,10 @@
 import React from 'react';
-import FacebookButton from 'components/Signin/FacebookButton';
+import SocialSignins from 'components/Signin/SocialSignins';
 import styles from 'components/Signin/index.css';
 
 const Signin = () => (
   <div className={styles.wrapper}>
-    <FacebookButton />
+    <SocialSignins />
   </div>
 );
 

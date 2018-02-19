@@ -1,11 +1,7 @@
 import React from 'react';
 import SocialButton from 'components/Signin/SocialButton';
-import handleFacebookLogin from 'api/auth/facebook';
-import handleGoogleLogin from 'api/auth/google';
+import handleSocialLoginSuccess from 'api/auth/handleSocialLoginSuccess';
 import handleSocialLoginFailure from 'api/auth/handleSocialLoginFailure';
-
-const FACEBOOK = 'facebook';
-const GOOGLE = 'google';
 
 const {
   FACEBOOK_APP_ID,
@@ -14,21 +10,21 @@ const {
 
 console.log('google', GOOGLE_APP_ID);
 
-const FacebookButton = () => (
+const SocialSignins = () => (
   <div>
     <SocialButton
-      provider={FACEBOOK}
+      provider="facebook"
       appId={FACEBOOK_APP_ID}
-      onLoginSuccess={handleFacebookLogin}
+      onLoginSuccess={handleSocialLoginSuccess}
       onLoginFailure={handleSocialLoginFailure}
     >
       SIGN IN WITH FACEBOOK
     </SocialButton>
 
     <SocialButton
-      provider={GOOGLE}
+      provider="google"
       appId={GOOGLE_APP_ID}
-      onLoginSuccess={handleGoogleLogin}
+      onLoginSuccess={handleSocialLoginSuccess}
       onLoginFailure={handleSocialLoginFailure}
     >
       SIGN IN WITH GOOGLE
@@ -36,4 +32,4 @@ const FacebookButton = () => (
   </div>
 );
 
-export default FacebookButton;
+export default SocialSignins;

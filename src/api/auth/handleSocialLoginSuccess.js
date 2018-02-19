@@ -1,12 +1,12 @@
 import jsonHeaders from 'api/utils/jsonHeaders';
 import createJsonProfile from 'api/utils/createJsonProfile';
 import fetchLogin from 'api/utils/fetchLogin';
-import { FACEBOOK } from 'api/urls/auth';
+import { AUTH } from 'api/urls/auth';
 
-const handleFacebookLogin = (user) => {
+const handleSocialLoginSuccess = (user) => {
   const jsonProfile = createJsonProfile(user);
   const requestObject = {
-    path: FACEBOOK,
+    path: AUTH,
     method: 'POST',
     headers: jsonHeaders,
     body: jsonProfile,
@@ -14,4 +14,4 @@ const handleFacebookLogin = (user) => {
   fetchLogin(requestObject);
 };
 
-export default handleFacebookLogin;
+export default handleSocialLoginSuccess;
