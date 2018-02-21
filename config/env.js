@@ -74,6 +74,10 @@ function getClientEnvironment(publicUrl) {
         // This should only be used as an escape hatch. Normally you would put
         // images into the `src` and `import` them in code to get their paths.
         PUBLIC_URL: publicUrl,
+        FACEBOOK_APP_ID: process.env.FACEBOOK_APP_ID,
+        GOOGLE_APP_ID: process.env.GOOGLE_APP_ID,
+        API_URL: process.env.API_URL,
+        PORT: process.env.PORT
       }
     );
   // Stringify all values so we can feed into Webpack DefinePlugin

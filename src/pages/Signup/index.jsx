@@ -1,5 +1,5 @@
 import React from 'react';
-import Nav from '../../components/Nav/index';
+import Nav from 'components/Nav/index';
 
 const Signup = () => (
   <div className="Signup">

@@ -1,0 +1,84 @@
+.wrapper {
+  display: flex;
+  flex-flow: row wrap;
+
+  header {
+    text-align: center;
+    border-top: 1px solid rgba(0, 0, 0, 0.100);
+  }
+}
+
+.wrapper > * {
+  padding: 10px;
+  flex: 1 100%;
+}
+
+.footer {
+  border-top: 1px solid rgba(0, 0, 0, 0.100);
+  text-align: center;
+  color: rgba(108,108,108,0.5);
+  font-size: 12px;
+}
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.aside1 {
+  text-align: center
+}
+
+.logoWrapper {
+  padding: 15px 0px;
+}
+
+.aside2 { 
+  text-align: center;
+}
+
+.icon {
+  padding: 20px;
+}
+
+@media all and (min-width: 600px) {
+  .aside { flex: 1 0%; }
+}
+
+@media all and (min-width: 850px) {
+  .main { flex: 2 0px }
+  .aside1 { order: 1; }
+  .main { order: 2; }
+  .aside2 { order: 3; }
+  .footer { order: 4; }
+}
+
+.footerNav {
+  text-align: center;
+  justify-content: space-between;
+  flex: 1 1 130px;
+
+  li {
+    margin: 25px 0;
+    color: 	rgba(30, 30, 30, 0.600);
+  }
+
+  ul {
+    padding: 0;
+  }
+}
+
+.titleFont {
+  height: 15px;
+  color: #292929;	
+  letter-spacing: 3px;
+}
+/* We rely on source order for mobile-first approach
+ * in this case:
+ * 1. header
+ * 2. article
+ * 3. aside 1
+ * 4. aside 2
+ * 5. footer
+ */
+

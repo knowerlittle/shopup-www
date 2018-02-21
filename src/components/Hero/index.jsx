@@ -1,16 +1,23 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import './index.css';
+import styles from 'components/Hero/index.css';
 
-const Hero = () => (
-  <div className="hero-container">
-    <h1>Home page title</h1>
-    <button>
-      <NavLink to="/signup" activeClassName="current">
-        Get Started
-      </NavLink>
-    </button>
+const HeroComp = () => (
+  <div>
+    <section className={styles.heroContainer}>
+      <h1>Home page title</h1>
+      <p>
+        <button>
+          <NavLink to="/signup">
+            Get Started
+          </NavLink>
+        </button>
+      </p>
+    </section>
+    <section className={styles.featureContainer}>
+      <h2>Feature Container</h2>
+    </section>
   </div>
 );
 
-export default Hero;
+export default HeroComp;

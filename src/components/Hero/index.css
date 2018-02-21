@@ -1,6 +1,15 @@
-.hero-container{
-   height: 100vh;
-   display:flex;
+.heroContainer{
+   height: 80vh;
+   display: flex;
    justify-content: center;
    align-items: center;
+   background: red;
+}
+
+.featureContainer {
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: grey;
 }

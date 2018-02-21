@@ -1,5 +1,5 @@
 $maxwidth: 1280px;
 
-$globalFont: 'Roboto';
+$globalFont: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
 $globalFontSize: 14px;

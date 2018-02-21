@@ -1,14 +1,14 @@
 import React from 'react';
 import Nav from 'components/Nav/index';
-import HeroComp from 'components/Hero/index';
+import SocialSignin from 'components/SocialSignin/index';
 import Footer from 'components/Footer/index';
 
-const Home = () => (
-  <div className="Home">
+const Signin = () => (
+  <div className="Login">
     <Nav nav="home" />
-    <HeroComp />
+    <SocialSignin />
     <Footer />
   </div>
 );
 
-export default Home;
+export default Signin;

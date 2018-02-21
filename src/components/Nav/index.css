@@ -1,23 +1,38 @@
-nav {
-    .wrapper {
-        display: flex;
-    }
-    .logo-container,
-    .menu-container {
-        width: 50%;
-    }
-    .logo-container {
-        display: flex;
-        justify-content: flex-started;
-    }
-    .menu-container,
-    .menu-container ul {
-        display: flex;
-        justify-content: flex-end;
-    }
-    .menu-container{
-        li{
-            margin: 0 20px;
-        }
-    }
+.nav {
+	background: red;
+}
+
+.ul {
+	color: white;	
+}
+
+.wrapper {
+  display: flex;
+  padding: 10px 80px;
+}
+.logoContainer,
+.menuContainer {
+  width: 100%;
+}
+.logoContainer {
+  display: flex;
+  justify-content: flex-started;
+}
+.menuContainer,
+.menuContainer ul {
+  display: flex;
+  justify-content: flex-end;
+}
+.menuContainer{
+  li{
+    margin: 0 15px;
+  }
+}
+.current{
+  font-weight: bold;
+  margin: -1.5px;
+}
+
+.menuLink:hover {
+  text-shadow: 1px 1px 1px rgba(34, 34, 34, 0.6);
 }
