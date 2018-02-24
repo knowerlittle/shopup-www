@@ -17,7 +17,12 @@ const Onboard = ({ match: { params: { journey, step } } }) => (
 );
 
 Onboard.propTypes = {
-  match: PropTypes.object.isRequired, // eslint-disable-line react/forbid-prop-types
+  match: PropTypes.shape({
+    params: PropTypes.shape({
+      journey: PropTypes.node,
+      step: PropTypes.node,
+    }).isRequired,
+  }).isRequired,
 };
 
 export default Onboard;
