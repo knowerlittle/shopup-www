@@ -5,8 +5,8 @@ import styles from 'components/Signup/index.css';
 const spaceText = 'I have space';
 const brandText = 'I need space';
 
-const spaceLink = '/onboard/space';
-const brandLink = '/onboard/brand';
+const spaceLink = '/onboard/space/1';
+const brandLink = '/onboard/brand/1';
 
 const footerText = 'Are you a Brand or a Space ?';
 

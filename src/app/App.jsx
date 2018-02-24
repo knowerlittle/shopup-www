@@ -4,7 +4,7 @@ import MissionPage from 'pages/Mission';
 import Home from 'pages/Home';
 import Signup from 'pages/Signup';
 import Signin from 'pages/Signin';
-import OnboardUser from 'pages/Onboard';
+import Onboard from 'pages/Onboard';
 import 'app/App.css';
 
 const App = () => (
@@ -14,7 +14,7 @@ const App = () => (
         <Route exact path="/" component={Home} />
         <Route path="/signin" component={Signin} />
         <Route path="/signup" component={Signup} />
-        <Route path="/onboard/:journey" component={OnboardUser} />
+        <Route path="/onboard/:journey/:step" component={Onboard} />
         <Route path="/mission" component={MissionPage} />
       </Switch>
     </Router>

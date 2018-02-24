@@ -1,23 +1,23 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import Nav from 'components/Nav/index';
-import Onboard from 'components/Onboard/index';
+import PropTypes from 'prop-types';
+import OnboardUser from 'components/OnboardUser/index';
 
-
-const OnboardUser = ({ match: { params: { journey } } }) => (
-  <div>
+const Onboard = ({ match: { params: { journey, step } } }) => (
+  <div className="main">
     <Nav nav="signup" />
-    Onboarding Page {journey}
-    <Onboard journey={journey} />
+    Onboarding Page
+    {journey}
+    {step}
+    <OnboardUser
+      journey={journey}
+      step={step}
+    />
   </div>
 );
 
-OnboardUser.propTypes = {
-  match: PropTypes.object, // eslint-disable-line react/forbid-prop-types
+Onboard.propTypes = {
+  match: PropTypes.object.isRequired, // eslint-disable-line react/forbid-prop-types
 };
 
-OnboardUser.defaultProps = {
-  match: '',
-};
-
-export default OnboardUser;
+export default Onboard;
