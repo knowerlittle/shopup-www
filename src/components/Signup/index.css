@@ -1,9 +1,26 @@
-.wrapper {
-  height: 80vh;
+.body {
+  height: 78vh;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #FAFAFA;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0px;
+  height: 14vh;
+  width: 100%;
+  background-color: #8D76BE;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  p {
+    font-size: 33px;
+    font-weight: 500;
+    color: #F5F5F5;
+    letter-spacing: 3px;
+  }
 }
 
 .buttonWrapper {
@@ -22,7 +39,6 @@
 
 .rectangle:hover {
   background-color: #FFC80A;
-
 }
 
 .text {

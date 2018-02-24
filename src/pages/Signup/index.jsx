@@ -3,7 +3,7 @@ import Nav from 'components/Nav/index';
 import JourneyOptions from 'components/Signup/index';
 
 const Signup = () => (
-  <div className="Signup">
+  <div>
     <Nav nav="signup" />
     <JourneyOptions />
   </div>
