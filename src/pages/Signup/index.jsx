@@ -1,11 +1,11 @@
 import React from 'react';
 import Nav from 'components/Nav/index';
-import JourneyOptions from 'components/Signup/index';
+import SignupOption from 'components/SignupOption/index';
 
 const Signup = () => (
   <div>
     <Nav nav="signup" />
-    <JourneyOptions />
+    <SignupOption />
   </div>
 );
 

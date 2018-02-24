@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
-import styles from 'components/Signup/index.css';
+import styles from 'components/SignupOption/index.css';
 
 const Button = ({ text, link }) => (
   <div className={styles.buttonWrapper}>

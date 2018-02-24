@@ -1,6 +1,6 @@
 import React from 'react';
-import Button from 'components/Signup/Button';
-import styles from 'components/Signup/index.css';
+import Button from 'components/SignupOption/Button';
+import styles from 'components/SignupOption/index.css';
 
 const spaceText = 'I have space';
 const brandText = 'I need space';
@@ -10,7 +10,7 @@ const brandLink = '/onboard/brand/1';
 
 const footerText = 'Are you a Brand or a Space ?';
 
-const JourneyOptions = () => (
+const SignupOption = () => (
   <div>
     <div className={styles.body}>
       <Button text={spaceText} link={spaceLink} />
@@ -22,4 +22,4 @@ const JourneyOptions = () => (
   </div>
 );
 
-export default JourneyOptions;
+export default SignupOption;
