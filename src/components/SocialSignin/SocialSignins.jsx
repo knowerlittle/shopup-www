@@ -8,8 +8,6 @@ const {
   GOOGLE_APP_ID,
 } = process.env;
 
-console.log('google', GOOGLE_APP_ID);
-
 const SocialSignins = () => (
   <div>
     <SocialButton
