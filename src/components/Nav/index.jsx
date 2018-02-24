@@ -8,7 +8,7 @@ const options = {
   signup: <SignUp />,
 };
 
-const Nav = props => options[props.nav];
+const Nav = ({ nav }) => options[nav];
 
 Nav.propTypes = {
   nav: PropTypes.string.isRequired,

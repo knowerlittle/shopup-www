@@ -4,7 +4,7 @@ import HeroComp from 'components/Hero/index';
 import Footer from 'components/Footer/index';
 
 const Home = () => (
-  <div className="Home">
+  <div>
     <Nav nav="home" />
     <HeroComp />
     <Footer />

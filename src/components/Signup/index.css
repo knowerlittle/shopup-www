@@ -1,0 +1,32 @@
+.wrapper {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FAFAFA;
+}
+
+.buttonWrapper {
+  padding: 50px;
+}
+
+.rectangle {
+	height: 462.14px;
+	width: 402px;
+	border-radius: 23px;
+  background-color: #FF0808;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text {
+  height: 46px;
+  width: 276px;
+  color: #FFFFFF;
+  font-family: Roboto;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 46px;
+  text-align: center;
+}
