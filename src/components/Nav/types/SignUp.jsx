@@ -11,11 +11,11 @@ const SignUpNav = () => (
       </div>
       <div className={styles.menuContainer}>
         <ul>
-          <li>
+          <li className={styles.accountText}>
             Have an account?
           </li>
           <li>
-            <NavLink to="/signin" activeClassName={styles.current}>
+            <NavLink to="/signin" className={styles.signinText} activeClassName={styles.current}>
             Sign in
             </NavLink>
           </li>

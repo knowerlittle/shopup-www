@@ -23,14 +23,29 @@
   display: flex;
   justify-content: flex-end;
 }
-.menuContainer{
+.menuContainer {
   li{
     margin: 0 15px;
+    cursor: default;
   }
 }
-.current{
+.current {
   font-weight: bold;
   margin: -1.5px;
+}
+
+.accountText {
+  color: #9B9B9B;
+  font-weight: 500;
+}
+
+.signinText {
+  font-weight: bold;
+  color: #292929;
+}
+
+.signinText:hover {
+  text-shadow: 0.5px 0.5px 0.5px rgba(34, 34, 34, 0.3)
 }
 
 .menuLink:hover {

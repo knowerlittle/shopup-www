@@ -20,6 +20,11 @@
   align-items: center;
 }
 
+.rectangle:hover {
+  background-color: #FFC80A;
+
+}
+
 .text {
   height: 46px;
   width: 276px;
