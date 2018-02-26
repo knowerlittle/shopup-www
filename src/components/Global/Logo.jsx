@@ -4,7 +4,8 @@ import { NavLink } from 'react-router-dom';
 import red from 'assets/logo/popin_logo_red.png';
 import white from 'assets/logo/popin_logo_white.png';
 import black from 'assets/logo/popin_logo_black.png';
-import styles from 'components/Global/index.css';
+import styles from 'components/Global/logo.css';
+
 
 const logo = {
   red,

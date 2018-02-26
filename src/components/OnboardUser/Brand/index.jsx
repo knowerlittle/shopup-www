@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Step1 from 'components/OnboardUser/Brand/Step1';
+import Footer from 'components/OnboardUser/Brand/Footer';
 // import { Link } from 'react-router-dom';
 
 const steps = {
@@ -10,6 +11,7 @@ const steps = {
 const OnboardBrand = ({ step }) => (
   <div>
     {steps[step]}
+    <Footer />
   </div>
 );
 
