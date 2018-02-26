@@ -6,6 +6,7 @@
   border: 1px solid #FFC80A;	
   background: #FFFFFF;
   border-radius: 30px;
+  font-size: 12px;
 
   p {
     color: black;
@@ -34,6 +35,7 @@
   border: 1px solid #FFC80A;	
   background: #FFC80A;
   border-radius: 30px;
+  font-size: 12px;
 
   p {
     color: black;
@@ -48,6 +50,35 @@
   cursor: pointer;
   background: #8D76BE;
   border: 1px solid #8D76BE;
+  
+  p {
+    color: white;
+  }
+}
+
+.purple {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;	
+  border: 1px solid #8D76BE;	
+  background: #8D76BE;
+  border-radius: 30px;
+  font-size: 12px;
+
+  p {
+    color: black;
+    height: 15px;
+    color: white;	
+    letter-spacing: 1px;
+    font-weight: bold;
+  }
+}
+
+.purple:hover {
+  cursor: pointer;
+  background: #FFC80A;
+  border: 1px solid #FFC80A;
   
   p {
     color: white;

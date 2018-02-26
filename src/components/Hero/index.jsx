@@ -1,17 +1,19 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import LinkButton from 'components/Global/LinkButton';
 import styles from 'components/Hero/index.css';
 
-const HeroComp = () => (
+const Hero = () => (
   <div>
     <section className={styles.heroContainer}>
       <h1>Home page title</h1>
       <p>
-        <button>
-          <NavLink to="/signup">
-            Get Started
-          </NavLink>
-        </button>
+        <LinkButton
+          color="purple"
+          text="GET STARTED"
+          link="/signup"
+          height="50"
+          width="300"
+        />
       </p>
     </section>
     <section className={styles.featureContainer}>
@@ -20,4 +22,4 @@ const HeroComp = () => (
   </div>
 );
 
-export default HeroComp;
+export default Hero;

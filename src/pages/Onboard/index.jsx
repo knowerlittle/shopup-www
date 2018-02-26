@@ -6,9 +6,6 @@ import OnboardUser from 'components/OnboardUser/index';
 const Onboard = ({ match: { params: { journey, step } } }) => (
   <div className="main">
     <Nav nav="signup" />
-    Onboarding Page
-    {journey}
-    {step}
     <OnboardUser
       journey={journey}
       step={step}

@@ -4,7 +4,7 @@ import styles from 'components/OnboardUser/index.css';
 
 const Footer = () => (
   <div className={styles.onboardFooter}>
-    <h3>Itinerrary builder</h3>
+    <h3>Itinerary builder</h3>
     <p className={styles.footerExplainer}>
       Save, organize, and share all details here
     </p>

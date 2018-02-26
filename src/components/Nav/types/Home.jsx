@@ -1,6 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import Logo from 'components/Global/Logo';
+import LinkButton from 'components/Global/LinkButton';
 import styles from 'components/Nav/index.css';
 
 const HomeNav = () => (
@@ -22,11 +23,13 @@ const HomeNav = () => (
             </NavLink>
           </li>
           <li>
-            <button>
-              <NavLink to="/signup" activeClassName={styles.current}>
-               SIGN UP
-              </NavLink>
-            </button>
+            <LinkButton
+              color="purple"
+              text="SIGN UP"
+              link="/signup"
+              height="40"
+              width="100"
+            />
           </li>
         </ul>
       </div>
