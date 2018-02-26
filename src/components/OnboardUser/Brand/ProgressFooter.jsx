@@ -4,8 +4,8 @@ import { withRouter } from 'react-router-dom';
 import styles from 'components/OnboardUser/index.css';
 
 const stepA = 'Tell us about yourself';
-const stepB = 'Best people for your space';
-const stepC = 'Book 360 appointment';
+const stepB = 'Best people for your brand';
+const stepC = 'Upload your media';
 
 const A_COMPLETE = 4;
 const B_COMPLETE = 6;

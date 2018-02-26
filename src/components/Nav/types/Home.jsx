@@ -5,7 +5,7 @@ import LinkButton from 'components/Global/LinkButton';
 import styles from 'components/Nav/index.css';
 
 const HomeNav = () => (
-  <nav className={styles.nav}>
+  <nav className={styles.redNav}>
     <div className={styles.wrapper}>
       <div className={styles.logoContainer}>
         <Logo logo="white" />

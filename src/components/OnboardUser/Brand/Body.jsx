@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import Body1 from 'components/OnboardUser/Brand/Body1';
 import { withRouter } from 'react-router-dom';
 import Body2 from 'components/OnboardUser/Brand/Body2';
+import styles from 'components/OnboardUser/index.css';
 
 const options = {
   1: <Body1 />,
@@ -10,8 +11,7 @@ const options = {
 };
 
 const Body = ({ match: { params: { step } } }) => (
-  <div>
-    {step}
+  <div className={styles.bodyWrapper}>
     {options[step]}
   </div>
 );

@@ -4,10 +4,10 @@ import Logo from 'components/Global/Logo';
 import styles from 'components/Nav/index.css';
 
 const SignUpNav = () => (
-  <nav>
+  <nav className={styles.nav}>
     <div className={styles.wrapper}>
       <div className={styles.logoContainer}>
-        <h1><Logo /></h1>
+        <Logo />
       </div>
       <div className={styles.menuContainer}>
         <ul>

@@ -14,16 +14,20 @@ const body = {
   C: 'You will be asked to list your products and upload images, list prices, etc...',
 };
 
-const BrandExplainer = ({ option }) => (
+const BrandExplainer = ({ option, width, height }) => (
   <Explainer
     option={option}
     title={title[option]}
     body={body[option]}
+    width={width}
+    height={height}
   />
 );
 
 BrandExplainer.propTypes = {
   option: PropTypes.string.isRequired,
+  width: PropTypes.string.isRequired,
+  height: PropTypes.string.isRequired,
 };
 
 export default BrandExplainer;

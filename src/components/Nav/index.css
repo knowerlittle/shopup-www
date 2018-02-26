@@ -1,5 +1,14 @@
+.redNav {
+  background: red;
+  display: flex;
+  justify-content: center;
+  height: 10vh;
+}
+
 .nav {
-	background: red;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
 }
 
 .ul {
@@ -9,6 +18,7 @@
 .wrapper {
   display: flex;
   padding: 10px 80px;
+  width: 100%;
 }
 .logoContainer,
 .menuContainer {

@@ -5,19 +5,36 @@ import StepB from 'assets/img/onboarding/stepB.png';
 import StepC from 'assets/img/onboarding/stepC.png';
 import styles from 'components/OnboardUser/index.css';
 
-const logoImage = (image, alt) => (
-  <img src={image} alt={alt} />
+const setDimensions = (height, width) => ({
+  height: `${height}px`,
+  width: `${width}px`,
+});
+
+const logoImage = (image, alt, width, height) => (
+  <img src={image} alt={alt} style={setDimensions(width, height)} />
 );
 
 const image = {
-  A: logoImage(StepA, 'Step A'),
-  B: logoImage(StepB, 'Step B'),
-  C: logoImage(StepC, 'Step C'),
+  A(width, height) {
+    return logoImage(StepA, 'Step A', width, height);
+  },
+  B(width, height) {
+    return logoImage(StepB, 'Step B', width, height);
+  },
+  C(width, height) {
+    return logoImage(StepC, 'Step C', width, height);
+  },
 };
 
-const Explainer = ({ option, title, body }) => (
+const Explainer = ({
+  option,
+  title,
+  body,
+  width = '250',
+  height,
+}) => (
   <div className={styles.explainerWrapper}>
-    {image[option]}
+    {image[option](width, height)}
     <p className={styles.titleText}>{title}</p>
     <p className={styles.bodyText}>{body}</p>
   </div>
@@ -27,6 +44,8 @@ Explainer.propTypes = {
   option: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   body: PropTypes.string.isRequired,
+  width: PropTypes.string.isRequired,
+  height: PropTypes.string.isRequired,
 };
 
 export default Explainer;

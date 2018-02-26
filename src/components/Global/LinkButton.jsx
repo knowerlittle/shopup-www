@@ -15,8 +15,8 @@ const getStyle = (color) => {
 };
 
 const setDimensions = (height, width) => ({
-  minHeight: `${height}px`,
-  minWidth: `${width}px`,
+  height: `${height}px`,
+  width: `${width}px`,
 });
 
 const LinkButton = ({
@@ -26,9 +26,11 @@ const LinkButton = ({
   height = '50',
   width = '200',
 }) => (
-  <div className={getStyle(color)} style={setDimensions(height, width)}>
+  <div>
     <Link to={link}>
-      <p>{text}</p>
+      <div className={getStyle(color)} style={setDimensions(height, width)}>
+        <p>{text}</p>
+      </div>
     </Link>
   </div>
 );
