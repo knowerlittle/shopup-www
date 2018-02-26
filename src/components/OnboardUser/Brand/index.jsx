@@ -1,21 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import BrandExplainer from 'components/OnboardUser/Brand/BrandExplainer';
-import styles from 'components/OnboardUser/index.css';
+import Step1 from 'components/OnboardUser/Brand/Step1';
 // import { Link } from 'react-router-dom';
 
+const steps = {
+  1: <Step1 />,
+};
+
 const OnboardBrand = ({ step }) => (
-  <div className={styles.explainersWrapper}>
-    STEP: { step }
-    <BrandExplainer
-      option="A"
-    />
-    <BrandExplainer
-      option="B"
-    />
-    <BrandExplainer
-      option="C"
-    />
+  <div>
+    {steps[step]}
   </div>
 );
 
