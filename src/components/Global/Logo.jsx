@@ -19,18 +19,14 @@ const propsShadow = color => (color === 'red'
 );
 
 const Logo = props => (
-  <div>
-    <NavLink to="/" activeClassName="current">
-      <div>
-        <img
-          className={propsShadow(props.shadow)}
-          src={logo[props.logo]}
-          alt="Logo"
-          width={props.width}
-        />
-      </div>
-    </NavLink>
-  </div>
+  <NavLink to="/" activeClassName="current">
+    <img
+      className={propsShadow(props.shadow)}
+      src={logo[props.logo]}
+      alt="Logo"
+      width={props.width}
+    />
+  </NavLink>
 );
 
 Logo.propTypes = {

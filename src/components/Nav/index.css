@@ -17,6 +17,7 @@
 .logoContainer {
   display: flex;
   justify-content: flex-started;
+  align-items: center;
 }
 .menuContainer,
 .menuContainer ul {

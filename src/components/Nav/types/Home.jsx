@@ -8,7 +8,7 @@ const HomeNav = () => (
   <nav className={styles.nav}>
     <div className={styles.wrapper}>
       <div className={styles.logoContainer}>
-        <h1><Logo logo="white" /></h1>
+        <Logo logo="white" />
       </div>
       <div className={styles.menuContainer}>
         <ul className={styles.ul}>
