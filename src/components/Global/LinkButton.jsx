@@ -26,11 +26,9 @@ const LinkButton = ({
   height = '50',
   width = '200',
 }) => (
-  <div>
+  <div className={getStyle(color)} style={setDimensions(height, width)}>
     <Link to={link}>
-      <div className={getStyle(color)} style={setDimensions(height, width)}>
-        <p>{text}</p>
-      </div>
+      <p>{text}</p>
     </Link>
   </div>
 );

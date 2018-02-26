@@ -1,26 +1,12 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import Step1 from 'components/OnboardUser/Brand/Step1';
+import Body from 'components/OnboardUser/Brand/Body';
 import Footer from 'components/OnboardUser/Brand/Footer';
-// import { Link } from 'react-router-dom';
 
-const steps = {
-  1: <Step1 />,
-};
-
-const OnboardBrand = ({ step }) => (
+const OnboardBrand = () => (
   <div>
-    {steps[step]}
+    <Body />
     <Footer />
   </div>
 );
-
-OnboardBrand.propTypes = {
-  step: PropTypes.string,
-};
-
-OnboardBrand.defaultProps = {
-  step: '1',
-};
 
 export default OnboardBrand;
