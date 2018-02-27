@@ -19,7 +19,6 @@ const Body2 = () => (
       <input
         className={styles.inputBox}
         type="text"
-        name="lname"
         placeholder="Brand Name"
       />
       <LinkButton
