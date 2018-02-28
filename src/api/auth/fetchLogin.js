@@ -11,10 +11,10 @@ function fetchLogin({
       body,
     }).then(
       response => (response),
-      err => console.log('api Error', err),
+      error => console.log('api Error', error),
     );
   } catch (error) {
-    return console.log('err', error);
+    return console.log('system error', error);
   }
 }
 

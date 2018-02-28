@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import OnboardBrand from 'components/OnboardUser/Brand/index';
 import OnboardSpace from 'components/OnboardUser/Space/index';
 import { withRouter } from 'react-router-dom';
-// import { fetchSignupInfo } from ''
+import fetchSignupInfo from 'api/signup';
 
 const options = {
   brand: step => <OnboardBrand step={step} />,
@@ -12,9 +12,7 @@ const options = {
 
 class OnboardUser extends Component {
   componentDidMount() {
-    // fetchSignupInfo().then(response =>
-    //   console.log('r', response)
-    // );
+    fetchSignupInfo().then(response => console.log('r', response));
   }
 
   render() {
