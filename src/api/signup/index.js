@@ -1,13 +1,13 @@
 import headers from 'api/utils/jsonHeaders';
 import * as url from 'api/urls/signup';
 
-function fetchSignupInfo() {
+async function fetchSignupInfo() {
   try {
     return fetch(url.getInfo, {
       method: 'GET',
       headers,
     }).then(
-      response => (response),
+      response => response.json(),
       err => console.log('api Error', err),
     );
   } catch (error) {

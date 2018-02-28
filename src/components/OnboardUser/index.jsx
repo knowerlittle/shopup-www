@@ -12,7 +12,10 @@ const options = {
 
 class OnboardUser extends Component {
   componentDidMount() {
-    fetchSignupInfo().then(response => console.log('r', response));
+    fetchSignupInfo().then(({ categories, demographics }) => {
+      console.log('c', categories);
+      console.log('d', demographics);
+    });
   }
 
   render() {
