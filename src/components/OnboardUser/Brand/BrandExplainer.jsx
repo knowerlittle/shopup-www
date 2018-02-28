@@ -26,8 +26,13 @@ const BrandExplainer = ({ option, width, height }) => (
 
 BrandExplainer.propTypes = {
   option: PropTypes.string.isRequired,
-  width: PropTypes.string.isRequired,
-  height: PropTypes.string.isRequired,
+  width: PropTypes.string,
+  height: PropTypes.string,
+};
+
+BrandExplainer.defaultProps = {
+  width: '250',
+  height: '',
 };
 
 export default BrandExplainer;

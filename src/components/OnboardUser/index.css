@@ -17,7 +17,7 @@
   img {
     max-width: 300px;
     max-height: 300px;
-    filter: drop-shadow(1.00px 1.00px 1.00px rgba(34, 34, 34, 0.05));
+    filter: drop-shadow(2.00px 2.00px 2.00px rgba(34, 34, 34, 0.055));
   }
 }
 

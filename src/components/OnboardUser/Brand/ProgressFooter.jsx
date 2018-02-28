@@ -34,7 +34,11 @@ const ProgressFooter = ({ match: { params: { step } } }) => (
 );
 
 ProgressFooter.propTypes = {
-  match: PropTypes.object.isRequired, // eslint-disable-line react/forbid-prop-types
+  match: PropTypes.shape({
+    params: PropTypes.shape({
+      step: PropTypes.node,
+    }).isRequired,
+  }).isRequired,
 };
 
 export default withRouter(ProgressFooter);

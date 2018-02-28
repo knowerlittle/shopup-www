@@ -3,7 +3,13 @@ import createJsonProfile from 'api/utils/createJsonProfile';
 import fetchLogin from 'api/utils/fetchLogin';
 import * as url from 'api/urls/auth';
 
-const handleSocialLoginSuccess = (user) => {
+const setTokenToLocalStorage = async (response) => {
+  const { token } = await response.json();
+  console.log('token', token);
+  localStorage.setItem('popinToken', token);
+};
+
+const handleSocialLoginSuccess = routerPush => async (user) => {
   const jsonProfile = createJsonProfile(user);
   const requestObject = {
     path: url.auth,
@@ -11,7 +17,9 @@ const handleSocialLoginSuccess = (user) => {
     headers: jsonHeaders,
     body: jsonProfile,
   };
-  fetchLogin(requestObject);
+  const response = await fetchLogin(requestObject);
+  setTokenToLocalStorage(response);
+  routerPush('/signup');
 };
 
 export default handleSocialLoginSuccess;

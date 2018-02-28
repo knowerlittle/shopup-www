@@ -30,7 +30,7 @@ const Explainer = ({
   option,
   title,
   body,
-  width = '250',
+  width,
   height,
 }) => (
   <div className={styles.explainerWrapper}>
@@ -44,8 +44,13 @@ Explainer.propTypes = {
   option: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   body: PropTypes.string.isRequired,
-  width: PropTypes.string.isRequired,
-  height: PropTypes.string.isRequired,
+  width: PropTypes.string,
+  height: PropTypes.string,
+};
+
+Explainer.defaultProps = {
+  width: '250',
+  height: '',
 };
 
 export default Explainer;

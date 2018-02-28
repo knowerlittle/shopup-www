@@ -19,7 +19,11 @@ function options(step) {
 const Footer = ({ match: { params: { step } } }) => options(step);
 
 Footer.propTypes = {
-  match: PropTypes.object.isRequired, // eslint-disable-line react/forbid-prop-types
+  match: PropTypes.shape({
+    params: PropTypes.shape({
+      step: PropTypes.node,
+    }).isRequired,
+  }).isRequired,
 };
 
 export default withRouter(Footer);

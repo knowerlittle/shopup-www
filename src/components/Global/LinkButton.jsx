@@ -23,8 +23,8 @@ const LinkButton = ({
   text,
   link,
   color,
-  height = '50',
-  width = '200',
+  height,
+  width,
 }) => (
   <div>
     <Link to={link}>
@@ -39,8 +39,13 @@ LinkButton.propTypes = {
   text: PropTypes.string.isRequired,
   link: PropTypes.string.isRequired,
   color: PropTypes.string.isRequired,
-  height: PropTypes.string.isRequired,
-  width: PropTypes.string.isRequired,
+  height: PropTypes.string,
+  width: PropTypes.string,
+};
+
+LinkButton.defaultProps = {
+  height: '50',
+  width: '200',
 };
 
 export default LinkButton;

@@ -1,20 +1,17 @@
-const fetchLogin = ({
+function fetchLogin({
   path,
   method,
   headers,
   body,
-}) => {
+}) {
   try {
-    fetch(path, { method, headers, body }).then(async (res) => {
-      const { token } = await res.json();
-      console.log('t', token);
-      localStorage.setItem('popinToken', token);
-    }, (err) => {
-      console.log(`api error ${err}`);
-    });
-  } catch (err) {
-    console.log(`system error ${err}`);
+    return fetch(path, { method, headers, body }).then(
+      response => (response),
+      err => console.log('api Error', err),
+    );
+  } catch (error) {
+    return console.log('err', error);
   }
-};
+}
 
 export default fetchLogin;
