@@ -1,6 +1,12 @@
-const jsonHeaders = {
+const token = localStorage.getItem('popinToken');
+
+const headers = {
   Accept: 'application/json, text/plain, */*',
   'Content-Type': 'application/json',
 };
 
-export default jsonHeaders;
+const headersWithToken = Object.assign({}, headers, { Authorization: `Bearer ${token}` });
+
+const jsonHeader = token ? headersWithToken : headers;
+
+export default jsonHeader;
