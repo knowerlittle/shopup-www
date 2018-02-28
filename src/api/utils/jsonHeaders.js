@@ -7,6 +7,6 @@ const headers = {
 
 const headersWithToken = Object.assign({}, headers, { Authorization: `Bearer ${token}` });
 
-const jsonHeader = token ? headersWithToken : headers;
+const jsonHeaders = token ? headersWithToken : headers;
 
-export default jsonHeader;
+export default jsonHeaders;

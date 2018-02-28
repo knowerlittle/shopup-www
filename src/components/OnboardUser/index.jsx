@@ -1,15 +1,28 @@
-import React from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import OnboardBrand from 'components/OnboardUser/Brand/index';
 import OnboardSpace from 'components/OnboardUser/Space/index';
 import { withRouter } from 'react-router-dom';
+// import { fetchSignupInfo } from ''
 
 const options = {
   brand: step => <OnboardBrand step={step} />,
   space: step => <OnboardSpace step={step} />,
 };
 
-const OnboardUser = ({ match: { params: { journey, step } } }) => (options[journey](step));
+class OnboardUser extends Component {
+  componentDidMount() {
+    // fetchSignupInfo().then(response =>
+    //   console.log('r', response)
+    // );
+  }
+
+  render() {
+    return (options[this.props.match.params.journey](this.props.match.params.step));
+  }
+}
+
+// const OnboardUser = ({ match: { params: { journey, step } } }) => ;
 
 OnboardUser.propTypes = {
   match: PropTypes.shape({

@@ -1,11 +1,15 @@
+import headers from 'api/utils/jsonHeaders';
+import * as url from 'api/urls/auth';
+
 function fetchLogin({
-  path,
-  method,
-  headers,
   body,
 }) {
   try {
-    return fetch(path, { method, headers, body }).then(
+    return fetch(url.auth, {
+      method: 'POST',
+      headers,
+      body,
+    }).then(
       response => (response),
       err => console.log('api Error', err),
     );
