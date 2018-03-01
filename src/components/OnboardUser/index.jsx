@@ -3,7 +3,9 @@ import PropTypes from 'prop-types';
 import OnboardBrand from 'components/OnboardUser/Brand/index';
 import OnboardSpace from 'components/OnboardUser/Space/index';
 import { withRouter } from 'react-router-dom';
-import fetchSignupInfo from 'api/signup';
+// import fetchSignupInfo from 'api/signup';
+import { connect } from 'react-redux';
+import fetchSignupData from 'action/signup';
 
 const options = {
   brand: step => <OnboardBrand step={step} />,
@@ -12,18 +14,14 @@ const options = {
 
 class OnboardUser extends Component {
   componentDidMount() {
-    fetchSignupInfo().then(({ categories, demographics }) => {
-      console.log('c', categories);
-      console.log('d', demographics);
-    });
+    console.log('hi');
+    fetchSignupData(this.props.dispatch);
   }
 
   render() {
     return (options[this.props.match.params.journey](this.props.match.params.step));
   }
 }
-
-// const OnboardUser = ({ match: { params: { journey, step } } }) => ;
 
 OnboardUser.propTypes = {
   match: PropTypes.shape({
@@ -32,6 +30,7 @@ OnboardUser.propTypes = {
       step: PropTypes.node,
     }).isRequired,
   }).isRequired,
+  dispatch: PropTypes.func.isRequired,
 };
 
-export default withRouter(OnboardUser);
+export default withRouter(connect()(OnboardUser));

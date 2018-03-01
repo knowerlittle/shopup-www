@@ -5,7 +5,7 @@ import styles from 'components/OnboardUser/index.css';
 
 const question = 'What is the name of your brand ?';
 
-const Body2 = () => (
+const Step2 = () => (
   <div className={styles.card}>
     <section className={styles.leftSection}>
       <BrandExplainer
@@ -31,4 +31,4 @@ const Body2 = () => (
   </div>
 );
 
-export default Body2;
+export default Step2;

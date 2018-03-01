@@ -1,13 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Body1 from 'components/OnboardUser/Brand/Body1';
 import { withRouter } from 'react-router-dom';
-import Body2 from 'components/OnboardUser/Brand/Body2';
+import Step1 from 'components/OnboardUser/Brand/Step1';
+import Step2 from 'components/OnboardUser/Brand/Step2';
 import styles from 'components/OnboardUser/index.css';
 
 const options = {
-  1: <Body1 />,
-  2: <Body2 />,
+  1: <Step1 />,
+  2: <Step2 />,
 };
 
 const Body = ({ match: { params: { step } } }) => (

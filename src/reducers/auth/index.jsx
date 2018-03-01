@@ -3,7 +3,7 @@ const initState = {
 };
 export const TODO_ADD = 'TODO_ADD';
 
-export default (state = initState, action) => {
+const auth = (state = initState, action) => {
   switch (action.type) {
     case TODO_ADD:
       return {
@@ -15,3 +15,5 @@ export default (state = initState, action) => {
       return state;
   }
 };
+
+export default auth;

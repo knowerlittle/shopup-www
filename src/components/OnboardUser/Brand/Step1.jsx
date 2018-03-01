@@ -2,7 +2,7 @@ import React from 'react';
 import BrandExplainer from 'components/OnboardUser/Brand/BrandExplainer';
 import styles from 'components/OnboardUser/index.css';
 
-const Body1 = () => (
+const Step1 = () => (
   <div className={styles.explainersWrapper}>
     <BrandExplainer
       option="A"
@@ -16,4 +16,4 @@ const Body1 = () => (
   </div>
 );
 
-export default Body1;
+export default Step1;
