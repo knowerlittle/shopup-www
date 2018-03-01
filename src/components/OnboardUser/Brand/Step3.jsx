@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
+import { Link } from 'react-router-dom';
 import LinkButton from 'components/Global/LinkButton';
 import BrandExplainer from 'components/OnboardUser/Brand/BrandExplainer';
 import { addDataToSignup } from 'action/signup';
@@ -65,20 +66,22 @@ const Step3 = ({ dispatch }) => {
           </p>
         </div>
         <div className={styles.buttonWrapper}>
-          <LinkButton
-            color="purple"
-            text="BACK"
-            link="/onboard/brand/2"
-            width="150"
-            onClick={() => dispatch(addDataToSignup(createInputStream()))}
-          />
-          <LinkButton
-            color="purple"
-            text="CONTINUE"
-            link="/onboard/brand/4"
-            width="150"
-            onClick={() => dispatch(addDataToSignup(createInputStream()))}
-          />
+          <Link to="/onboard/brand/2">
+            <LinkButton
+              color="purple"
+              text="BACK"
+              width="150"
+              onClick={() => dispatch(addDataToSignup(createInputStream()))}
+            />
+          </Link>
+          <Link to="/onboard/brand/4">
+            <LinkButton
+              color="purple"
+              text="CONTINUE"
+              width="150"
+              onClick={() => dispatch(addDataToSignup(createInputStream()))}
+            />
+          </Link>
         </div>
       </section>
     </div>

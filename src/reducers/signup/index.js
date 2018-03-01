@@ -12,9 +12,7 @@ const signup = (state = {}, action) => {
         journey: action.payload,
       };
     case 'ADD_DATA_TO_SIGNUP': {
-      const key = Object.keys(action.payload)[0];
-      const value = Object.values(action.payload)[0];
-      const inputValue = Object.assign({}, state.inputValue, { [key]: value });
+      const inputValue = Object.assign({}, state.inputValue, action.payload);
       return {
         ...state,
         inputValue,

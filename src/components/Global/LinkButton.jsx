@@ -1,7 +1,6 @@
 import React from 'react';
 import styles from 'components/Global/linkButton.css';
 import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom';
 
 const option = {
   white: 'white',
@@ -22,14 +21,13 @@ const setDimensions = (height, width) => ({
 
 const LinkButton = ({
   text,
-  link,
   color,
   height,
   width,
   onClick,
 }) => (
   <div>
-    <Link to={link}>
+    
       <div
         className={getStyle(color)}
         style={setDimensions(height, width)}
@@ -45,7 +43,6 @@ const LinkButton = ({
 
 LinkButton.propTypes = {
   text: PropTypes.string.isRequired,
-  link: PropTypes.string.isRequired,
   color: PropTypes.string.isRequired,
   height: PropTypes.string,
   width: PropTypes.string,
