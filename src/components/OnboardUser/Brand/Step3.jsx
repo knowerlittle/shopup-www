@@ -7,16 +7,16 @@ import BrandExplainer from 'components/OnboardUser/Brand/BrandExplainer';
 import { addDataToSignup } from 'action/signup';
 import styles from 'components/OnboardUser/index.css';
 
-const question = 'Tell us more about what you do ?';
+const question = 'Tell us more about what you do?';
 
-const Step3 = ({ dispatch }) => {
-  let input1;
-  let input2;
-  let input3;
-  let input4;
+const Step3 = ({ dispatch, inputs }) => {
+  let input1 = '';
+  let input2 = '';
+  let input3 = '';
+  let input4 = '';
   const createInputStream = () => ({
     name: 'description',
-    value: `I create ${input1.value} to ${input2.value} for ${input3.value} that ${input4.value}`,
+    value: [input1.value, input2.value, input3.value, input4.value],
   });
 
   return (
@@ -34,36 +34,40 @@ const Step3 = ({ dispatch }) => {
         </div>
 
         <div className={styles.middleWrapper}>
-          <p>
+          <p className={styles.inputP}>
             I create
             <input
               className={styles.firstField}
               type="text"
               ref={(node) => { input1 = node; }}
+              defaultValue={inputs[0]}
             />
             to
           </p>
-          <p>
+          <p className={styles.inputP}>
             <input
               className={styles.inputField}
               type="text"
               ref={(node) => { input2 = node; }}
+              defaultValue={inputs[1]}
             />
             for
           </p>
-          <p>
+          <p className={styles.inputP}>
             <input
               className={styles.inputField}
               type="text"
               ref={(node) => { input3 = node; }}
+              defaultValue={inputs[2]}
             />
             that
           </p>
-          <p>
+          <p className={styles.inputP}>
             <input
               className={styles.lastField}
               type="text"
               ref={(node) => { input4 = node; }}
+              defaultValue={inputs[3]}
             />
             .
           </p>
@@ -93,7 +97,15 @@ const Step3 = ({ dispatch }) => {
 
 Step3.propTypes = {
   dispatch: PropTypes.func.isRequired,
+  inputs: PropTypes.array.isRequired, // eslint-disable-line react/forbid-prop-types
+};
+
+const mapStateToProps = (state) => {
+  const inputs = state.signupInfo.inputValue.description;
+  return {
+    inputs,
+  };
 };
 
 
-export default connect()(Step3);
+export default connect(mapStateToProps)(Step3);

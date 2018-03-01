@@ -16,14 +16,9 @@ export const setSignupJourney = journey => dispatch => (
   })
 );
 
-export const addDataToSignup = input => (dispatch) => {
-  const { name, value } = input;
-  const data = {
-    [name]: value,
-  };
-
+export const addDataToSignup = ({ name, value }) => (dispatch) => {
   dispatch({
     type: 'ADD_DATA_TO_SIGNUP',
-    payload: data,
+    payload: { [name]: value },
   });
 };

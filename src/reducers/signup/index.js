@@ -1,4 +1,14 @@
-const signup = (state = {}, action) => {
+const initState = {
+  categories: [],
+  demographics: [],
+  inputValue: {
+    name: '',
+    description: [],
+  },
+};
+
+
+const signup = (state = initState, action) => {
   switch (action.type) {
     case 'FETCH_SIGNUP_INFO':
       return {

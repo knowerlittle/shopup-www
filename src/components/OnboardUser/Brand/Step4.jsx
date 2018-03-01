@@ -6,10 +6,11 @@ import Button from 'components/Global/Button';
 import BrandExplainer from 'components/OnboardUser/Brand/BrandExplainer';
 import styles from 'components/OnboardUser/index.css';
 import { addDataToSignup } from 'action/signup';
+// import { getCategories } from 'reducers/signup';
 
-const question = 'What is the name of your brand?';
+const question = 'Which categories do your products fall under?';
 
-const Step2 = ({ dispatch, name }) => {
+const Step4 = ({ dispatch, categories }) => {
   let inputValue;
 
   return (
@@ -25,25 +26,29 @@ const Step2 = ({ dispatch, name }) => {
         <div className={styles.topWrapper}>
           {question}
         </div>
+
         <div className={styles.middleWrapper}>
-          <input
-            className={styles.inputBox}
-            type="text"
-            name="name"
-            defaultValue={name}
-            ref={(node) => { inputValue = node; }}
-            // value={name.toString()}
-          />
+          {categories.map(({ _id: id, name }) => (
+            <Button
+              key={id}
+              color="purple"
+              text={name}
+              width="150"
+              onClick={() => {}}
+            />
+          ))}
         </div>
 
         <div className={styles.buttonWrapper}>
-          <Button
-            color="disabled"
-            text="BACK"
-            width="150"
-            onClick={() => {}}
-          />
           <Link to="/onboard/brand/3">
+            <Button
+              color="purple"
+              text="BACK"
+              width="150"
+              onClick={() => {}}
+            />
+          </Link>
+          <Link to="/onboard/brand/5">
             <Button
               color="purple"
               text="CONTINUE"
@@ -57,16 +62,16 @@ const Step2 = ({ dispatch, name }) => {
   );
 };
 
-Step2.propTypes = {
+Step4.propTypes = {
   dispatch: PropTypes.func.isRequired,
-  name: PropTypes.string.isRequired,
+  categories: PropTypes.array.isRequired, // eslint-disable-line react/forbid-prop-types
 };
 
 const mapStateToProps = (state) => {
-  const { name } = state.signupInfo.inputValue;
+  const { categories } = state.signupInfo;
   return {
-    name,
+    categories,
   };
 };
 
-export default connect(mapStateToProps)(Step2);
+export default connect(mapStateToProps)(Step4);
