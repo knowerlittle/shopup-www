@@ -16,3 +16,15 @@ export const setSignupJourney = journey => dispatch => (
   })
 );
 
+export const addDataToSignup = input => (dispatch) => {
+  const { name, value } = input;
+  const data = {
+    [name]: value,
+  };
+  console.log('input', data);
+
+  dispatch({
+    type: 'ADD_DATA_TO_SIGNUP',
+    payload: data,
+  });
+};

@@ -25,10 +25,17 @@ const LinkButton = ({
   color,
   height,
   width,
+  onClick,
 }) => (
   <div>
     <Link to={link}>
-      <div className={getStyle(color)} style={setDimensions(height, width)}>
+      <div
+        className={getStyle(color)}
+        style={setDimensions(height, width)}
+        onKeyDown={() => {}}
+        role="presentation"
+        onClick={onClick}
+      >
         <p>{text}</p>
       </div>
     </Link>
@@ -41,11 +48,13 @@ LinkButton.propTypes = {
   color: PropTypes.string.isRequired,
   height: PropTypes.string,
   width: PropTypes.string,
+  onClick: PropTypes.func,
 };
 
 LinkButton.defaultProps = {
   height: '50',
   width: '200',
+  onClick: () => {},
 };
 
 export default LinkButton;
