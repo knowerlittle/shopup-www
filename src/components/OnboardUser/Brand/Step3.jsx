@@ -64,13 +64,22 @@ const Step3 = ({ dispatch }) => {
             .
           </p>
         </div>
-        <LinkButton
-          color="purple"
-          text="CONTINUE"
-          link="/onboard/brand/4"
-          width="150"
-          onClick={() => dispatch(addDataToSignup(createInputStream()))}
-        />
+        <div className={styles.buttonWrapper}>
+          <LinkButton
+            color="purple"
+            text="BACK"
+            link="/onboard/brand/2"
+            width="150"
+            onClick={() => dispatch(addDataToSignup(createInputStream()))}
+          />
+          <LinkButton
+            color="purple"
+            text="CONTINUE"
+            link="/onboard/brand/4"
+            width="150"
+            onClick={() => dispatch(addDataToSignup(createInputStream()))}
+          />
+        </div>
       </section>
     </div>
   );

@@ -7,6 +7,7 @@ const option = {
   white: 'white',
   yellow: 'yellow',
   purple: 'purple',
+  disabled: 'disabled',
 };
 
 const getStyle = (color) => {

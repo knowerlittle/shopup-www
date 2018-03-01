@@ -144,11 +144,10 @@
 }
 
 .inputBox {
-  height: 50px;
-  width: 350px;
-  border: 2px solid #F5F5F5;
-  border-radius: 4px;
-  background-color: #FFFFFF;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #979797;
+  width: 50%;;
 }
 
 .firstField {
@@ -181,15 +180,25 @@
   p {
     text-align: center;
   }
-  input[type=text] {
-    font-family: Roboto;
-    font-size: 20px;
-    text-align: center;
-    text-justify: distribute;
-  }
-  input[type=text]:focus {
-    outline: none;
-    border-bottom: 1px solid #FFC80A;
-    text-align: center;
-  }
+}
+
+input[type=text] {
+  font-family: Roboto;
+  font-size: 23px;
+  text-align: center;
+  text-justify: distribute;
+  padding: 10px 0px;
+}
+
+input[type=text]:focus {
+  outline: none;
+  border-bottom: 1px solid #FFC80A;
+  text-align: center;
+}
+
+.buttonWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
 }

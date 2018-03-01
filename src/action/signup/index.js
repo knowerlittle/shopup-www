@@ -21,7 +21,6 @@ export const addDataToSignup = input => (dispatch) => {
   const data = {
     [name]: value,
   };
-  console.log('input', data);
 
   dispatch({
     type: 'ADD_DATA_TO_SIGNUP',

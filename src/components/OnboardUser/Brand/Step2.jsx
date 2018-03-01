@@ -24,17 +24,25 @@ const Step2 = ({ dispatch }) => {
         <input
           className={styles.inputBox}
           type="text"
-          placeholder="Brand Name"
           name="name"
           ref={(node) => { inputValue = node; }}
         />
-        <LinkButton
-          color="purple"
-          text="CONTINUE"
-          link="/onboard/brand/3"
-          width="150"
-          onClick={() => dispatch(addDataToSignup(inputValue))}
-        />
+        <div className={styles.buttonWrapper}>
+          <LinkButton
+            color="disabled"
+            text="BACK"
+            link="/onboard/brand/2"
+            width="150"
+            onClick={() => {}}
+          />
+          <LinkButton
+            color="purple"
+            text="CONTINUE"
+            link="/onboard/brand/3"
+            width="150"
+            onClick={() => dispatch(addDataToSignup(inputValue))}
+          />
+        </div>
       </section>
     </div>
   );
