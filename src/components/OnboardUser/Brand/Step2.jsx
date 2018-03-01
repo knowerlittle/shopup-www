@@ -1,7 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import LinkButton from 'components/Global/LinkButton';
+import { Link } from 'react-router-dom';
+import Button from 'components/Global/Button';
 import BrandExplainer from 'components/OnboardUser/Brand/BrandExplainer';
 import styles from 'components/OnboardUser/index.css';
 import { addDataToSignup } from 'action/signup';
@@ -20,28 +21,34 @@ const Step2 = ({ dispatch }) => {
         />
       </section>
       <section className={styles.rightSection}>
-        <p className={styles.questionTitle}>{question}</p>
-        <input
-          className={styles.inputBox}
-          type="text"
-          name="name"
-          ref={(node) => { inputValue = node; }}
-        />
+        <div className={styles.topWrapper}>
+          {question}
+        </div>
+
+        <div className={styles.middleWrapper}>
+          <input
+            className={styles.inputBox}
+            type="text"
+            name="name"
+            ref={(node) => { inputValue = node; }}
+          />
+        </div>
+
         <div className={styles.buttonWrapper}>
-          <LinkButton
+          <Button
             color="disabled"
             text="BACK"
-            link="/onboard/brand/2"
             width="150"
             onClick={() => {}}
           />
-          <LinkButton
-            color="purple"
-            text="CONTINUE"
-            link="/onboard/brand/3"
-            width="150"
-            onClick={() => dispatch(addDataToSignup(inputValue))}
-          />
+          <Link to="/onboard/brand/3">
+            <Button
+              color="purple"
+              text="CONTINUE"
+              width="150"
+              onClick={() => dispatch(addDataToSignup(inputValue))}
+            />
+          </Link>
         </div>
       </section>
     </div>

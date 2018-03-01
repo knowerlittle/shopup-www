@@ -1,7 +1,7 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 import Logo from 'components/Global/Logo';
-import LinkButton from 'components/Global/LinkButton';
+import Button from 'components/Global/Button';
 import styles from 'components/Nav/index.css';
 
 const HomeNav = () => (
@@ -23,13 +23,14 @@ const HomeNav = () => (
             </NavLink>
           </li>
           <li>
-            <LinkButton
-              color="purple"
-              text="SIGN UP"
-              link="/signup"
-              height="40"
-              width="100"
-            />
+            <Link to="/signup">
+              <Button
+                color="purple"
+                text="SIGN UP"
+                height="40"
+                width="100"
+              />
+            </Link>
           </li>
         </ul>
       </div>

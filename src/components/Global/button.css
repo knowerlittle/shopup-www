@@ -96,6 +96,7 @@
   font-size: 12px;
 
   p {
+    cursor: default;
     color: black;
     height: 15px;
     color: white;	

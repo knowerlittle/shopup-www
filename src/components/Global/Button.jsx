@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from 'components/Global/linkButton.css';
+import styles from 'components/Global/button.css';
 import PropTypes from 'prop-types';
 
 const option = {
@@ -19,7 +19,7 @@ const setDimensions = (height, width) => ({
   width: `${width}px`,
 });
 
-const LinkButton = ({
+const Button = ({
   text,
   color,
   height,
@@ -27,21 +27,19 @@ const LinkButton = ({
   onClick,
 }) => (
   <div>
-    
-      <div
-        className={getStyle(color)}
-        style={setDimensions(height, width)}
-        onKeyDown={() => {}}
-        role="presentation"
-        onClick={onClick}
-      >
-        <p>{text}</p>
-      </div>
-    </Link>
+    <div
+      className={getStyle(color)}
+      style={setDimensions(height, width)}
+      onKeyDown={() => {}}
+      role="presentation"
+      onClick={onClick}
+    >
+      <p>{text}</p>
+    </div>
   </div>
 );
 
-LinkButton.propTypes = {
+Button.propTypes = {
   text: PropTypes.string.isRequired,
   color: PropTypes.string.isRequired,
   height: PropTypes.string,
@@ -49,10 +47,10 @@ LinkButton.propTypes = {
   onClick: PropTypes.func,
 };
 
-LinkButton.defaultProps = {
+Button.defaultProps = {
   height: '50',
   width: '200',
   onClick: () => {},
 };
 
-export default LinkButton;
+export default Button;

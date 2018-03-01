@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
+import Button from 'components/Global/Button';
 import { Link } from 'react-router-dom';
-import LinkButton from 'components/Global/LinkButton';
 import BrandExplainer from 'components/OnboardUser/Brand/BrandExplainer';
 import { addDataToSignup } from 'action/signup';
 import styles from 'components/OnboardUser/index.css';
@@ -29,8 +29,11 @@ const Step3 = ({ dispatch }) => {
         />
       </section>
       <section className={styles.rightSection}>
-        <p className={styles.questionTitle}>{question}</p>
-        <div className={styles.descriptionBox}>
+        <div className={styles.topWrapper}>
+          {question}
+        </div>
+
+        <div className={styles.middleWrapper}>
           <p>
             I create
             <input
@@ -67,7 +70,7 @@ const Step3 = ({ dispatch }) => {
         </div>
         <div className={styles.buttonWrapper}>
           <Link to="/onboard/brand/2">
-            <LinkButton
+            <Button
               color="purple"
               text="BACK"
               width="150"
@@ -75,7 +78,7 @@ const Step3 = ({ dispatch }) => {
             />
           </Link>
           <Link to="/onboard/brand/4">
-            <LinkButton
+            <Button
               color="purple"
               text="CONTINUE"
               width="150"
