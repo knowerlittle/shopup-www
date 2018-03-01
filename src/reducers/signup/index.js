@@ -12,6 +12,7 @@ const signup = (state = {}, action) => {
         journey: action.payload,
       };
     case 'ADD_DATA_TO_SIGNUP': {
+      console.log('a', action.payload);
       return {
         ...state,
         inputValues: action.payload,

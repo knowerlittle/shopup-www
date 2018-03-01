@@ -150,3 +150,46 @@
   border-radius: 4px;
   background-color: #FFFFFF;
 }
+
+.firstField {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #979797;
+  width: 60%; 
+}
+
+.inputField {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #979797;
+  width: 80%;
+}
+
+.lastField {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #979797;
+  width: 90%;
+}
+
+.descriptionBox {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  font-size: 20px;
+  color: #292929;
+  p {
+    text-align: center;
+  }
+  input[type=text] {
+    font-family: Roboto;
+    font-size: 20px;
+    text-align: center;
+    text-justify: distribute;
+  }
+  input[type=text]:focus {
+    outline: none;
+    border-bottom: 1px solid #FFC80A;
+    text-align: center;
+  }
+}
