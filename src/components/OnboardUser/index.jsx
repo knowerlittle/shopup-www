@@ -3,9 +3,8 @@ import PropTypes from 'prop-types';
 import OnboardBrand from 'components/OnboardUser/Brand/index';
 import OnboardSpace from 'components/OnboardUser/Space/index';
 import { withRouter } from 'react-router-dom';
-// import fetchSignupInfo from 'api/signup';
 import { connect } from 'react-redux';
-import fetchSignupData from 'action/signup';
+import * as action from 'action/signup';
 
 const options = {
   brand: step => <OnboardBrand step={step} />,
@@ -14,8 +13,8 @@ const options = {
 
 class OnboardUser extends Component {
   componentDidMount() {
-    console.log('hi');
-    fetchSignupData(this.props.dispatch);
+    action.setSignupJourney(this.props.match.params.journey)(this.props.dispatch);
+    action.fetchSignupData(this.props.dispatch);
   }
 
   render() {
