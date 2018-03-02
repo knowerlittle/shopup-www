@@ -4,13 +4,13 @@ import IntroFooter from 'components/OnboardUser/IntroFooter';
 import ProgressFooter from 'components/OnboardUser/Brand/ProgressFooter';
 import { withRouter } from 'react-router-dom';
 
-const introTitle = 'Itinerary builder';
-const introExplainer = 'Save, organize, and share all details here';
-
 function options(step) {
+  console.log('step', step);
   switch (step) {
     case '1':
-      return <IntroFooter title={introTitle} explainer={introExplainer} />;
+      return <IntroFooter />;
+    case 'signin':
+      return <IntroFooter hideButton />;
     default:
       return <ProgressFooter />;
   }
