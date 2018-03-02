@@ -5,17 +5,23 @@ import { Link } from 'react-router-dom';
 import Button from 'components/Global/Button';
 import BrandExplainer from 'components/OnboardUser/Brand/BrandExplainer';
 import styles from 'components/OnboardUser/index.css';
-import { addCategory, removeCategory } from 'action/signup';
+import { addDemography, removeDemography } from 'action/signup';
 
-class Step4 extends Component {
+class Step5 extends Component {
   render() {
-    const { dispatch, categories, selectedCategories } = this.props;
-    const question = 'Which categories do your products fall under?';
+    const { dispatch, demographics, selectedDemographics } = this.props;
+    const question = 'Describe your ideal customer?';
+    const nextLink = () => {
+      const token = localStorage.getItem('popinToken');
+      return token ?
+        '/onboard/brand/6' :
+        '/onboard/brand/signin';
+    };
     return (
       <div className={styles.card}>
         <section className={styles.leftSection}>
           <BrandExplainer
-            option="A"
+            option="B"
             width="260"
           />
         </section>
@@ -26,8 +32,8 @@ class Step4 extends Component {
 
           <div className={styles.middleWrapper}>
             <div className={styles.selectionWrapper}>
-              {categories.map(({ _id: id, name }) => (
-                selectedCategories.includes(id) ?
+              {demographics.map(({ _id: id, name }) => (
+                selectedDemographics.includes(id) ?
                   <Button
                     key={id}
                     color="yellow"
@@ -35,7 +41,7 @@ class Step4 extends Component {
                     width="100"
                     height="40"
                     onClick={() => {
-                      dispatch(removeCategory(id));
+                      dispatch(removeDemography(id));
                       this.forceUpdate();
                     }}
                   /> :
@@ -46,7 +52,7 @@ class Step4 extends Component {
                     width="100"
                     height="40"
                     onClick={() => {
-                      dispatch(addCategory(id));
+                      dispatch(addDemography(id));
                       this.forceUpdate();
                     }}
                   />
@@ -55,7 +61,7 @@ class Step4 extends Component {
           </div>
 
           <div className={styles.buttonWrapper}>
-            <Link to="/onboard/brand/3">
+            <Link to="/onboard/brand/4">
               <Button
                 color="purple"
                 text="BACK"
@@ -63,7 +69,7 @@ class Step4 extends Component {
                 onClick={() => {}}
               />
             </Link>
-            <Link to="/onboard/brand/5">
+            <Link to={nextLink()}>
               <Button
                 color="purple"
                 text="CONTINUE"
@@ -78,19 +84,19 @@ class Step4 extends Component {
   }
 }
 
-Step4.propTypes = {
+Step5.propTypes = {
   dispatch: PropTypes.func.isRequired,
-  categories: PropTypes.array.isRequired, // eslint-disable-line react/forbid-prop-types
-  selectedCategories: PropTypes.array.isRequired, // eslint-disable-line react/forbid-prop-types
+  demographics: PropTypes.array.isRequired, // eslint-disable-line react/forbid-prop-types
+  selectedDemographics: PropTypes.array.isRequired, // eslint-disable-line react/forbid-prop-types
 };
 
 const mapStateToProps = (state) => {
-  const { categories } = state.signupInfo;
-  const selectedCategories = state.signupInfo.inputValue.categories;
+  const { demographics } = state.signupInfo;
+  const selectedDemographics = state.signupInfo.inputValue.demographics;
   return {
-    categories,
-    selectedCategories,
+    demographics,
+    selectedDemographics,
   };
 };
 
-export default connect(mapStateToProps)(Step4);
+export default connect(mapStateToProps)(Step5);

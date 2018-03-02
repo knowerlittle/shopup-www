@@ -7,11 +7,11 @@ const stepA = 'Tell us about yourself';
 const stepB = 'Best people for your brand';
 const stepC = 'Upload your media';
 
-const A_COMPLETE = 4;
-const B_COMPLETE = 6;
+const A_COMPLETE = 1;
+const B_COMPLETE = 5;
 const C_COMPLETE = 8;
 
-const determineProgress = (step, requiredCompletedStep) => (step > requiredCompletedStep ?
+const determineProgress = (step, requiredCompletedStep) => (step >= requiredCompletedStep ?
   styles.progressCircleFilled :
   styles.progressCircleEmpty
 );

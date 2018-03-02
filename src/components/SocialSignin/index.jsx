@@ -13,25 +13,23 @@ const {
 
 const SocialSignin = ({ history: { push } }) => (
   <div className={styles.wrapper}>
-    <div>
-      <SocialButton
-        provider="facebook"
-        appId={FACEBOOK_APP_ID}
-        onLoginSuccess={handleSocialLoginSuccess(push)}
-        onLoginFailure={handleSocialLoginFailure}
-      >
-        SIGN IN WITH FACEBOOK
-      </SocialButton>
+    <SocialButton
+      provider="facebook"
+      appId={FACEBOOK_APP_ID}
+      onLoginSuccess={handleSocialLoginSuccess(push)}
+      onLoginFailure={handleSocialLoginFailure}
+    >
+      SIGN IN WITH FACEBOOK
+    </SocialButton>
 
-      <SocialButton
-        provider="google"
-        appId={GOOGLE_APP_ID}
-        onLoginSuccess={handleSocialLoginSuccess}
-        onLoginFailure={handleSocialLoginFailure}
-      >
-        SIGN IN WITH GOOGLE
-      </SocialButton>
-    </div>
+    <SocialButton
+      provider="google"
+      appId={GOOGLE_APP_ID}
+      onLoginSuccess={handleSocialLoginSuccess}
+      onLoginFailure={handleSocialLoginFailure}
+    >
+      SIGN IN WITH GOOGLE
+    </SocialButton>
   </div>
 );
 

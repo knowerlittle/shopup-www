@@ -38,3 +38,19 @@ export const removeCategory = id => (dispatch) => {
     payload: { id },
   });
 };
+
+export const addDemography = id => (dispatch) => {
+  console.log('Add demo', id);
+  dispatch({
+    type: 'ADD_DEMOGRAPHY',
+    payload: { id },
+  });
+};
+
+export const removeDemography = id => (dispatch) => {
+  console.log('Remove demo', id);
+  dispatch({
+    type: 'REMOVE_DEMOGRAPHY',
+    payload: { id },
+  });
+};

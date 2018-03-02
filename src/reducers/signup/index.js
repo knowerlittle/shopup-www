@@ -5,6 +5,7 @@ const initState = {
     name: '',
     description: [],
     categories: [],
+    demographics: [],
   },
 };
 
@@ -39,6 +40,22 @@ const signup = (state = initState, action) => {
     case 'REMOVE_CATEGORY': {
       const inputValue = Object.assign({}, state.inputValue);
       inputValue.categories = inputValue.categories.filter(id => id !== action.payload.id);
+      return {
+        ...state,
+        inputValue,
+      };
+    }
+    case 'ADD_DEMOGRAPHY': {
+      const inputValue = Object.assign({}, state.inputValue);
+      inputValue.demographics.push(action.payload.id);
+      return {
+        ...state,
+        inputValue,
+      };
+    }
+    case 'REMOVE_DEMOGRAPHY': {
+      const inputValue = Object.assign({}, state.inputValue);
+      inputValue.demographics = inputValue.demographics.filter(id => id !== action.payload.id);
       return {
         ...state,
         inputValue,

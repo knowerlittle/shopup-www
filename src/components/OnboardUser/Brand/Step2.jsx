@@ -18,7 +18,6 @@ const Step2 = ({ dispatch, name }) => {
         <BrandExplainer
           option="A"
           width="260"
-          height="260"
         />
       </section>
       <section className={styles.rightSection}>
@@ -37,12 +36,14 @@ const Step2 = ({ dispatch, name }) => {
         </div>
 
         <div className={styles.buttonWrapper}>
-          <Button
-            color="disabled"
-            text="BACK"
-            width="150"
-            onClick={() => {}}
-          />
+          <Link to="/onboard/brand/1">
+            <Button
+              color="purple"
+              text="BACK"
+              width="150"
+              onClick={() => dispatch(addDataToSignup(inputValue))}
+            />
+          </Link>
           <Link to="/onboard/brand/3">
             <Button
               color="purple"
