@@ -4,9 +4,9 @@ const initState = {
   inputValue: {
     name: '',
     description: [],
+    categories: [],
   },
 };
-
 
 const signup = (state = initState, action) => {
   switch (action.type) {
@@ -23,6 +23,22 @@ const signup = (state = initState, action) => {
       };
     case 'ADD_DATA_TO_SIGNUP': {
       const inputValue = Object.assign({}, state.inputValue, action.payload);
+      return {
+        ...state,
+        inputValue,
+      };
+    }
+    case 'ADD_CATEGORY': {
+      const inputValue = Object.assign({}, state.inputValue);
+      inputValue.categories.push(action.payload.id);
+      return {
+        ...state,
+        inputValue,
+      };
+    }
+    case 'REMOVE_CATEGORY': {
+      const inputValue = Object.assign({}, state.inputValue);
+      inputValue.categories = inputValue.categories.filter(id => id !== action.payload.id);
       return {
         ...state,
         inputValue,

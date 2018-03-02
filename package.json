@@ -141,6 +141,7 @@
           ]
         }
       ],
+      "react/prefer-stateless-function": "off",
       "no-console": 0
     }
   }

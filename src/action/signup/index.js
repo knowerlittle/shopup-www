@@ -22,3 +22,19 @@ export const addDataToSignup = ({ name, value }) => (dispatch) => {
     payload: { [name]: value },
   });
 };
+
+export const addCategory = id => (dispatch) => {
+  console.log('Add cat', id);
+  dispatch({
+    type: 'ADD_CATEGORY',
+    payload: { id },
+  });
+};
+
+export const removeCategory = id => (dispatch) => {
+  console.log('Remove cat', id);
+  dispatch({
+    type: 'REMOVE_CATEGORY',
+    payload: { id },
+  });
+};

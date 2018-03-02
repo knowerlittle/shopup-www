@@ -6,6 +6,7 @@ const option = {
   white: 'white',
   yellow: 'yellow',
   purple: 'purple',
+  whiteYellow: 'whiteYellow',
   disabled: 'disabled',
 };
 
