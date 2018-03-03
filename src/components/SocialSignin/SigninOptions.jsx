@@ -1,22 +1,26 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import handleSocialLoginSuccess from 'components/SocialSignin/handleSocialLoginSuccess';
 import SocialButton from 'components/SocialSignin/SocialButton';
-import handleSocialLoginFailure from 'components/SocialSignin/handleSocialLoginFailure';
 import { withRouter } from 'react-router-dom';
 import styles from 'components/SocialSignin/index.css';
+import handleSocialLoginFailure from 'components/SocialSignin/handleSocialLoginFailure';
+import handleSocialLoginSuccess from 'components/SocialSignin/handleSocialLoginSuccess';
 
 const {
   FACEBOOK_APP_ID,
   GOOGLE_APP_ID,
 } = process.env;
 
-const SocialSignin = ({ history: { push } }) => (
+const SigninOptions = ({
+  history: { push },
+  location: { pathname: currentPath },
+}) => (
   <div className={styles.wrapper}>
+    { currentPath }
     <SocialButton
       provider="facebook"
       appId={FACEBOOK_APP_ID}
-      onLoginSuccess={handleSocialLoginSuccess(push)}
+      onLoginSuccess={handleSocialLoginSuccess(push, currentPath)}
       onLoginFailure={handleSocialLoginFailure}
     >
       SIGN IN WITH FACEBOOK
@@ -33,11 +37,12 @@ const SocialSignin = ({ history: { push } }) => (
   </div>
 );
 
-SocialSignin.propTypes = {
+SigninOptions.propTypes = {
   history: PropTypes.shape({
     push: PropTypes.func.isRequired,
   }).isRequired,
+  location: PropTypes.shape({}).isRequired,
 };
 
 
-export default withRouter(SocialSignin);
+export default withRouter(SigninOptions);

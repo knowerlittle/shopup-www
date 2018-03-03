@@ -1,5 +1,4 @@
 import React from 'react';
-// import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import signinImage from 'assets/img/signin/cloud.png';
 import styles from 'components/OnboardUser/index.css';
@@ -7,7 +6,7 @@ import SigninOptions from 'components/SocialSignin/SigninOptions';
 
 const question = 'Sign in with ...';
 
-const OnboardSignin = () => (
+const HomePageSignin = () => (
   <div className={styles.card}>
     <section className={styles.leftSection}>
       <img src={signinImage} width="280" alt="Signin" />
@@ -26,4 +25,4 @@ const OnboardSignin = () => (
   </div>
 );
 
-export default connect()(OnboardSignin);
+export default connect()(HomePageSignin);

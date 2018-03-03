@@ -5,7 +5,6 @@ import ProgressFooter from 'components/OnboardUser/Brand/ProgressFooter';
 import { withRouter } from 'react-router-dom';
 
 function options(step) {
-  console.log('step', step);
   switch (step) {
     case '1':
       return <IntroFooter />;

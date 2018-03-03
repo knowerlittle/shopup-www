@@ -1,4 +1,4 @@
-import fetchLogin from 'api/auth/fetchLogin';
+import * as api from 'api/auth';
 import createJsonProfile from 'components/SocialSignin/createJsonProfile';
 
 const setTokenToLocalStorage = async (response) => {
@@ -7,10 +7,13 @@ const setTokenToLocalStorage = async (response) => {
   localStorage.setItem('popinToken', token);
 };
 
-const handleSocialLoginSuccess = routerPush => async (user) => {
+const handleSocialLoginSuccess = (routerPush, path) => async (user) => {
   const body = createJsonProfile(user);
-  const response = await fetchLogin({ body });
-  setTokenToLocalStorage(response);
+  const authResponse = await api.fetchLogin({ body });
+  await setTokenToLocalStorage(authResponse);
+  const signinResponse = await api.fetchSignin();
+
+  console.log('siginR', signinResponse, 'c', path);
   routerPush('/signup');
 };
 
