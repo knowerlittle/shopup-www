@@ -7,14 +7,39 @@ const setTokenToLocalStorage = async (response) => {
   localStorage.setItem('popinToken', token);
 };
 
+const goToNext = (path) => {
+  switch (path) {
+    case '/signin':
+      return '/signup';
+    case '/onboard/brand/signin':
+      return '/onboard/brand/6';
+    default:
+      return '/signup';
+  }
+};
+
+const nextPath = (type, path) => {
+  switch (type) {
+    case 'new':
+      return goToNext(path);
+    case 'brand':
+      return '/profile/brand';
+    case 'space':
+      return '/profile/space';
+    default:
+      return '/';
+  }
+};
+
 const handleSocialLoginSuccess = (routerPush, path) => async (user) => {
   const body = createJsonProfile(user);
   const authResponse = await api.fetchLogin({ body });
   await setTokenToLocalStorage(authResponse);
   const signinResponse = await api.fetchSignin();
-
+  const { type } = signinResponse;
+  const next = nextPath(type, path);
   console.log('siginR', signinResponse, 'c', path);
-  routerPush('/signup');
+  routerPush(next);
 };
 
 export default handleSocialLoginSuccess;

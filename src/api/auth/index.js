@@ -6,7 +6,6 @@ export function fetchLogin({
 }) {
   try {
     const headers = getHeaders();
-    console.log('h1', headers);
     return fetch(url.auth, {
       method: 'POST',
       headers,
@@ -23,14 +22,11 @@ export function fetchLogin({
 export function fetchSignin() {
   try {
     const headers = getHeaders();
-    console.log('h2', headers);
-
     return fetch(url.signin, {
-      method: 'POST',
+      get: 'POST',
       headers,
-      body: {},
     }).then(
-      response => (response),
+      response => (response.json()),
       error => console.log('api Error', error),
     );
   } catch (error) {
