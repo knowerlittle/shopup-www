@@ -80,8 +80,13 @@ class Step4 extends Component {
 
 Step4.propTypes = {
   dispatch: PropTypes.func.isRequired,
-  categories: PropTypes.array.isRequired, // eslint-disable-line react/forbid-prop-types
-  selectedCategories: PropTypes.array.isRequired, // eslint-disable-line react/forbid-prop-types
+  categories: PropTypes.array, // eslint-disable-line react/forbid-prop-types
+  selectedCategories: PropTypes.array, // eslint-disable-line react/forbid-prop-types
+};
+
+Step4.defaultProps = {
+  categories: [],
+  selectedCategories: [],
 };
 
 const mapStateToProps = (state) => {

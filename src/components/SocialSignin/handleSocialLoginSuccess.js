@@ -1,68 +1,74 @@
 import * as auth from 'api/auth';
 import * as signup from 'api/signup';
 import createJsonProfile from 'components/SocialSignin/createJsonProfile';
+import setTokenToLocalStorage from 'components/SocialSignin/setTokenToLocalStorage';
 
-const setTokenToLocalStorage = async (response) => {
-  const { token } = await response.json();
-  console.log('token', token);
-  localStorage.setItem('popinToken', token);
+const NEW = 'new';
+const BRAND = 'brand';
+const SPACE = 'space';
+const HOMEPAGE = '/';
+const SIGNUP_PAGE = '/signup';
+const SIGNIN_PAGE = '/signin';
+const BRAND_PROFILE_PAGE = '/profile/brand';
+const SPACE_PROFILE_PAGE = '/profile/brand';
+const BRAND_ONBOARDING_SIGNIN_BEFORE = '/onboard/brand/5';
+const BRAND_ONBOARDING_SIGNIN_AFTER = '/onboard/brand/signin';
+const SPACE_ONBOARDING_SIGNIN = '/onboard/space/signin';
+const BRAND_ONBOARDING_NEXT = '/onboard/brand/6';
+const SPACE_ONBOARDING_NEXT = '/onboard/space/6';
+
+const nextPage = (type) => {
+  switch (type) {
+    case NEW:
+      return SIGNUP_PAGE;
+    case BRAND:
+      return BRAND_PROFILE_PAGE;
+    case SPACE:
+      return SPACE_PROFILE_PAGE;
+    default:
+      return HOMEPAGE;
+  }
 };
 
-// const goToNext = (path) => {
-//   switch (path) {
-//     case '/signin':
-//       return '/signup';
-//     case '/onboard/brand/signin':
-//       return;
-//     default:
-//       return '/signup';
-//   }
-// };
+const fetchSignin = async () => {
+  const signinResponse = await auth.fetchSignin();
+  const { type: userType } = signinResponse;
+  return nextPage(userType);
+};
 
+const createBrand = async (inputValues) => {
+  await signup.createBrand(inputValues);
+  return BRAND_ONBOARDING_NEXT;
+};
+
+const createSpace = async (inputValues) => {
+  await signup.createBrand(inputValues);
+  return SPACE_ONBOARDING_NEXT;
+};
 
 const handleNextCall = async (path, inputValues) => {
   switch (path) {
-    case '/onboard/brand/signin':
-      console.log('createBrand', path, inputValues);
-      await signup.createBrand(inputValues);
-      return '/onboard/brand/6';
-    case '/onboard/space/signin':
-      await signup.createBrand(inputValues);
-      return '/onboard/space/6';
+    case SIGNIN_PAGE:
+      return fetchSignin();
+    case BRAND_ONBOARDING_SIGNIN_AFTER:
+    case BRAND_ONBOARDING_SIGNIN_BEFORE:
+      return createBrand(inputValues);
+    case SPACE_ONBOARDING_SIGNIN:
+      return createSpace(inputValues);
     default:
-      return '/';
+      return HOMEPAGE;
   }
 };
 
-const handleSocialLoginSuccess = (routerPush, path, inputValues) => async (user) => {
-  const nextPath = (type) => { // eslint-disable-line no-unused-vars
-    console.log('nextpath', type);
-    switch (type) {
-      case 'new':
-        return '/signup';
-      case 'brand':
-        return '/profile/brand';
-      case 'space':
-        return '/profile/space';
-      default:
-        return '/';
-    }
-  };
-  console.log('inputValues', inputValues, 'path', path);
+export const nextCallAndPush = async (routerPush, path, inputValues) => {
+  console.log('hi', routerPush, 'path', path, 'in', inputValues);
+  const goToNextPath = await handleNextCall(path, inputValues);
+  routerPush(goToNextPath);
+};
+
+export const handleSocialLoginSuccess = (routerPush, path, inputValues) => async (user) => {
   const body = createJsonProfile(user);
   const authResponse = await auth.fetchLogin({ body });
   await setTokenToLocalStorage(authResponse);
-  if (inputValues === false) {
-    console.log('here', inputValues);
-    const signinResponse = await auth.fetchSignin();
-    const { type } = signinResponse;
-    const next = nextPath(type);
-    routerPush(next);
-  } else {
-    const goToNextPath = await handleNextCall(path, inputValues);
-    routerPush(goToNextPath);
-  }
-  // console.log('next', nextPath);
+  await nextCallAndPush(routerPush, path, inputValues);
 };
-
-export default handleSocialLoginSuccess;

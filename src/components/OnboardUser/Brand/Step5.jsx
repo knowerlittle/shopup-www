@@ -1,21 +1,30 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { Link } from 'react-router-dom';
+import { Link, withRouter } from 'react-router-dom';
 import Button from 'components/Global/Button';
 import BrandExplainer from 'components/OnboardUser/Brand/BrandExplainer';
 import styles from 'components/OnboardUser/index.css';
 import { addDemography, removeDemography } from 'action/signup';
+import { nextCallAndPush } from 'components/SocialSignin/handleSocialLoginSuccess';
 
 class Step5 extends Component {
   render() {
-    const { dispatch, demographics, selectedDemographics } = this.props;
+    const {
+      dispatch,
+      demographics,
+      selectedDemographics,
+      history: { push },
+      location: { pathname: currentPath },
+      inputValue,
+    } = this.props;
+    const BRAND_ONBOARDING_SIGNIN = '/onboard/brand/signin';
     const question = 'Describe your ideal customer?';
-    const nextLink = () => {
+    const nextLink = async () => {
       const token = localStorage.getItem('popinToken');
       return token ?
-        '/onboard/brand/6' :
-        '/onboard/brand/signin';
+        nextCallAndPush(push, currentPath, inputValue) :
+        BRAND_ONBOARDING_SIGNIN;
     };
     return (
       <div className={styles.card}>
@@ -69,14 +78,12 @@ class Step5 extends Component {
                 onClick={() => {}}
               />
             </Link>
-            <Link to={nextLink()}>
-              <Button
-                color="purple"
-                text="CONTINUE"
-                width="150"
-                onClick={() => {}}
-              />
-            </Link>
+            <Button
+              color="purple"
+              text="CONTINUE"
+              width="150"
+              onClick={() => nextLink()}
+            />
           </div>
         </section>
       </div>
@@ -85,18 +92,29 @@ class Step5 extends Component {
 }
 
 Step5.propTypes = {
+  history: PropTypes.shape({
+    push: PropTypes.func.isRequired,
+  }).isRequired,
+  location: PropTypes.shape({}).isRequired,
   dispatch: PropTypes.func.isRequired,
   demographics: PropTypes.array.isRequired, // eslint-disable-line react/forbid-prop-types
   selectedDemographics: PropTypes.array.isRequired, // eslint-disable-line react/forbid-prop-types
+  inputValue: PropTypes.object, // eslint-disable-line react/forbid-prop-types
+};
+
+Step5.defaultProps = {
+  inputValue: {},
 };
 
 const mapStateToProps = (state) => {
+  const { inputValue } = state.signupInfo;
   const { demographics } = state.signupInfo;
   const selectedDemographics = state.signupInfo.inputValue.demographics;
   return {
     demographics,
     selectedDemographics,
+    inputValue,
   };
 };
 
-export default connect(mapStateToProps)(Step5);
+export default withRouter(connect(mapStateToProps)(Step5));

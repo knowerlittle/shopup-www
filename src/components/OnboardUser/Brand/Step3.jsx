@@ -93,7 +93,11 @@ const Step3 = ({ dispatch, inputs }) => (
 
 Step3.propTypes = {
   dispatch: PropTypes.func.isRequired,
-  inputs: PropTypes.array.isRequired, // eslint-disable-line react/forbid-prop-types
+  inputs: PropTypes.array, // eslint-disable-line react/forbid-prop-types
+};
+
+Step3.defaultProps = {
+  inputs: [],
 };
 
 const mapStateToProps = (state) => {

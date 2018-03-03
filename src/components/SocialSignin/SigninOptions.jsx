@@ -5,7 +5,7 @@ import SocialButton from 'components/SocialSignin/SocialButton';
 import { withRouter } from 'react-router-dom';
 import styles from 'components/SocialSignin/index.css';
 import handleSocialLoginFailure from 'components/SocialSignin/handleSocialLoginFailure';
-import handleSocialLoginSuccess from 'components/SocialSignin/handleSocialLoginSuccess';
+import { handleSocialLoginSuccess } from 'components/SocialSignin/handleSocialLoginSuccess';
 
 const {
   FACEBOOK_APP_ID,
@@ -18,7 +18,6 @@ const SigninOptions = ({
   inputValue,
 }) => (
   <div className={styles.wrapper}>
-    { inputValue.name }
     <SocialButton
       provider="facebook"
       appId={FACEBOOK_APP_ID}
@@ -48,7 +47,7 @@ SigninOptions.propTypes = {
 };
 
 SigninOptions.defaultProps = {
-  inputValue: false,
+  inputValue: {},
 };
 
 const mapStateToProps = (state) => {

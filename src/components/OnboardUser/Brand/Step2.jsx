@@ -59,7 +59,11 @@ const Step2 = ({ dispatch, name }) => {
 
 Step2.propTypes = {
   dispatch: PropTypes.func.isRequired,
-  name: PropTypes.string.isRequired,
+  name: PropTypes.string,
+};
+
+Step2.defaultProps = {
+  name: '',
 };
 
 const mapStateToProps = (state) => {
