@@ -6,7 +6,7 @@ import SigninOptions from 'components/SocialSignin/SigninOptions';
 
 const question = 'Sign in with ...';
 
-const HomePageSignin = () => (
+const Signin = () => (
   <div className={styles.card}>
     <section className={styles.leftSection}>
       <img src={signinImage} width="280" alt="Signin" />
@@ -19,10 +19,10 @@ const HomePageSignin = () => (
         <SigninOptions />
       </div>
       <div className={styles.buttonWrapper}>
-        hey
+        &nbsp;
       </div>
     </section>
   </div>
 );
 
-export default connect()(HomePageSignin);
+export default connect()(Signin);

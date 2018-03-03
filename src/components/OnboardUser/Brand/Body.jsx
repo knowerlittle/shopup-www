@@ -6,7 +6,7 @@ import Step2 from 'components/OnboardUser/Brand/Step2';
 import Step3 from 'components/OnboardUser/Brand/Step3';
 import Step4 from 'components/OnboardUser/Brand/Step4';
 import Step5 from 'components/OnboardUser/Brand/Step5';
-import OnboardSignin from 'components/OnboardUser/OnboardSignin';
+import SigninPanel from 'components/SocialSignin/index';
 import styles from 'components/OnboardUser/index.css';
 
 const options = {
@@ -15,7 +15,7 @@ const options = {
   3: <Step3 />,
   4: <Step4 />,
   5: <Step5 />,
-  signin: <OnboardSignin />,
+  signin: <SigninPanel />,
 };
 
 const Body = ({ match: { params: { step } } }) => (

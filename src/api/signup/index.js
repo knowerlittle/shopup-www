@@ -1,8 +1,9 @@
-import headers from 'api/utils/jsonHeaders';
+import getHeaders from 'api/utils/jsonHeaders';
 import * as url from 'api/urls/signup';
 
-async function fetchSignupInfo() {
+export function fetchSignupInfo() {
   try {
+    const headers = getHeaders();
     return fetch(url.getInfo, {
       method: 'GET',
       headers,
@@ -15,4 +16,19 @@ async function fetchSignupInfo() {
   }
 }
 
-export default fetchSignupInfo;
+export function createBrand(inputValues) {
+  try {
+    const headers = getHeaders();
+    console.log('create', inputValues);
+    return fetch(url.createBrand, {
+      method: 'POST',
+      headers,
+      body: JSON.stringify(inputValues),
+    }).then(
+      response => (response.json()),
+      error => console.log('api Error', error),
+    );
+  } catch (error) {
+    return console.log('api Error', error);
+  }
+}

@@ -31,7 +31,6 @@ const Step2 = ({ dispatch, name }) => {
             name="name"
             defaultValue={name}
             ref={(node) => { inputValue = node; }}
-            // value={name.toString()}
           />
         </div>
 

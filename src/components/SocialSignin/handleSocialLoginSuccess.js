@@ -1,4 +1,5 @@
-import * as api from 'api/auth';
+import * as auth from 'api/auth';
+import * as signup from 'api/signup';
 import createJsonProfile from 'components/SocialSignin/createJsonProfile';
 
 const setTokenToLocalStorage = async (response) => {
@@ -7,39 +8,61 @@ const setTokenToLocalStorage = async (response) => {
   localStorage.setItem('popinToken', token);
 };
 
-const goToNext = (path) => {
-  switch (path) {
-    case '/signin':
-      return '/signup';
-    case '/onboard/brand/signin':
-      return '/onboard/brand/6';
-    default:
-      return '/signup';
-  }
-};
+// const goToNext = (path) => {
+//   switch (path) {
+//     case '/signin':
+//       return '/signup';
+//     case '/onboard/brand/signin':
+//       return;
+//     default:
+//       return '/signup';
+//   }
+// };
 
-const nextPath = (type, path) => {
-  switch (type) {
-    case 'new':
-      return goToNext(path);
-    case 'brand':
-      return '/profile/brand';
-    case 'space':
-      return '/profile/space';
+
+const handleNextCall = async (path, inputValues) => {
+  switch (path) {
+    case '/onboard/brand/signin':
+      console.log('createBrand', path, inputValues);
+      await signup.createBrand(inputValues);
+      return '/onboard/brand/6';
+    case '/onboard/space/signin':
+      await signup.createBrand(inputValues);
+      return '/onboard/space/6';
     default:
       return '/';
   }
 };
 
-const handleSocialLoginSuccess = (routerPush, path) => async (user) => {
+const handleSocialLoginSuccess = (routerPush, path, inputValues) => async (user) => {
+  const nextPath = (type) => { // eslint-disable-line no-unused-vars
+    console.log('nextpath', type);
+    switch (type) {
+      case 'new':
+        return '/signup';
+      case 'brand':
+        return '/profile/brand';
+      case 'space':
+        return '/profile/space';
+      default:
+        return '/';
+    }
+  };
+  console.log('inputValues', inputValues, 'path', path);
   const body = createJsonProfile(user);
-  const authResponse = await api.fetchLogin({ body });
+  const authResponse = await auth.fetchLogin({ body });
   await setTokenToLocalStorage(authResponse);
-  const signinResponse = await api.fetchSignin();
-  const { type } = signinResponse;
-  const next = nextPath(type, path);
-  console.log('siginR', signinResponse, 'c', path);
-  routerPush(next);
+  if (inputValues === false) {
+    console.log('here', inputValues);
+    const signinResponse = await auth.fetchSignin();
+    const { type } = signinResponse;
+    const next = nextPath(type);
+    routerPush(next);
+  } else {
+    const goToNextPath = await handleNextCall(path, inputValues);
+    routerPush(goToNextPath);
+  }
+  // console.log('next', nextPath);
 };
 
 export default handleSocialLoginSuccess;

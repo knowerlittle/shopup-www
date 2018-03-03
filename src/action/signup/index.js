@@ -1,4 +1,4 @@
-import fetchSignupInfo from 'api/signup';
+import { fetchSignupInfo } from 'api/signup';
 
 export const fetchSignupData = dispatch => (
   fetchSignupInfo().then(response => (
@@ -24,7 +24,6 @@ export const addDataToSignup = ({ name, value }) => (dispatch) => {
 };
 
 export const addCategory = id => (dispatch) => {
-  console.log('Add cat', id);
   dispatch({
     type: 'ADD_CATEGORY',
     payload: { id },
@@ -32,7 +31,6 @@ export const addCategory = id => (dispatch) => {
 };
 
 export const removeCategory = id => (dispatch) => {
-  console.log('Remove cat', id);
   dispatch({
     type: 'REMOVE_CATEGORY',
     payload: { id },
@@ -40,7 +38,6 @@ export const removeCategory = id => (dispatch) => {
 };
 
 export const addDemography = id => (dispatch) => {
-  console.log('Add demo', id);
   dispatch({
     type: 'ADD_DEMOGRAPHY',
     payload: { id },
@@ -48,7 +45,6 @@ export const addDemography = id => (dispatch) => {
 };
 
 export const removeDemography = id => (dispatch) => {
-  console.log('Remove demo', id);
   dispatch({
     type: 'REMOVE_DEMOGRAPHY',
     payload: { id },

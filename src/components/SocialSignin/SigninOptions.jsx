@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
 import SocialButton from 'components/SocialSignin/SocialButton';
 import { withRouter } from 'react-router-dom';
 import styles from 'components/SocialSignin/index.css';
@@ -14,13 +15,14 @@ const {
 const SigninOptions = ({
   history: { push },
   location: { pathname: currentPath },
+  inputValue,
 }) => (
   <div className={styles.wrapper}>
-    { currentPath }
+    { inputValue.name }
     <SocialButton
       provider="facebook"
       appId={FACEBOOK_APP_ID}
-      onLoginSuccess={handleSocialLoginSuccess(push, currentPath)}
+      onLoginSuccess={handleSocialLoginSuccess(push, currentPath, inputValue)}
       onLoginFailure={handleSocialLoginFailure}
     >
       SIGN IN WITH FACEBOOK
@@ -42,7 +44,19 @@ SigninOptions.propTypes = {
     push: PropTypes.func.isRequired,
   }).isRequired,
   location: PropTypes.shape({}).isRequired,
+  inputValue: PropTypes.object, // eslint-disable-line react/forbid-prop-types
+};
+
+SigninOptions.defaultProps = {
+  inputValue: false,
+};
+
+const mapStateToProps = (state) => {
+  const { inputValue } = state.signupInfo;
+  return {
+    inputValue,
+  };
 };
 
 
-export default withRouter(SigninOptions);
+export default withRouter(connect(mapStateToProps)(SigninOptions));
