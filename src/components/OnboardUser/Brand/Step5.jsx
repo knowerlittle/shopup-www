@@ -23,8 +23,8 @@ class Step5 extends Component {
     const nextLink = async () => {
       const token = localStorage.getItem('popinToken');
       return token ?
-        nextCallAndPush(push, currentPath, inputValue) :
-        BRAND_ONBOARDING_SIGNIN;
+        nextCallAndPush(push, currentPath, inputValue, dispatch) :
+        push(BRAND_ONBOARDING_SIGNIN);
     };
     return (
       <div className={styles.card}>

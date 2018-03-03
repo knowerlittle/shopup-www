@@ -1,15 +1,12 @@
-const initState = {
-  token: '',
-};
-export const TODO_ADD = 'TODO_ADD';
+const initState = {};
 
 const auth = (state = initState, action) => {
   switch (action.type) {
-    case TODO_ADD:
+    case 'STORE_BRAND_USER':
       return {
         ...state,
-        currentTodo: '',
-        todos: state.todos.concat(action.payload),
+        user: action.payload.user,
+        brand: action.payload.brand,
       };
     default:
       return state;

@@ -13,6 +13,7 @@ const {
 } = process.env;
 
 const SigninOptions = ({
+  dispatch,
   history: { push },
   location: { pathname: currentPath },
   inputValue,
@@ -21,7 +22,7 @@ const SigninOptions = ({
     <SocialButton
       provider="facebook"
       appId={FACEBOOK_APP_ID}
-      onLoginSuccess={handleSocialLoginSuccess(push, currentPath, inputValue)}
+      onLoginSuccess={handleSocialLoginSuccess(push, currentPath, inputValue, dispatch)}
       onLoginFailure={handleSocialLoginFailure}
     >
       SIGN IN WITH FACEBOOK
@@ -39,6 +40,7 @@ const SigninOptions = ({
 );
 
 SigninOptions.propTypes = {
+  dispatch: PropTypes.func.isRequired,
   history: PropTypes.shape({
     push: PropTypes.func.isRequired,
   }).isRequired,
