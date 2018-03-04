@@ -295,3 +295,23 @@ input[type=text]:focus {
     width: 100%;
   }
 }
+
+.congratsWrapper { 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 80%;
+  justify-content: space-around;
+}
+
+.congratsTitle { 
+  font-weight: 500;
+  font-size: 36px;
+}
+
+.congratsText {
+  width: 80%;
+  text-align: center;
+  line-height: 20px;
+  color: #9FA3A7;
+}

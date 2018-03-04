@@ -60,7 +60,7 @@ class Step6 extends Component {
           </div>
 
           <div className={styles.buttonWrapperCenter}>
-            <Link to="/onboard/brand/4">
+            <Link to="/onboard/brand/7">
               <Button
                 color="purple"
                 text="DONE"
