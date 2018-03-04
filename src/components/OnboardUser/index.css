@@ -310,7 +310,7 @@ input[type=text]:focus {
 }
 
 .congratsText {
-  width: 80%;
+  max-width: 70%;
   text-align: center;
   line-height: 20px;
   color: #9FA3A7;

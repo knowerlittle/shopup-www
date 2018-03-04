@@ -5,6 +5,7 @@ import Home from 'pages/Home';
 import Signup from 'pages/Signup';
 import Signin from 'pages/Signin';
 import Onboard from 'pages/Onboard';
+import BrandProfile from 'pages/BrandProfile';
 import 'app/App.css';
 
 const App = () => (
@@ -16,6 +17,7 @@ const App = () => (
         <Route path="/signup" component={Signup} />
         <Route path="/onboard/:journey/:step" component={Onboard} />
         <Route path="/mission" component={MissionPage} />
+        <Route path="/profile/brand" component={BrandProfile} />
       </Switch>
     </Router>
   </div>
