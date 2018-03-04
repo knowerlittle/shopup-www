@@ -162,13 +162,6 @@
   width: 85%;
 }
 
-.descriptionBox {
-  display: flex;
-  flex-direction: column;
-  // width: 60%;
-
-}
-
 input[type=text] {
   font-family: Roboto;
   font-size: 23px;
@@ -205,6 +198,14 @@ input[type=text]:focus {
   align-items: center;
 }
 
+.middleWrapperPhotos {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
 
 .inputP {
   font-size: 20px;
@@ -220,7 +221,15 @@ input[type=text]:focus {
   width: 80%;
   height: 20%;
   justify-content: space-between;
-  // align-items: center
+}
+
+.buttonWrapperCenter {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  height: 20%;
+  justify-content: center;
+  align-items: center;
 }
 
 .selectionWrapper {
@@ -231,4 +240,58 @@ input[type=text]:focus {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+}
+
+.boxBorder {
+  border-top: 2px solid #F5F5F5;
+  width: 90%;
+  height: 100%;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.05);
+  overflow: scroll;
+}
+
+.addPhotoOption {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20%;
+  width: 100%;
+  
+  font-size: 14px;
+  color: #999999;
+  
+  img {
+    padding-right: 10px;
+  }
+}
+
+.addPhotoOption:hover {
+  cursor: pointer; 
+  color: #bababa;
+}
+
+.photoWrapper {
+  display: grid;
+  grid-template-columns: 48% 48%;
+  grid-column-gap: 4%;
+  grid-row-gap: 10px;
+  width: 100%;
+  text-align: center;
+  padding: 20px 0px;
+}
+
+.photoPreview {
+  border-radius: 6px;
+  background-color: #E8E9ED;
+  min-width: 90%;
+  max-height: 250px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+  }
 }

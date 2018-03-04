@@ -9,7 +9,7 @@ const stepC = 'Upload your media';
 
 const A_COMPLETE = 1;
 const B_COMPLETE = 5;
-const C_COMPLETE = 8;
+const C_COMPLETE = 6;
 
 const determineProgress = (step, requiredCompletedStep) => (step >= requiredCompletedStep ?
   styles.progressCircleFilled :
