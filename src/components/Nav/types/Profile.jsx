@@ -3,10 +3,10 @@ import Logo from 'components/Global/Logo';
 import styles from 'components/Nav/index.css';
 
 const ProfileNav = () => (
-  <nav className={styles.nav}>
+  <nav className={styles.navProfile}>
     <div className={styles.wrapper}>
       <div className={styles.logoContainer}>
-        <Logo />
+        <Logo shadow="red" />
       </div>
       <div className={styles.menuContainer}>
         <ul>

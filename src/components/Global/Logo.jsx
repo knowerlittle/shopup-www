@@ -7,7 +7,7 @@ import black from 'assets/logo/popin_logo_black.png';
 import styles from 'components/Global/logo.css';
 
 
-const logo = {
+const logos = {
   red,
   white,
   black,
@@ -18,13 +18,17 @@ const propsShadow = color => (color === 'red'
   : styles.blackShadow
 );
 
-const Logo = props => (
+const Logo = ({
+  width,
+  logo,
+  shadow,
+}) => (
   <NavLink to="/" activeClassName="current">
     <img
-      className={propsShadow(props.shadow)}
-      src={logo[props.logo]}
+      className={propsShadow(shadow)}
+      src={logos[logo]}
       alt="Logo"
-      width={props.width}
+      width={width}
     />
   </NavLink>
 );

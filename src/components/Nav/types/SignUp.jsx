@@ -7,7 +7,7 @@ const SignUpNav = () => (
   <nav className={styles.nav}>
     <div className={styles.wrapper}>
       <div className={styles.logoContainer}>
-        <Logo />
+        <Logo shadow="red" />
       </div>
       <div className={styles.menuContainer}>
         <ul>
