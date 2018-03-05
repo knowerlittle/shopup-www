@@ -12,10 +12,6 @@ import productDemo4 from 'assets/img/demo/productdemo4.png';
 
 class Step6 extends Component {
   render() {
-    // const {
-    // dispatch,
-    // history: { push },
-    // } = this.props;
     const question = 'Add Products?';
     return (
       <div className={styles.card}>
@@ -74,13 +70,5 @@ class Step6 extends Component {
     );
   }
 }
-
-// Step6.propTypes = {
-//   history: PropTypes.shape({
-//     push: PropTypes.func.isRequired,
-//   }).isRequired,
-//   // dispatch: PropTypes.func.isRequired,
-// };
-
 
 export default withRouter(connect()(Step6));

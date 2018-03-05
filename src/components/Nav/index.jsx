@@ -2,10 +2,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Home from 'components/Nav/types/Home';
 import SignUp from 'components/Nav/types/SignUp';
+import Profile from 'components/Nav/types/Profile';
 
 const options = {
   home: <Home />,
   signup: <SignUp />,
+  profile: <Profile />,
 };
 
 const Nav = ({ nav }) => options[nav];
