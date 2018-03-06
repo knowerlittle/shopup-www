@@ -1,16 +1,72 @@
 .heroContainer{
-   height: 80vh;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   background: red;
+	height: 80vh;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	background: red;
+	margin-top: 8vh;
 }
 
 .featureContainer {
-    height: 50vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: grey;
+	height: 50vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: grey;
+}
+
+.leftSection {
+	height: 100%;
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding-left: 5%;
+
+	p {
+		margin-top: 0em;
+		margin-bottom: 0em;
+	}
+}
+
+.rightSection {
+	height: 100%;
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	justify-content: center;
+	margin-right: 10%;
+
+	img {
+		max-width: 80%;
+	}
+}
+
+.introText {
+	color: #FFFFFF;
+	font-size: 14px;
+	font-weight: 500;
+	letter-spacing: 2px;
+}
+
+.mainText {
+	font-size: 5vw;
+	font-weight: 500;
+	line-height: 96px;
+	color: #FFFFFF;
+	width: 100%;
+}
+
+.mainTextLast {
+	font-size: 5vw;
+	font-weight: 500;
+	line-height: 96px;
+	color: #FFFFFF;
+	width: 100%;
+}
+
+.buttonWrapper {
+	margin-top: 30px;
 }
