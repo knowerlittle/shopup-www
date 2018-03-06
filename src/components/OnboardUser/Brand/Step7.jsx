@@ -20,7 +20,7 @@ const Step7 = () => (
       <p className={styles.congratsText}>{statement}</p>
 
       <div className={styles.buttonWrapperCenter}>
-        <Link to="/profile/brand">
+        <Link to="/brand/profile">
           <Button
             color="white"
             text="SEE PROFILE"
