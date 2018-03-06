@@ -11,7 +11,7 @@ import ProfileDemo from 'assets/img/demo/profiledemo.png';
 
 const ProfileNav = ({ user }) => (
   <nav className={styles.navProfile}>
-    <div className={styles.wrapper}>
+    <div className={styles.profileWrapper}>
       <div className={styles.logoContainer}>
         <Logo shadow="red" />
       </div>

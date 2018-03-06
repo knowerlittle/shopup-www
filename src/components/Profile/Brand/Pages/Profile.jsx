@@ -6,6 +6,8 @@ import SVG from 'react-inlinesvg';
 import Email from 'assets/icons/ic_email.svg';
 import BackgroundDemo from 'assets/img/demo/brandbg.png';
 import HatLady from 'assets/img/demo/hatdemo.png';
+import ReviewFull from 'assets/icons/ic_star.svg';
+import ReviewHalf from 'assets/icons/ic_star_half.svg';
 
 const divStyle = {
   backgroundImage: `url(${BackgroundDemo}`,
@@ -30,7 +32,17 @@ const Profile = ({ brand }) => (
         <img src={HatLady} alt="Brand" width="120" />
         <p>{brandDescription}</p>
       </div>
-      <div className={styles.profileItem}>Hi</div>
+      <div className={styles.profileItemStats}>
+        <p>45 <span>Views</span></p>
+        <p>10 <span>Events</span></p>
+        <p>
+          <SVG src={ReviewFull} />
+          <SVG src={ReviewFull} />
+          <SVG src={ReviewFull} />
+          <SVG src={ReviewFull} />
+          <SVG src={ReviewHalf} />
+        </p>
+      </div>
       <div className={styles.profileItem}>Hi</div>
       <div className={styles.profileItemBottom}>Hi</div>
     </section>

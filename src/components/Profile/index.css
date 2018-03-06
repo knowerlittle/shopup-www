@@ -8,21 +8,21 @@
 }
 
 .innerWrapper {
-  min-width: 80%;
+  width: 90%;
+  width: 90%;
   display: flex;
   flex-direction: row;
 }
 
 .leftMenu {
-  /* background: blue; */
   width: 20%;
 }
 
 .contentBody {
-  /* background: red; */
   width: 80%;
   min-height: 80vh;
   margin-left: 2%;
+  margin-right: 1%;
   margin-top: 1%;
 }
 
@@ -92,6 +92,23 @@
   background-color: rgba(0, 0, 0, 0.7);
 }
 
+.profileItemTop {
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 6px 6px 0px 0px;
+  overflow: hidden;
+  z-index:1;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 100%;
+
+  span {
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 500;
+  }
+}
+
 .profileItemWithImage {
   display: flex;
   align-items: center;
@@ -111,22 +128,26 @@
   }
 }
 
-.profileItemTop {
+.profileItemStats {
   background-color: rgba(0, 0, 0, 0.7);
-  border-radius: 6px 6px 0px 0px;
-  overflow: hidden;
-  z-index:1;
   display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-  width: 100%;
-
+  align-items: center;
+  justify-content: space-evenly; 
+  font-weight: bold;
+  font-size: 14px;
+  color: #FFFFFF;
   span {
-    color: #FFFFFF;
-    font-size: 20px;
+    color: #9B9B9B;
     font-weight: 500;
+    margin-left: 5px;
+  }
+  p {
+    g {
+      fill: #F9AD3D;
+      }  
   }
 }
+
 
 .brandName {
   margin-left: 50%; 
