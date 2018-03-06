@@ -19,10 +19,11 @@
 }
 
 .contentBody {
-  background: red;
+  /* background: red; */
   width: 80%;
   min-height: 80vh;
   margin-left: 2%;
+  margin-top: 1%;
 }
 
 .menuOptions {
@@ -77,3 +78,30 @@
   }
 }
 
+
+.profileInfo {
+  display: grid;
+  grid-template-rows: 20% 30% 10% 20% 20%;
+  height: 50vh;
+  border-radius: 6px;
+}
+
+.profileItem {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.profileItemTop {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 6px 6px 0px 0px;
+  overflow: hidden;
+}
+
+.profileItemBottom {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 0px 0px 6px 6px;
+  overflow: hidden;
+}
+
+.pageWrapper {
+  height: 100%;
+}
