@@ -1,15 +1,11 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { NavLink, withRouter } from 'react-router-dom';
+import { withRouter } from 'react-router-dom';
 import { fetchBrandUser } from 'action/auth';
-import SVG from 'react-inlinesvg';
-import AccountIcon from 'assets/icons/accountCircle.svg';
-import CalenderIcon from 'assets/icons/miniCalender.svg';
-import MessageIcon from 'assets/icons/ic_comment.svg';
-import FindSpaceIcon from 'assets/icons/ic_search.svg';
-import styles from 'components/Profile/index.css';
 import Page from 'components/Profile/Brand/Pages';
+import Nav from 'components/Profile/Brand/Nav';
+import styles from 'components/Profile/index.css';
 
 class BrandProfile extends Component {
   componentWillMount() {
@@ -29,34 +25,7 @@ class BrandProfile extends Component {
       <div className={styles.bodyWrapper}>
         <div className={styles.innerWrapper}>
           <section className={styles.leftMenu}>
-            <div className={styles.menuOptions}>
-              <ul>
-                <NavLink to="/brand/profile" className={styles.grey} activeClassName={styles.red} >
-                  <li>
-                    <SVG src={AccountIcon} />
-                    <span>{ brand.name }</span>
-                  </li>
-                </NavLink>
-                <NavLink to="/brand/bookings" className={styles.grey} activeClassName={styles.red} >
-                  <li>
-                    <SVG src={CalenderIcon} />
-                    <span>Bookings</span>
-                  </li>
-                </NavLink>
-                <NavLink to="/brand/messages" className={styles.grey} activeClassName={styles.red} >
-                  <li>
-                    <SVG src={MessageIcon} />
-                    <span>Messages</span>
-                  </li>
-                </NavLink>
-                <NavLink to="/brand/spaces" className={styles.grey} activeClassName={styles.red} >
-                  <li>
-                    <SVG src={FindSpaceIcon} />
-                    <span>Find a Space</span>
-                  </li>
-                </NavLink>
-              </ul>
-            </div>
+            <Nav brandName={brand.name} />
           </section>
           <section className={styles.contentBody}>
             <Page page={page} />
