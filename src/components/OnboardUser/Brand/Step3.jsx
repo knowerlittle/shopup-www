@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import Button from 'components/Global/Button';
-import { Link } from 'react-router-dom';
+import { withRouter } from 'react-router-dom';
 import BrandExplainer from 'components/OnboardUser/Brand/BrandExplainer';
 import { addDataToSignup } from 'action/signup';
 import styles from 'components/OnboardUser/index.css';
@@ -17,7 +17,11 @@ const createInputStream = () => ({
   value: [input1.value, input2.value, input3.value, input4.value],
 });
 
-const Step3 = ({ dispatch, inputs }) => (
+const Step3 = ({
+  dispatch,
+  inputs,
+  history: { push },
+}) => (
   <div className={styles.card}>
     <section className={styles.leftSection}>
       <BrandExplainer
@@ -70,22 +74,24 @@ const Step3 = ({ dispatch, inputs }) => (
         </p>
       </div>
       <div className={styles.buttonWrapper}>
-        <Link to="/onboard/brand/2">
-          <Button
-            color="purple"
-            text="BACK"
-            width="150"
-            onClick={() => dispatch(addDataToSignup(createInputStream()))}
-          />
-        </Link>
-        <Link to="/onboard/brand/4">
-          <Button
-            color="purple"
-            text="CONTINUE"
-            width="150"
-            onClick={() => dispatch(addDataToSignup(createInputStream()))}
-          />
-        </Link>
+        <Button
+          color="purple"
+          text="BACK"
+          width="150"
+          onClick={() => {
+            dispatch(addDataToSignup(createInputStream()));
+            push('/onboard/brand/2');
+          }}
+        />
+        <Button
+          color="purple"
+          text="CONTINUE"
+          width="150"
+          onClick={() => {
+            dispatch(addDataToSignup(createInputStream()));
+            push('/onboard/brand/4');
+          }}
+        />
       </div>
     </section>
   </div>
@@ -94,6 +100,9 @@ const Step3 = ({ dispatch, inputs }) => (
 Step3.propTypes = {
   dispatch: PropTypes.func.isRequired,
   inputs: PropTypes.array, // eslint-disable-line react/forbid-prop-types
+  history: PropTypes.shape({
+    push: PropTypes.func.isRequired,
+  }).isRequired,
 };
 
 Step3.defaultProps = {
@@ -108,4 +117,4 @@ const mapStateToProps = (state) => {
 };
 
 
-export default connect(mapStateToProps)(Step3);
+export default withRouter(connect(mapStateToProps)(Step3));
