@@ -1,37 +1,52 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { withRouter } from 'react-router-dom';
+import { NavLink, withRouter } from 'react-router-dom';
+import { fetchBrandUser } from 'action/auth';
+import SVG from 'react-inlinesvg';
+import AccountIcon from 'assets/icons/accountCircle.svg';
+import CalenderIcon from 'assets/icons/miniCalender.svg';
+import MessageIcon from 'assets/icons/ic_comment.svg';
+import FindSpaceIcon from 'assets/icons/ic_search.svg';
 import styles from 'components/Profile/index.css';
-import ReactSVG from 'react-svg';
-import Calender from 'assets/icons/miniCalender.svg';
 
 class BrandProfile extends Component {
+  componentDidMount() {
+    this.fetchData();
+  }
+
+  fetchData() {
+    const { dispatch } = this.props;
+    fetchBrandUser(dispatch);
+  }
+
   render() {
     const { brand } = this.props;
+
     return (
       <div className={styles.bodyWrapper}>
         <div className={styles.innerWrapper}>
           <section className={styles.leftMenu}>
             <div className={styles.menuOptions}>
               <ul>
+                <NavLink to="/profile/brand" className={styles.grey} activeClassName={styles.red} >
+                  <li>
+                    <SVG src={AccountIcon} />
+                    <span>{ brand.name }</span>
+                  </li>
+                </NavLink>
                 <li>
-                  { brand.name }
+                  <SVG src={CalenderIcon} />
+                  <span>Bookings</span>
                 </li>
                 <li>
-                  <ReactSVG
-                    path={Calender}
-                    callback={(svg) => {
-                      svg.height.baseVal.valueAsString = '30px'; // eslint-disable-line no-param-reassign
-                      svg.width.baseVal.valueAsString = '30px'; // eslint-disable-line no-param-reassign
-                      return svg;
-                    }}
-                    wrapperClassName={styles.grey}
-                  />
-                  <p>Bookings</p>
+                  <SVG src={MessageIcon} />
+                  <span>Messages</span>
                 </li>
-                <li>Bookings</li>
-                <li>Find a Space</li>
+                <li>
+                  <SVG src={FindSpaceIcon} />
+                  <span>Find a Space</span>
+                </li>
               </ul>
             </div>
           </section>
@@ -46,6 +61,7 @@ class BrandProfile extends Component {
 
 BrandProfile.propTypes = {
   brand: PropTypes.object.isRequired, // eslint-disable-line react/forbid-prop-types
+  dispatch: PropTypes.func.isRequired,
 };
 
 const mapStateToProps = (state) => {

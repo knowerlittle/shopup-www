@@ -40,25 +40,38 @@
       flex-direction: row;
       align-items: center;
       justify-content: flex-start;
-      padding: 5px 20px;
+      padding: 10px 20px;
 
-      p {
-        margin-left: 20px;
+      span {
+        margin-right: 10px;
+        font-weight: 500;
+      }
+
+      a {
+        display: flex;
+        align-items: center;
       }
     }
   }
 }
 
 .grey {
-  margin-top: 2px;
+  /* margin-top: 2px; */
   g {
     fill: #999999;
   }
 }
 
 .red {
-  margin-top: 2px;
+  li {
+    border-left: 2px solid red;
+
+    span {
+      color: red;
+    }
+  }
   g {
   fill: red;
   }
 }
+
