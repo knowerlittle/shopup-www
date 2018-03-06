@@ -1,13 +1,14 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 import Logo from 'components/Global/Logo';
+import Button from 'components/Global/Button';
 import styles from 'components/Nav/index.css';
 
 const HomeNav = () => (
-  <nav className={styles.nav}>
+  <nav className={styles.redNav}>
     <div className={styles.wrapper}>
       <div className={styles.logoContainer}>
-        <h1><Logo logo="white" /></h1>
+        <Logo logo="white" />
       </div>
       <div className={styles.menuContainer}>
         <ul className={styles.ul}>
@@ -22,11 +23,14 @@ const HomeNav = () => (
             </NavLink>
           </li>
           <li>
-            <button>
-              <NavLink to="/signup" activeClassName={styles.current}>
-               SIGN UP
-              </NavLink>
-            </button>
+            <Link to="/signup">
+              <Button
+                color="purple"
+                text="SIGN UP"
+                height="40"
+                width="100"
+              />
+            </Link>
           </li>
         </ul>
       </div>

@@ -4,18 +4,18 @@ import Logo from 'components/Global/Logo';
 import styles from 'components/Nav/index.css';
 
 const SignUpNav = () => (
-  <nav>
+  <nav className={styles.nav}>
     <div className={styles.wrapper}>
       <div className={styles.logoContainer}>
-        <h1><Logo /></h1>
+        <Logo shadow="red" />
       </div>
       <div className={styles.menuContainer}>
         <ul>
-          <li>
+          <li className={styles.accountText}>
             Have an account?
           </li>
           <li>
-            <NavLink to="/signin" activeClassName={styles.current}>
+            <NavLink to="/signin" className={styles.signinText} activeClassName={styles.current}>
             Sign in
             </NavLink>
           </li>

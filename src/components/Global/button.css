@@ -1,0 +1,136 @@
+.white {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;	
+  border: 1px solid #FFC80A;	
+  background: #FFFFFF;
+  border-radius: 30px;
+  font-size: 12px;
+
+  p {
+    color: black;
+    height: 15px;
+    color: #292929;	
+    letter-spacing: 1px;
+    font-weight: bold;
+  }
+}
+
+.white:hover {
+  cursor: pointer;
+  background: #8D76BE;
+  border: 1px solid #8D76BE;
+  
+  p {
+    color: white;
+  }
+}
+
+.whiteYellow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;	
+  border: 1px solid #FFC80A;	
+  background: #FFFFFF;
+  border-radius: 30px;
+  font-size: 12px;
+
+  p {
+    color: black;
+    height: 15px;
+    color: #292929;	
+    letter-spacing: 1px;
+    font-weight: bold;
+  }
+}
+
+.whiteYellow:hover {
+  cursor: pointer;
+  background: #FFC80A;
+  border: 1px solid #FFC80A;
+  
+  p {
+    color: white;
+  }
+}
+
+
+.yellow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;	
+  border: 1px solid #FFC80A;	
+  background: #FFC80A;
+  border-radius: 30px;
+  font-size: 12px;
+
+  p {
+    color: black;
+    height: 15px;
+    color: white;	
+    letter-spacing: 1px;
+    font-weight: bold;
+  }
+}
+
+.yellow:hover {
+  cursor: pointer;
+  background: #8D76BE;
+  border: 1px solid #8D76BE;
+  
+  p {
+    color: white;
+  }
+}
+
+.purple {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;	
+  border: 1px solid #8D76BE;	
+  background: #8D76BE;
+  border-radius: 30px;
+  font-size: 12px;
+
+  p {
+    color: black;
+    height: 15px;
+    color: white;	
+    letter-spacing: 1px;
+    font-weight: bold;
+  }
+}
+
+.purple:hover {
+  cursor: pointer;
+  background: #FFC80A;
+  border: 1px solid #FFC80A;
+  
+  p {
+    color: white;
+  }
+}
+
+.disabled {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;	
+  border: 1px solid grey;	
+  background: grey;
+  border-radius: 30px;
+  font-size: 12px;
+
+  p {
+    cursor: default;
+    color: black;
+    height: 15px;
+    color: white;	
+    letter-spacing: 1px;
+    font-weight: bold;
+  }
+}

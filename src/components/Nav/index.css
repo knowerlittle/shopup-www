@@ -1,6 +1,28 @@
-.nav {
-	background: red;
+.redNav {
+  background: red;
+  display: flex;
+  justify-content: center;
+  height: 10vh;
 }
+
+.nav {
+  position: absolute;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.05);
+}
+
+.navProfile {
+  position: absolute;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.05);
+}
+
 
 .ul {
 	color: white;	
@@ -9,6 +31,7 @@
 .wrapper {
   display: flex;
   padding: 10px 80px;
+  width: 100%;
 }
 .logoContainer,
 .menuContainer {
@@ -17,20 +40,37 @@
 .logoContainer {
   display: flex;
   justify-content: flex-started;
+  align-items: center;
 }
 .menuContainer,
 .menuContainer ul {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
 }
-.menuContainer{
+.menuContainer {
   li{
     margin: 0 15px;
+    cursor: default;
   }
 }
-.current{
+.current {
   font-weight: bold;
   margin: -1.5px;
+}
+
+.accountText {
+  color: #9B9B9B;
+  font-weight: 500;
+}
+
+.signinText {
+  font-weight: bold;
+  color: #292929;
+}
+
+.signinText:hover {
+  text-shadow: 0.5px 0.5px 0.5px rgba(34, 34, 34, 0.3)
 }
 
 .menuLink:hover {

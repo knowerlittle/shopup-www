@@ -4,9 +4,10 @@ import { NavLink } from 'react-router-dom';
 import red from 'assets/logo/popin_logo_red.png';
 import white from 'assets/logo/popin_logo_white.png';
 import black from 'assets/logo/popin_logo_black.png';
-import styles from 'components/Global/index.css';
+import styles from 'components/Global/logo.css';
 
-const logo = {
+
+const logos = {
   red,
   white,
   black,
@@ -17,19 +18,19 @@ const propsShadow = color => (color === 'red'
   : styles.blackShadow
 );
 
-const Logo = props => (
-  <div>
-    <NavLink to="/" activeClassName="current">
-      <div>
-        <img
-          className={propsShadow(props.shadow)}
-          src={logo[props.logo]}
-          alt="Logo"
-          width={props.width}
-        />
-      </div>
-    </NavLink>
-  </div>
+const Logo = ({
+  width,
+  logo,
+  shadow,
+}) => (
+  <NavLink to="/" activeClassName="current">
+    <img
+      className={propsShadow(shadow)}
+      src={logos[logo]}
+      alt="Logo"
+      width={width}
+    />
+  </NavLink>
 );
 
 Logo.propTypes = {

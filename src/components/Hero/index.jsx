@@ -1,18 +1,20 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import Button from 'components/Global/Button';
 import styles from 'components/Hero/index.css';
+import { Link } from 'react-router-dom';
 
-const HeroComp = () => (
+const Hero = () => (
   <div>
     <section className={styles.heroContainer}>
       <h1>Home page title</h1>
-      <p>
-        <button>
-          <NavLink to="/signup">
-            Get Started
-          </NavLink>
-        </button>
-      </p>
+      <Link to="/signup">
+        <Button
+          color="purple"
+          text="GET STARTED"
+          height="50"
+          width="300"
+        />
+      </Link>
     </section>
     <section className={styles.featureContainer}>
       <h2>Feature Container</h2>
@@ -20,4 +22,4 @@ const HeroComp = () => (
   </div>
 );
 
-export default HeroComp;
+export default Hero;

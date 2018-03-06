@@ -1,6 +1,6 @@
 .blackShadow:hover {
-  -webkit-filter: drop-shadow(1px 1px 1px rgba(34, 34, 34, 0.4));
-  filter: drop-shadow(1px 1px 1px rgba(34, 34, 34, 0.4));
+  -webkit-filter: drop-shadow(0.15px 0.15px 0.15px rgba(34, 34, 34, 0.8));
+  filter: drop-shadow(0.15px 0.15px 0.15px rgba(34, 34, 34, 0.8));
 }
 
 .redShadow:hover {
