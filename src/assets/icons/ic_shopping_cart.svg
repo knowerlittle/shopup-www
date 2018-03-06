@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>3. Icons/ic_shopping_cart</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M11,21 C9.9,21 9.01,21.9 9.01,23 C9.01,24.1 9.9,25 11,25 C12.1,25 13,24.1 13,23 C13,21.9 12.1,21 11,21 L11,21 Z M5,5 L5,7 L7,7 L10.6,14.59 L9.25,17.04 C9.09,17.32 9,17.65 9,18 C9,19.1 9.9,20 11,20 L23,20 L23,18 L11.42,18 C11.28,18 11.17,17.89 11.17,17.75 L11.2,17.63 L12.1,16 L19.55,16 C20.3,16 20.96,15.59 21.3,14.97 L24.88,8.48 C24.96,8.34 25,8.17 25,8 C25,7.45 24.55,7 24,7 L9.21,7 L8.27,5 L5,5 L5,5 Z M21,21 C19.9,21 19.01,21.9 19.01,23 C19.01,24.1 19.9,25 21,25 C22.1,25 23,24.1 23,23 C23,21.9 22.1,21 21,21 L21,21 Z" id="path-1"></path>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="3.-Icons/ic_shopping_cart">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <g id="Icon"></g>
+            <g id="5.-Colors/Gray-85" mask="url(#mask-2)" fill="#D8D8D8">
+                <g transform="translate(2.000000, 2.000000)" id="Gray-85">
+                    <rect x="0" y="0" width="26" height="26"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

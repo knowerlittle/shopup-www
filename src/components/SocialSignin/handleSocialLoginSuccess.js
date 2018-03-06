@@ -10,8 +10,8 @@ const SPACE = 'space';
 const HOMEPAGE = '/';
 const SIGNUP_PAGE = '/signup';
 const SIGNIN_PAGE = '/signin';
-const BRAND_PROFILE_PAGE = '/profile/brand';
-const SPACE_PROFILE_PAGE = '/profile/brand';
+const BRAND_PROFILE_PAGE = '/brand/profile';
+const SPACE_PROFILE_PAGE = '/space/profile';
 const BRAND_ONBOARDING_SIGNIN_BEFORE = '/onboard/brand/5';
 const BRAND_ONBOARDING_SIGNIN_AFTER = '/onboard/brand/signin';
 const SPACE_ONBOARDING_SIGNIN = '/onboard/space/signin';
@@ -43,7 +43,7 @@ const handleNextCall = async (path, inputValue, dispatch) => {
       return fetchSignin();
     case BRAND_ONBOARDING_SIGNIN_AFTER:
     case BRAND_ONBOARDING_SIGNIN_BEFORE:
-      dispatch(createBrand(inputValue));
+      await fetchSignin(dispatch(createBrand(inputValue)));
       return BRAND_ONBOARDING_NEXT;
     case SPACE_ONBOARDING_SIGNIN:
       // dispatch(acreateSpace(inputValues))

@@ -1,4 +1,15 @@
-const initState = {};
+const initState = {
+  user: {
+    givenName: '',
+    familyName: '',
+    email: '',
+    brand: '',
+  },
+  brand: {
+    name: '',
+    description: '',
+  },
+};
 
 const auth = (state = initState, action) => {
   switch (action.type) {

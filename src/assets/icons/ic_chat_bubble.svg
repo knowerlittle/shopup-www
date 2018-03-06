@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>3. Icons/ic_chat_bubble</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M23,5 L7,5 C5.9,5 5,5.9 5,7 L5,25 L9,21 L23,21 C24.1,21 25,20.1 25,19 L25,7 C25,5.9 24.1,5 23,5 L23,5 Z" id="path-1"></path>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="3.-Icons/ic_chat_bubble">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <g id="Icon"></g>
+            <g id="5.-Colors/Gray-85" mask="url(#mask-2)" fill="#D8D8D8">
+                <g transform="translate(2.000000, 2.000000)" id="Gray-85">
+                    <rect x="0" y="0" width="26" height="26"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

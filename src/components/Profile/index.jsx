@@ -1,15 +1,15 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import Brand from 'components/Profile/Brand';
+// import React from 'react';
+// import PropTypes from 'prop-types';
+// import Brand from 'components/Profile/Brand';
 
-const options = {
-  brand: <Brand />,
-};
+// const options = {
+//   brand: <Brand />,
+// };
 
-const Profile = ({ profile }) => options[profile];
+// const Profile = ({ profile }) => options[profile];
 
-Profile.propTypes = {
-  profile: PropTypes.string.isRequired,
-};
+// Profile.propTypes = {
+//   profile: PropTypes.string.isRequired,
+// };
 
-export default Profile;
+// export default Profile;

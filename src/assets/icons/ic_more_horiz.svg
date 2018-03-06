@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>3. Icons/ic_more_horiz</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M9,13 C7.9,13 7,13.9 7,15 C7,16.1 7.9,17 9,17 C10.1,17 11,16.1 11,15 C11,13.9 10.1,13 9,13 L9,13 Z M21,13 C19.9,13 19,13.9 19,15 C19,16.1 19.9,17 21,17 C22.1,17 23,16.1 23,15 C23,13.9 22.1,13 21,13 L21,13 Z M15,13 C13.9,13 13,13.9 13,15 C13,16.1 13.9,17 15,17 C16.1,17 17,16.1 17,15 C17,13.9 16.1,13 15,13 L15,13 Z" id="path-1"></path>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="3.-Icons/ic_more_horiz">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <g id="Icon"></g>
+            <g id="5.-Colors/Gray-85" mask="url(#mask-2)" fill="#D8D8D8">
+                <g transform="translate(2.000000, 2.000000)" id="Gray-85">
+                    <rect x="0" y="0" width="26" height="26"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
