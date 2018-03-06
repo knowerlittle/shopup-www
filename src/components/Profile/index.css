@@ -56,7 +56,9 @@
 }
 
 .grey {
-  /* margin-top: 2px; */
+  li {
+    border-left: 2px solid white;
+  }
   g {
     fill: #999999;
   }

@@ -17,7 +17,7 @@ const App = () => (
         <Route path="/signup" component={Signup} />
         <Route path="/onboard/:journey/:step" component={Onboard} />
         <Route path="/mission" component={MissionPage} />
-        <Route path="/profile/brand" component={BrandProfile} />
+        <Route path="/brand/:page?" component={BrandProfile} />
       </Switch>
     </Router>
   </div>

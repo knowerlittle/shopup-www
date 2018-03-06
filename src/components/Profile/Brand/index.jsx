@@ -9,9 +9,10 @@ import CalenderIcon from 'assets/icons/miniCalender.svg';
 import MessageIcon from 'assets/icons/ic_comment.svg';
 import FindSpaceIcon from 'assets/icons/ic_search.svg';
 import styles from 'components/Profile/index.css';
+import Page from 'components/Profile/Brand/Pages';
 
 class BrandProfile extends Component {
-  componentDidMount() {
+  componentWillMount() {
     this.fetchData();
   }
 
@@ -22,6 +23,7 @@ class BrandProfile extends Component {
 
   render() {
     const { brand } = this.props;
+    const { page } = this.props.match.params;
 
     return (
       <div className={styles.bodyWrapper}>
@@ -29,29 +31,35 @@ class BrandProfile extends Component {
           <section className={styles.leftMenu}>
             <div className={styles.menuOptions}>
               <ul>
-                <NavLink to="/profile/brand" className={styles.grey} activeClassName={styles.red} >
+                <NavLink to="/brand/profile" className={styles.grey} activeClassName={styles.red} >
                   <li>
                     <SVG src={AccountIcon} />
                     <span>{ brand.name }</span>
                   </li>
                 </NavLink>
-                <li>
-                  <SVG src={CalenderIcon} />
-                  <span>Bookings</span>
-                </li>
-                <li>
-                  <SVG src={MessageIcon} />
-                  <span>Messages</span>
-                </li>
-                <li>
-                  <SVG src={FindSpaceIcon} />
-                  <span>Find a Space</span>
-                </li>
+                <NavLink to="/brand/bookings" className={styles.grey} activeClassName={styles.red} >
+                  <li>
+                    <SVG src={CalenderIcon} />
+                    <span>Bookings</span>
+                  </li>
+                </NavLink>
+                <NavLink to="/brand/messages" className={styles.grey} activeClassName={styles.red} >
+                  <li>
+                    <SVG src={MessageIcon} />
+                    <span>Messages</span>
+                  </li>
+                </NavLink>
+                <NavLink to="/brand/spaces" className={styles.grey} activeClassName={styles.red} >
+                  <li>
+                    <SVG src={FindSpaceIcon} />
+                    <span>Find a Space</span>
+                  </li>
+                </NavLink>
               </ul>
             </div>
           </section>
           <section className={styles.contentBody}>
-            Profile
+            <Page page={page} />
           </section>
         </div>
       </div>
@@ -62,6 +70,11 @@ class BrandProfile extends Component {
 BrandProfile.propTypes = {
   brand: PropTypes.object.isRequired, // eslint-disable-line react/forbid-prop-types
   dispatch: PropTypes.func.isRequired,
+  match: PropTypes.shape({
+    params: PropTypes.shape({
+      page: PropTypes.node,
+    }).isRequired,
+  }).isRequired,
 };
 
 const mapStateToProps = (state) => {
