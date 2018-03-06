@@ -1,18 +1,23 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
+import { withRouter } from 'react-router-dom';
 import styles from 'components/Profile/index.css';
-/* eslint import/no-webpack-loader-syntax: off */
 import ReactSVG from 'react-svg';
 import Calender from 'assets/icons/miniCalender.svg';
 
 class BrandProfile extends Component {
   render() {
+    const { brand } = this.props;
     return (
       <div className={styles.bodyWrapper}>
         <div className={styles.innerWrapper}>
           <section className={styles.leftMenu}>
             <div className={styles.menuOptions}>
               <ul>
-                <li>Name</li>
+                <li>
+                  { brand.name }
+                </li>
                 <li>
                   <ReactSVG
                     path={Calender}
@@ -39,4 +44,16 @@ class BrandProfile extends Component {
   }
 }
 
-export default BrandProfile;
+BrandProfile.propTypes = {
+  brand: PropTypes.object.isRequired, // eslint-disable-line react/forbid-prop-types
+};
+
+const mapStateToProps = (state) => {
+  const { brand } = state.auth;
+  return {
+    brand,
+  };
+};
+
+// export default BrandProfile;
+export default withRouter(connect(mapStateToProps)(BrandProfile));

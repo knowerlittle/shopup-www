@@ -43,7 +43,7 @@ const handleNextCall = async (path, inputValue, dispatch) => {
       return fetchSignin();
     case BRAND_ONBOARDING_SIGNIN_AFTER:
     case BRAND_ONBOARDING_SIGNIN_BEFORE:
-      dispatch(createBrand(inputValue));
+      await fetchSignin(dispatch(createBrand(inputValue)));
       return BRAND_ONBOARDING_NEXT;
     case SPACE_ONBOARDING_SIGNIN:
       // dispatch(acreateSpace(inputValues))

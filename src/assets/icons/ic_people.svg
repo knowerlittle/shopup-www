@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>3. Icons/ic_people</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M19,14 C20.66,14 21.99,12.66 21.99,11 C21.99,9.34 20.66,8 19,8 C17.34,8 16,9.34 16,11 C16,12.66 17.34,14 19,14 L19,14 Z M11,14 C12.66,14 13.99,12.66 13.99,11 C13.99,9.34 12.66,8 11,8 C9.34,8 8,9.34 8,11 C8,12.66 9.34,14 11,14 L11,14 Z M11,16 C8.67,16 4,17.17 4,19.5 L4,22 L18,22 L18,19.5 C18,17.17 13.33,16 11,16 L11,16 Z M19,16 C18.71,16 18.38,16.02 18.03,16.05 C19.19,16.89 20,18.02 20,19.5 L20,22 L26,22 L26,19.5 C26,17.17 21.33,16 19,16 L19,16 Z" id="path-1"></path>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="3.-Icons/ic_people">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <g id="Icon"></g>
+            <g id="5.-Colors/Gray-85" mask="url(#mask-2)" fill="#D8D8D8">
+                <g transform="translate(2.000000, 2.000000)" id="Gray-85">
+                    <rect x="0" y="0" width="26" height="26"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

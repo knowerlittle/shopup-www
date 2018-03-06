@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>3. Icons/ic_place</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M15,5 C11.13,5 8,8.13 8,12 C8,17.25 15,25 15,25 C15,25 22,17.25 22,12 C22,8.13 18.87,5 15,5 L15,5 Z M15,14.5 C13.62,14.5 12.5,13.38 12.5,12 C12.5,10.62 13.62,9.5 15,9.5 C16.38,9.5 17.5,10.62 17.5,12 C17.5,13.38 16.38,14.5 15,14.5 L15,14.5 Z" id="path-1"></path>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="3.-Icons/ic_place">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <g id="Icon"></g>
+            <g id="5.-Colors/Gray-85" mask="url(#mask-2)" fill="#D8D8D8">
+                <g transform="translate(2.000000, 2.000000)" id="Gray-85">
+                    <rect x="0" y="0" width="26" height="26"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>3. Icons/ic_star_half</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M25,12.24 L17.81,11.62 L15,5 L12.19,11.63 L5,12.24 L10.46,16.97 L8.82,24 L15,20.27 L21.18,24 L19.55,16.97 L25,12.24 L25,12.24 Z M15,18.4 L15,9.1 L16.71,13.14 L21.09,13.52 L17.77,16.4 L18.77,20.68 L15,18.4 L15,18.4 Z" id="path-1"></path>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="3.-Icons/ic_star_half">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <g id="Icon"></g>
+            <g id="5.-Colors/Red" mask="url(#mask-2)" fill="#F74236">
+                <g transform="translate(2.000000, 2.000000)" id="Red">
+                    <rect x="0" y="0" width="26" height="26"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

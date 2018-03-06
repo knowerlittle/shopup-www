@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>3. Icons/ic_call</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M9.62,13.79 C11.06,16.62 13.38,18.93 16.21,20.38 L18.41,18.18 C18.68,17.91 19.08,17.82 19.43,17.94 C20.55,18.31 21.76,18.51 23,18.51 C23.55,18.51 24,18.96 24,19.51 L24,23 C24,23.55 23.55,24 23,24 C13.61,24 6,16.39 6,7 C6,6.45 6.45,6 7,6 L10.5,6 C11.05,6 11.5,6.45 11.5,7 C11.5,8.25 11.7,9.45 12.07,10.57 C12.18,10.92 12.1,11.31 11.82,11.59 L9.62,13.79 L9.62,13.79 Z" id="path-1"></path>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="3.-Icons/ic_call">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <g id="Icon"></g>
+            <g id="5.-Colors/Gray-85" mask="url(#mask-2)" fill="#D8D8D8">
+                <g transform="translate(2.000000, 2.000000)" id="Gray-85">
+                    <rect x="0" y="0" width="26" height="26"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

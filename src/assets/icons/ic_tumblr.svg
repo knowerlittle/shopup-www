@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>3. Icons/ic_tumblr</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M18.3305655,19.1182451 C18.071736,19.2416882 17.5767433,19.3490906 17.2076346,19.3583314 C16.093247,19.3881461 15.8769601,18.5755664 15.8679809,17.9865093 L15.8679809,13.6533612 L18.6633212,13.6533612 L18.6633212,11.5457626 L15.8776575,11.5457626 L15.8776575,8 L13.8391906,8 C13.8056273,8 13.7470441,8.02937875 13.7387623,8.10391535 C13.6195037,9.18909848 13.1117831,11.0937483 11,11.8553293 L11,13.6532741 L12.4087853,13.6532741 L12.4087853,18.2010527 C12.4087853,19.7583009 13.5574335,21.9705995 16.5897218,21.9183802 C17.6128347,21.9008576 18.7491037,21.4726427 19,21.1029237 L18.3305655,19.1182451" id="path-1"></path>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="3.-Icons/ic_tumblr">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <g id="Icon"></g>
+            <g id="5.-Colors/Gray-85" mask="url(#mask-2)" fill="#D8D8D8">
+                <g transform="translate(2.000000, 2.000000)" id="Gray-85">
+                    <rect x="0" y="0" width="26" height="26"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>1. Buttons/3. Small/6. Rounded/1. White</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="20" cy="20" r="20"></circle>
+        <polygon id="path-2" points="18.4 11.2 8.664 11.2 13.136 6.728 12 5.6 5.6 12 12 18.4 13.128 17.272 8.664 12.8 18.4 12.8"></polygon>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1.-Buttons/3.-Small/6.-Rounded/1.-White">
+            <g id="placeholder" transform="translate(20.000000, 20.000000) rotate(-180.000000) translate(-20.000000, -20.000000) ">
+                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                <circle stroke="#F5F5F5" stroke-width="2" cx="20" cy="20" r="19"></circle>
+            </g>
+            <g id="3.-Icons/ic_arrow_back" transform="translate(8.000000, 8.000000)">
+                <mask id="mask-3" fill="white">
+                    <use xlink:href="#path-2"></use>
+                </mask>
+                <g id="Icon"></g>
+                <g id="5.-Colors/White" mask="url(#mask-3)" fill="#FFFFFF" fill-rule="evenodd">
+                    <g transform="translate(1.600000, 1.600000)" id="White">
+                        <rect x="0" y="0" width="21" height="21"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
