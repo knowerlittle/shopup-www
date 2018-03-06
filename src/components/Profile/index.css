@@ -84,24 +84,79 @@
   grid-template-rows: 20% 30% 10% 20% 20%;
   height: 50vh;
   border-radius: 6px;
+  background: linear-gradient(
+    rgba(255, 0, 0, 0.45), 
+    rgba(255, 0, 0, 0.45)
+  );
+  z-index:0;
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
-.profileItem {
-  background-color: rgba(0, 0, 0, 0.5);
+.profileItemWithImage {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  p {
+    max-width: 50%;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 30px;
+  }
+
+  background-color: rgba(0, 0, 0, 0.7);
+  img {
+    border-radius: 200px;
+  }
 }
 
 .profileItemTop {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.7);
   border-radius: 6px 6px 0px 0px;
   overflow: hidden;
+  z-index:1;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 100%;
+
+  span {
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 500;
+  }
+}
+
+.brandName {
+  margin-left: 50%; 
 }
 
 .profileItemBottom {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.7);
   border-radius: 0px 0px 6px 6px;
+  overflow: hidden;
+}
+
+.profileItem{
+  background-color: rgba(0, 0, 0, 0.7);
   overflow: hidden;
 }
 
 .pageWrapper {
   height: 100%;
+}
+
+.purpleCircle {
+  margin-right: 5%;
+  background-color: #8D76BE;
+  border-radius: 50px;
+  height: 60px;
+  width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  g {
+    fill: white;
+  }
 }

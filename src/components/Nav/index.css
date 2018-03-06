@@ -26,6 +26,8 @@
 }
 
 
+
+
 .ul {
 	color: white;	
 }
@@ -35,6 +37,13 @@
   padding: 10px 80px;
   width: 100%;
 }
+
+.profileWrapper {
+  display: flex;
+  padding: 10px 80px 5px 80px;
+  width: 100%;
+}
+
 .logoContainer,
 .menuContainer {
   width: 100%;
