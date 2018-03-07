@@ -37,11 +37,7 @@
 	flex-direction: column;
 	align-content: center;
 	justify-content: center;
-	margin-right: 10%;
-
-	img {
-		max-width: 80%;
-	}
+	margin-right: 5%;
 }
 
 .introText {

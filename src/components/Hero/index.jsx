@@ -27,12 +27,10 @@ const Hero = () => (
         </div>
       </div>
       <div className={styles.rightSection}>
-        {/* <img src={NeonLike} alt="like" /> */}
         <div className={styles.videoWrapper}>
           <Iframe
             url="https://www.thinglink.com/mediacard/951052997931040769?autoplay=1&autorotate=1&displaytitle=1&rel=1"
-            id="myId"
-            className="myClassname"
+            id="video"
             display="initial"
             position="relative"
             allowFullScreen
