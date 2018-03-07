@@ -70,3 +70,8 @@
 .buttonWrapper {
 	margin-top: 30px;
 }
+
+.videoWrapper {
+	width: 100%;
+	height: 60%;
+}
