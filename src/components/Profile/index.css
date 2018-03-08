@@ -180,8 +180,6 @@
   }
 }
 
-
-
 .spaceWrapper {
   height: 100%;
   display: flex;
@@ -236,19 +234,42 @@
     align-items: center;
     justify-content: space-evenly;
   }
+}
 
-  li {
-    border: 1px solid #8D76BE;
-    border-radius: 6px;
-    padding: 10px;
-  }
+.borderList {
+  border: 2px solid #F5F5F5;;
+  border-radius: 6px;
+  padding: 10px;
+}
+
+.borderListSelected {
+  border: 2px solid #8D76BE;
+  border-radius: 6px;
+  padding: 10px;
 }
 
 .previewBox {
-  height: 70px;
-  width: 70px;
+  height: 80px;
+  width: 80px;
   background-color: #8D76BE;
   border-radius: 6px;
+  position: relative;
+  overflow: hidden;
+
+  img {
+    height: 100%;
+    position: absolute;
+    right: -25%;
+    z-index: 0;
+  }
+}
+
+.svgOverlay {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 3;
+  filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.5));
 }
 
 .spaceTitle {
@@ -263,11 +284,15 @@
 
 .spaceTopLeft {
   width: 20%;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  /* align-items: center; */
 }
 
 .spaceTopRight {
   height: 80%;
-  width: 80%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
