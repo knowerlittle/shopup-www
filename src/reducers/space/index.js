@@ -1,4 +1,6 @@
-const initState = [];
+const initState = {
+  all: [],
+};
 
 const space = (state = initState, { type, payload }) => {
   switch (type) {
