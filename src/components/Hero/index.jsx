@@ -2,7 +2,7 @@ import React from 'react';
 import Button from 'components/Global/Button';
 import styles from 'components/Hero/index.css';
 import { Link } from 'react-router-dom';
-import NeonLike from 'assets/img/home/neonlike.png';
+import Iframe from 'react-iframe';
 
 const introText = 'THE INTERNET SAYS IT\'S';
 
@@ -26,7 +26,15 @@ const Hero = () => (
         </div>
       </div>
       <div className={styles.rightSection}>
-        <img src={NeonLike} alt="like" />
+        <div className={styles.videoWrapper}>
+          <Iframe
+            url="https://www.thinglink.com/mediacard/951052997931040769?autoplay=1&autorotate=1&displaytitle=1&rel=1"
+            id="video"
+            display="initial"
+            position="relative"
+            allowFullScreen
+          />
+        </div>
       </div>
     </section>
     <section className={styles.featureContainer}>
