@@ -3,20 +3,45 @@
 exports[`<Hero /> renders correctly 1`] = `
 <div>
   <section>
-    <h1>
-      Home page title
-    </h1>
-    <p>
-      <button>
-        <NavLink
-          activeClassName="active"
-          ariaCurrent="true"
+    <div>
+      <p>
+        THE INTERNET SAYS IT'S
+      </p>
+      <p>
+        The best way
+      </p>
+      <p>
+        to find space
+      </p>
+      <p>
+        for your passion.
+      </p>
+      <div>
+        <Link
+          replace={false}
           to="/signup"
         >
-          Get Started
-        </NavLink>
-      </button>
-    </p>
+          <Button
+            color="purple"
+            height="50"
+            onClick={[Function]}
+            text="GET STARTED"
+            width="300"
+          />
+        </Link>
+      </div>
+    </div>
+    <div>
+      <div>
+        <Iframe
+          allowFullScreen={true}
+          display="initial"
+          id="video"
+          position="relative"
+          url="https://www.thinglink.com/mediacard/951052997931040769?autoplay=1&autorotate=1&displaytitle=1&rel=1"
+        />
+      </div>
+    </div>
   </section>
   <section>
     <h2>
