@@ -2,7 +2,6 @@ import React from 'react';
 import Button from 'components/Global/Button';
 import styles from 'components/Hero/index.css';
 import { Link } from 'react-router-dom';
-// import NeonLike from 'assets/img/home/neonlike.png';
 import Iframe from 'react-iframe';
 
 const introText = 'THE INTERNET SAYS IT\'S';

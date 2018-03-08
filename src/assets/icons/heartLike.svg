@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>1. Buttons/1. Large/6. Rounded/1. White</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="30" cy="30" r="30"></circle>
+        <path d="M19.5,6 C17.76,6 16.09,6.81 15,8.09 C13.91,6.81 12.24,6 10.5,6 C7.42,6 5,8.42 5,11.5 C5,15.28 8.4,18.36 13.55,23.04 L15,24.35 L16.45,23.03 C21.6,18.36 25,15.28 25,11.5 C25,8.42 22.58,6 19.5,6 L19.5,6 Z M15.1,21.55 L15,21.65 L14.9,21.55 C10.14,17.24 7,14.39 7,11.5 C7,9.5 8.5,8 10.5,8 C12.04,8 13.54,8.99 14.07,10.36 L15.94,10.36 C16.46,8.99 17.96,8 19.5,8 C21.5,8 23,9.5 23,11.5 C23,14.39 19.86,17.24 15.1,21.55 L15.1,21.55 Z" id="path-2"></path>
+    </defs>
+    <g id="Find-space-page---listing-all-spaces-no-filter" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-575.000000, -183.000000)">
+        <g id="Product-Card" transform="translate(510.000000, 123.000000)">
+            <g id="header" transform="translate(65.000000, 60.000000)">
+                <g id="1.-Buttons/1.-Large/6.-Rounded/1.-White">
+                    <g id="placeholder" transform="translate(30.000000, 30.000000) rotate(-180.000000) translate(-30.000000, -30.000000) ">
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                        <circle stroke="#F5F5F5" stroke-width="2" cx="30" cy="30" r="29"></circle>
+                    </g>
+                    <g id="3.-Icons/ic_favorite_border" transform="translate(15.000000, 15.000000)">
+                        <mask id="mask-3" fill="white">
+                            <use xlink:href="#path-2"></use>
+                        </mask>
+                        <g id="Icon"></g>
+                        <g id="5.-Colors/Gray-85" mask="url(#mask-3)" fill="#D8D8D8" fill-rule="evenodd">
+                            <g transform="translate(2.000000, 2.000000)" id="Gray-85">
+                                <rect x="0" y="0" width="26" height="26"></rect>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

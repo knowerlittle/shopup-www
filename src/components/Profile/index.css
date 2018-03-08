@@ -8,8 +8,7 @@
 }
 
 .innerWrapper {
-  width: 90%;
-  width: 90%;
+  min-width: 90%;
   display: flex;
   flex-direction: row;
 }
@@ -33,6 +32,7 @@
 
   ul {
     padding-left: 0px;
+    margin-top: 10%;
     li {
       font-size: 13px;
       color: #999999;
@@ -78,10 +78,9 @@
   }
 }
 
-
 .profileInfo {
   display: grid;
-  grid-template-rows: 20% 30% 10% 20% 20%;
+  /* grid-template-rows: 20% 30% 10% 20% 20%; */
   height: 50vh;
   border-radius: 6px;
   background: linear-gradient(
@@ -100,7 +99,6 @@
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-  width: 100%;
 
   span {
     color: #FFFFFF;
@@ -108,6 +106,7 @@
     font-weight: 500;
   }
 }
+
 
 .profileItemWithImage {
   display: flex;
@@ -148,7 +147,6 @@
   }
 }
 
-
 .brandName {
   margin-left: 50%; 
 }
@@ -180,4 +178,104 @@
   g {
     fill: white;
   }
+}
+
+
+
+.spaceWrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.spaceCard {
+  height: 60vh;
+  min-width: 80%;
+  background-color: #FFFFFF;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.05);
+  border-radius: 6px;
+  margin-top: 1%;
+  margin-bottom: 2%;
+  display: flex;
+  flex-direction: column;
+  padding: 5%;
+  /* display: grid; */
+  /* align-items: center; */
+
+}
+
+.previewWrapper {
+  width: 80%;
+  height: 100%;
+}
+
+.spaceTop {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 30%;
+}
+
+.spaceBottom {
+  display: flex;
+  height: 70%;
+  width: 100%;
+}
+
+.previewOptions {
+  width: 20%;
+
+  ul {
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  li {
+    border: 1px solid #8D76BE;
+    border-radius: 6px;
+    padding: 10px;
+  }
+}
+
+.previewBox {
+  height: 70px;
+  width: 70px;
+  background-color: #8D76BE;
+  border-radius: 6px;
+}
+
+.spaceTitle {
+  font-size: 36px;
+  font-weight: 300;
+  color: #4D4D4D;
+}
+
+.locationText {
+  color: #999999;
+}
+
+.spaceTopLeft {
+  width: 20%;
+}
+
+.spaceTopRight {
+  height: 80%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.reviewIcons {
+  g {
+    fill: #F9AD3D;
+    }  
 }

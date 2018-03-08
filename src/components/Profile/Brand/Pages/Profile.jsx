@@ -46,7 +46,6 @@ const Profile = ({ brand }) => (
       <div className={styles.profileItem}>Hi</div>
       <div className={styles.profileItemBottom}>Hi</div>
     </section>
-    Profilex
   </div>
 );
 
