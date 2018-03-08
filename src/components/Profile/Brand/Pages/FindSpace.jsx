@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
-import styles from 'components/Profile/index.css';
+import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
 import SVG from 'react-inlinesvg';
 import Iframe from 'react-iframe';
+import * as actions from 'action/space';
 import ReviewFull from 'assets/icons/ic_star.svg';
 import ReviewHalf from 'assets/icons/ic_star_half.svg';
 import DownArrow from 'assets/icons/downArrow.svg';
@@ -9,8 +11,18 @@ import HeartLike from 'assets/icons/heartLike.svg';
 import VideoIcon from 'assets/icons/360icon.svg';
 import ShopFront1 from 'assets/img/demo/shopfront1.jpg';
 import ShopFront2 from 'assets/img/demo/shopfront2.jpg';
+import styles from 'components/Profile/index.css';
 
 class FindSpace extends Component {
+  componentDidMount() {
+    this.fetchData();
+  }
+
+  fetchData() {
+    const { dispatch } = this.props;
+    actions.getAllSpaces(dispatch);
+  }
+
   render() {
     return (
       <div className={styles.spaceWrapper}>
@@ -77,4 +89,8 @@ class FindSpace extends Component {
   }
 }
 
-export default FindSpace;
+FindSpace.propTypes = {
+  dispatch: PropTypes.func.isRequired,
+};
+
+export default connect()(FindSpace);
