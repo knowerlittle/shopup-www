@@ -1,10 +1,12 @@
+@import 'variables';
+
 .white {
   display: flex;
   align-items: center;
   justify-content: center;
   box-sizing: border-box;	
-  border: 1px solid #FFC80A;	
-  background: #FFFFFF;
+  border: 1px solid $secondary;	
+  background: white;
   border-radius: 30px;
   font-size: 12px;
 
@@ -19,8 +21,8 @@
 
 .white:hover {
   cursor: pointer;
-  background: #8D76BE;
-  border: 1px solid #8D76BE;
+  background: $secondary;
+  border: 1px solid $secondary;
   
   p {
     color: white;
