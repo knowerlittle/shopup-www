@@ -2722,6 +2722,10 @@ decamelize@^1.0.0, decamelize@^1.1.1, decamelize@^1.1.2:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/decamelize/-/decamelize-1.2.0.tgz#f6534d15148269b20352e7bee26f501f9a191290"
 
+decode-uri-component@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/decode-uri-component/-/decode-uri-component-0.2.0.tgz#eb3913333458775cb84cd1a1fae062106bb87545"
+
 deep-bind@^0.3.0:
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/deep-bind/-/deep-bind-0.3.0.tgz#95c31dd84a1cd1b381119a2c42edb90db485bc33"
@@ -7775,6 +7779,14 @@ query-string@^4.1.0:
     object-assign "^4.1.0"
     strict-uri-encode "^1.0.0"
 
+query-string@^5.1.0:
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/query-string/-/query-string-5.1.0.tgz#9583b15fd1307f899e973ed418886426a9976469"
+  dependencies:
+    decode-uri-component "^0.2.0"
+    object-assign "^4.1.0"
+    strict-uri-encode "^1.0.0"
+
 querystring-es3@^0.2.0:
   version "0.2.1"
   resolved "https://registry.yarnpkg.com/querystring-es3/-/querystring-es3-0.2.1.tgz#9ec61f79049875707d69414596fd907a4d711e73"
@@ -7945,6 +7957,14 @@ react-dom@^16.2.0:
 react-error-overlay@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/react-error-overlay/-/react-error-overlay-3.0.0.tgz#c2bc8f4d91f1375b3dad6d75265d51cd5eeaf655"
+
+react-favicon@0.0.13:
+  version "0.0.13"
+  resolved "https://registry.yarnpkg.com/react-favicon/-/react-favicon-0.0.13.tgz#5fec4f3f2a7cdb39eb253d8bb2d0ceb6194a00bf"
+
+react-iframe@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/react-iframe/-/react-iframe-1.1.0.tgz#fe0ac2eee934750ddd3fce1993fc97a967711d69"
 
 react-inlinesvg@^0.7.5:
   version "0.7.5"
