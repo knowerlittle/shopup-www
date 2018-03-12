@@ -27,7 +27,6 @@ const SigninOptions = ({
     >
       SIGN IN WITH FACEBOOK
     </SocialButton>
-
     <SocialButton
       provider="google"
       appId={GOOGLE_APP_ID}

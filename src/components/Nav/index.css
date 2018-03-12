@@ -1,6 +1,8 @@
-.redNav {
+@import 'variables';
+
+.red-nav {
   position: absolute;
-  background: red;
+  background: $primary;
   display: flex;
   justify-content: center;
   width: 100%;
@@ -16,7 +18,7 @@
   box-shadow: 0 2px 5px 0 rgba(0,0,0,0.05);
 }
 
-.navProfile {
+.nav-profile {
   position: absolute;
   height: 8vh;
   display: flex;
@@ -24,9 +26,6 @@
   width: 100%;
   box-shadow: 0 2px 5px 0 rgba(0,0,0,0.05);
 }
-
-
-
 
 .ul {
 	color: white;	
@@ -38,28 +37,28 @@
   width: 100%;
 }
 
-.profileWrapper {
+.profile-wrapper {
   display: flex;
   padding: 10px 30px 5px 80px;
   width: 100%;
 }
 
-.logoContainer,
-.menuContainer {
+.logo-container,
+.menu-container {
   width: 100%;
 }
-.logoContainer {
+.logo-container {
   display: flex;
   justify-content: flex-started;
   align-items: center;
 }
-.menuContainer,
-.menuContainer ul {
+.menu-container,
+.menu-container ul {
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
-.menuContainer {
+.menu-container {
   li{
     margin: 0 15px;
     cursor: default;
@@ -70,25 +69,25 @@
   margin: -1.5px;
 }
 
-.accountText {
+.account-text {
   color: #9B9B9B;
   font-weight: 500;
 }
 
-.signinText {
+.signin-text {
   font-weight: bold;
   color: #292929;
 }
 
-.signinText:hover {
+.signin-text:hover {
   text-shadow: 0.5px 0.5px 0.5px rgba(34, 34, 34, 0.3)
 }
 
-.menuLink:hover {
+.menu-link:hover {
   text-shadow: 1px 1px 1px rgba(34, 34, 34, 0.6);
 }
 
-.userName {
+.user-name {
   display: flex;
   align-items: center;
   color: #999999;
