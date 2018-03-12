@@ -27,13 +27,6 @@ const SigninOptions = ({
     >
       SIGN IN WITH FACEBOOK
     </SocialButton>
-    <div
-      onClick={handleSocialLoginSuccess(push, currentPath, inputValue, dispatch)}
-      onKeyDown={() => {}}
-      role="presentation"
-    >
-      Hack
-    </div>
     <SocialButton
       provider="google"
       appId={GOOGLE_APP_ID}

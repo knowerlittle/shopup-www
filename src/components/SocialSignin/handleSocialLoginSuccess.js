@@ -1,7 +1,7 @@
 import * as auth from 'api/auth';
 // import * as signup from 'api/signup';
-// import createJsonProfile from 'components/SocialSignin/createJsonProfile';
-// import setTokenToLocalStorage from 'components/SocialSignin/setTokenToLocalStorage';
+import createJsonProfile from 'components/SocialSignin/createJsonProfile';
+import setTokenToLocalStorage from 'components/SocialSignin/setTokenToLocalStorage';
 import { createBrand } from 'action/auth';
 
 const NEW = 'new';
@@ -63,10 +63,9 @@ export const handleSocialLoginSuccess = (
   path,
   inputValue,
   dispatch,
-) => async () => {
-// ) => async (user) => {
-  // const body = createJsonProfile(user);
-  // const authResponse = await auth.fetchLogin({ body });
-  // await setTokenToLocalStorage(authResponse);
+) => async (user) => {
+  const body = createJsonProfile(user);
+  const authResponse = await auth.fetchLogin({ body });
+  await setTokenToLocalStorage(authResponse);
   await nextCallAndPush(routerPush, path, inputValue, dispatch);
 };
