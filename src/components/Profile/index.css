@@ -450,3 +450,19 @@
   font-weight: 500;
   font-size: 13px;
 }
+
+.overview-breakdown {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 10px 10px 10px 10%;
+  margin-top: 0px;
+  margin-bottom: 0px;
+
+  li {
+    display: flex;
+    align-items: center;
+    width: 25%;
+    justify-content: flex-start;
+  }
+}

@@ -139,7 +139,64 @@ class Profile extends Component {
             <p><SVG src={Dropdown} /></p>
           </div>
           <div className={styles.infoBoxBody}>
-            Body
+            <ul className={styles.overviewBreakdown}>
+              <li>
+                <div>Left</div>
+                <div>
+                  <p>Titlte</p>
+                  <p>Bottom</p>
+                </div>
+              </li>
+              <li>
+                <div>Left</div>
+                <div>
+                  <p>Titlte</p>
+                  <p>Bottom</p>
+                </div>
+              </li>
+              <li>
+                <div>Left</div>
+                <div>
+                  <p>Titlte</p>
+                  <p>Bottom</p>
+                </div>
+              </li>
+              <li>
+                <div>Left</div>
+                <div>
+                  <p>Titlte</p>
+                  <p>Bottom</p>
+                </div>
+              </li>
+              <li>
+                <div>Left</div>
+                <div>
+                  <p>Titlte</p>
+                  <p>Bottom</p>
+                </div>
+              </li>
+              <li>
+                <div>Left</div>
+                <div>
+                  <p>Titlte</p>
+                  <p>Bottom</p>
+                </div>
+              </li>
+              <li>
+                <div>Left</div>
+                <div>
+                  <p>Titlte</p>
+                  <p>Bottom</p>
+                </div>
+              </li>
+              <li>
+                <div>Left</div>
+                <div>
+                  <p>Titlte</p>
+                  <p>Bottom</p>
+                </div>
+              </li>
+            </ul>
           </div>
         </section>
 
