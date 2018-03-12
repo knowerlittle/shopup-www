@@ -608,6 +608,7 @@
   width: 100%;
   display: flex;
   align-items: center;
+  margin: 0px 5%;
 
   g {
     fill: white;
@@ -624,6 +625,12 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  p {
+    font-weight: 500;
+    font-size: 24px;
+    color: white;
+    margin-left: 15px;
+  }
 }
 
 .events-image-wrapper {
@@ -648,6 +655,8 @@
   justify-content: space-between;
   width: 100%;
   padding: 5%;
+  border-radius: 6px;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .event-time {
@@ -658,7 +667,7 @@
 }
 
 .events-option-button {
-  background-color: rgba(0,0,0,0.3);
+  background-color: rgba(255, 255, 255,0.3);
   padding: 15px 40px;
   border-radius: 100px;
   color: white;

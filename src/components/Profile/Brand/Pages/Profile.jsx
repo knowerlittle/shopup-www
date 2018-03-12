@@ -6,10 +6,12 @@ import qs from 'query-string';
 import styles from 'components/Profile/index.css';
 import SVG from 'react-inlinesvg';
 import Email from 'assets/icons/ic_email.svg';
-import BackgroundDemo from 'assets/img/demo/brandbg.png';
+import BackgroundDemo from 'assets/img/demo/shopfront2.jpg';
 import HatLady from 'assets/img/demo/hatdemo.png';
 import demoShop1 from 'assets/img/demo/demoshop1.jpg';
 import demoShop2 from 'assets/img/demo/demoshop2.jpg';
+import demoShop1Lg from 'assets/img/demo/demoshop1lg.png';
+import demoShop2Lg from 'assets/img/demo/demoshop2lg.png';
 import shoes1 from 'assets/img/demo/demoshoes1.png';
 import shoes2 from 'assets/img/demo/demoshoes2.png';
 import shoes3 from 'assets/img/demo/demoshoes3.png';
@@ -30,10 +32,20 @@ import Work from 'assets/icons/ic_work.svg';
 import Subscriptions from 'assets/icons/ic_subscriptions.svg';
 import Schedule from 'assets/icons/ic_schedule.svg';
 
-const divStyle = {
+const profileDivStyle = {
   backgroundImage: `url(${BackgroundDemo}`,
   backgroundSize: 'cover',
   backgroundColor: 'rgba(0, 0, 0, 0.5)',
+};
+
+const eventsADivStyle = {
+  backgroundImage: `url(${demoShop1Lg}`,
+  backgroundSize: 'cover',
+};
+
+const eventsBDivStyle = {
+  backgroundImage: `url(${demoShop2Lg}`,
+  backgroundSize: 'cover',
 };
 
 const brandDescription = `Co-founder, chairman, and chief executive officer (CEO)
@@ -62,7 +74,7 @@ class Profile extends Component {
 
     return (
       <div className={styles.pageWrapper}>
-        <section className={styles.profileInfo} style={divStyle}>
+        <section className={styles.profileInfo} style={profileDivStyle}>
           <div className={styles.profileLeft}>
             <img src={HatLady} alt="Brand" width="120" />
           </div>
@@ -289,7 +301,7 @@ class Profile extends Component {
           <div className={styles.infoBoxBody}>
             <div className={styles.eventsInnerWrapper}>
               <ul>
-                <li>
+                <li style={eventsADivStyle}>
                   <div className={styles.eventsListContainer}>
                     <div className={styles.eventsTopHalf}>
                       <p><SVG src={Schedule} /></p>
@@ -300,7 +312,7 @@ class Profile extends Component {
                         <div className={styles.eventsImageWrapper}>
                           <img src={demoShop1} alt="shop" width="180" />
                         </div>
-                        <p>SPACE NAME</p>
+                        <p>Coffee Club</p>
                       </div>
                       <div className={styles.eventsInterested}>
                         <div className={styles.eventsOptionButton}>
@@ -313,9 +325,29 @@ class Profile extends Component {
                     </div>
                   </div>
                 </li>
-                <li>
-                  <img src={demoShop2} alt="shop" width="150" />
-                  Event 2
+                <li style={eventsBDivStyle}>
+                  <div className={styles.eventsListContainer}>
+                    <div className={styles.eventsTopHalf}>
+                      <p><SVG src={Schedule} /></p>
+                      <p className={styles.eventTime}>12 Oct 2016, 10:00am - 07:00pm</p>
+                    </div>
+                    <div className={styles.eventsBottomHalf}>
+                      <div className={styles.eventsImageName}>
+                        <div className={styles.eventsImageWrapper}>
+                          <img src={demoShop2} alt="shop" width="180" />
+                        </div>
+                        <p>Art Gallery</p>
+                      </div>
+                      <div className={styles.eventsInterested}>
+                        <div className={styles.eventsOptionButton}>
+                          INTERESTED
+                        </div>
+                        <div className={styles.eventsOptionButton}>
+                          GOING
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </li>
               </ul>
             </div>
