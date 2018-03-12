@@ -8,6 +8,9 @@ import SVG from 'react-inlinesvg';
 import Email from 'assets/icons/ic_email.svg';
 import BackgroundDemo from 'assets/img/demo/brandbg.png';
 import HatLady from 'assets/img/demo/hatdemo.png';
+import shoes1 from 'assets/img/demo/demoshoes1.png';
+import shoes2 from 'assets/img/demo/demoshoes2.png';
+import shoes3 from 'assets/img/demo/demoshoes3.png';
 import ReviewFull from 'assets/icons/ic_star.svg';
 import ReviewHalf from 'assets/icons/ic_star_half.svg';
 import Instagram from 'assets/icons/ic_instagram.svg';
@@ -15,6 +18,14 @@ import Twitter from 'assets/icons/ic_twitter.svg';
 import Facebook from 'assets/icons/ic_facebook.svg';
 import Dropdown from 'assets/icons/ic_more_horiz.svg';
 import ArrowDown from 'assets/icons/ic_arrow_downward.svg';
+import Cake from 'assets/icons/ic_cake.svg';
+import Favorite from 'assets/icons/ic_favorite.svg';
+import Language from 'assets/icons/ic_language.svg';
+import City from 'assets/icons/ic_location_city.svg';
+import People from 'assets/icons/ic_people.svg';
+import School from 'assets/icons/ic_school.svg';
+import Work from 'assets/icons/ic_work.svg';
+import Subscriptions from 'assets/icons/ic_subscriptions.svg';
 
 const divStyle = {
   backgroundImage: `url(${BackgroundDemo}`,
@@ -141,59 +152,59 @@ class Profile extends Component {
           <div className={styles.infoBoxBody}>
             <ul className={styles.overviewBreakdown}>
               <li>
-                <div>Left</div>
+                <div><SVG src={Cake} className={styles.cakeIcon} /></div>
                 <div>
-                  <p>Titlte</p>
-                  <p>Bottom</p>
+                  <p className={styles.overviewDescription}>22 Aug 1993</p>
+                  <p className={styles.overviewSubject}>Birthday</p>
                 </div>
               </li>
               <li>
-                <div>Left</div>
+                <div><SVG src={Favorite} className={styles.favoriteIcon} /></div>
                 <div>
-                  <p>Titlte</p>
-                  <p>Bottom</p>
+                  <p className={styles.overviewDescription}>Single</p>
+                  <p className={styles.overviewSubject}>Relationship</p>
                 </div>
               </li>
               <li>
-                <div>Left</div>
+                <div><SVG src={City} className={styles.cityIcon} /></div>
                 <div>
-                  <p>Titlte</p>
-                  <p>Bottom</p>
+                  <p className={styles.overviewDescription}>London</p>
+                  <p className={styles.overviewSubject}>Hometown</p>
                 </div>
               </li>
               <li>
-                <div>Left</div>
+                <div><SVG src={People} className={styles.peopleIcon} /></div>
                 <div>
-                  <p>Titlte</p>
-                  <p>Bottom</p>
+                  <p className={styles.overviewDescription}>Woman</p>
+                  <p className={styles.overviewSubject}>Gender</p>
                 </div>
               </li>
               <li>
-                <div>Left</div>
+                <div><SVG src={School} className={styles.schoolIcon} /></div>
                 <div>
-                  <p>Titlte</p>
-                  <p>Bottom</p>
+                  <p className={styles.overviewDescription}>Makers Academy</p>
+                  <p className={styles.overviewSubject}>Education</p>
                 </div>
               </li>
               <li>
-                <div>Left</div>
+                <div><SVG src={Work} className={styles.workIcon} /></div>
                 <div>
-                  <p>Titlte</p>
-                  <p>Bottom</p>
+                  <p className={styles.overviewDescription}>Incorporated</p>
+                  <p className={styles.overviewSubject}>Work</p>
                 </div>
               </li>
               <li>
-                <div>Left</div>
+                <div><SVG src={Subscriptions} className={styles.subscriptionsIcon} /></div>
                 <div>
-                  <p>Titlte</p>
-                  <p>Bottom</p>
+                  <p className={styles.overviewDescription}>www.brand.com</p>
+                  <p className={styles.overviewSubject}>Website</p>
                 </div>
               </li>
               <li>
-                <div>Left</div>
+                <div><SVG src={Language} className={styles.languageIcon} /></div>
                 <div>
-                  <p>Titlte</p>
-                  <p>Bottom</p>
+                  <p className={styles.overviewDescription}>English</p>
+                  <p className={styles.overviewSubject}>Language</p>
                 </div>
               </li>
             </ul>
@@ -209,7 +220,52 @@ class Profile extends Component {
             <p><SVG src={Dropdown} /></p>
           </div>
           <div className={styles.infoBoxBody}>
-            Body
+            <div className={styles.productInnerWrapper}>
+              <ul>
+                <li>
+                  <div className={styles.productInformation}>
+                    <p className={styles.productPrice}>$ 200.50</p>
+                    <img src={shoes1} alt="product" />
+                    <p className={styles.productDescription}>Ankle Boots</p>
+                  </div>
+                </li>
+                <li>
+                  <div className={styles.productInformation}>
+                    <p className={styles.productPrice}>$ 100.25</p>
+                    <img src={shoes2} alt="product" />
+                    <p className={styles.productDescription}>Fabric Shoes</p>
+                  </div>
+                </li>
+                <li>
+                  <div className={styles.productInformation}>
+                    <p className={styles.productPrice}>$ 40.50</p>
+                    <img src={shoes3} alt="product" />
+                    <p className={styles.productDescription}>Suede Boots</p>
+                  </div>
+                </li>
+                <li>
+                  <div className={styles.productInformation}>
+                    <p className={styles.productPrice}>$ 200.50</p>
+                    <img src={shoes1} alt="product" />
+                    <p className={styles.productDescription}>Ankle Boots</p>
+                  </div>
+                </li>
+                <li>
+                  <div className={styles.productInformation}>
+                    <p className={styles.productPrice}>$ 100.25</p>
+                    <img src={shoes2} alt="product" />
+                    <p className={styles.productDescription}>Fabric Shoes</p>
+                  </div>
+                </li>
+                <li>
+                  <div className={styles.productInformation}>
+                    <p className={styles.productPrice}>$ 40.50</p>
+                    <img src={shoes3} alt="product" />
+                    <p className={styles.productDescription}>Suede Boots</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
           </div>
           <div className={styles.infoBoxBottom}>
             <p>SHOW ALL</p><p><SVG src={ArrowDown} /></p>

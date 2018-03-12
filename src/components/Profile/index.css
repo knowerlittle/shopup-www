@@ -62,7 +62,7 @@
     border-left: 2px solid white;
   }
   g {
-    fill: #999999;
+    fill: #D8D8D8;
   }
 }
 
@@ -464,5 +464,117 @@
     align-items: center;
     width: 25%;
     justify-content: flex-start;
+    padding: 20px 0px;
+
+    div {
+      padding: 0px 5px;
+    }
   }
+
+  p {
+    margin: 0px;
+  }
+}
+
+.overviewDescription {
+  color: #808080;
+}
+
+.overviewSubject {
+  font-size: 12px;
+  color: #D8D8D8;
+}
+
+.cakeIcon {
+  g {
+    fill: #F9AD3D;
+  }
+}
+
+.favoriteIcon {
+  g {
+    fill: #FF0808;
+  }
+}
+
+
+.cityIcon {
+  g {
+    fill: #5553CE;
+  }
+}
+
+.peopleIcon {
+  g {
+    fill: #3AA4D2;
+  }
+}
+
+
+.schoolIcon {
+  g {
+    fill: #FFF080;
+  }
+}
+
+.workIcon {
+  g {
+    fill: #34CB49;
+  }
+}
+
+.subscriptionsIcon {
+  g {
+    fill: #3AA4D2;
+  }
+}
+
+.languageIcon {
+  g {
+    fill: #F9AD3D;
+  }
+}
+
+.productInnerWrapper {
+  padding: 2%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  ul {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    li {
+      padding: 2% 2% 5% 2%;
+      width: 20%;
+      border: 2px solid #F5F5F5;
+      margin: 3% 2%;
+    }
+  }
+}
+
+.productInformation {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+
+  img {
+    width: 100%;
+    padding: 10% 0;
+  }
+}
+
+.product-price {
+  color: #666666;
+  font-weight: 500;
+}
+
+.product-description {
+  color: #808080;
+  text-align: center;
 }
