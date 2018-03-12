@@ -305,7 +305,7 @@ class Profile extends Component {
                   <div className={styles.eventsListContainer}>
                     <div className={styles.eventsTopHalf}>
                       <p><SVG src={Schedule} /></p>
-                      <p className={styles.eventTime}>11 Oct 2016, 10:00am - 07:00pm</p>
+                      <p className={styles.eventTime}>19 Aug 2018, 10:00am - 07:00pm</p>
                     </div>
                     <div className={styles.eventsBottomHalf}>
                       <div className={styles.eventsImageName}>
@@ -329,7 +329,7 @@ class Profile extends Component {
                   <div className={styles.eventsListContainer}>
                     <div className={styles.eventsTopHalf}>
                       <p><SVG src={Schedule} /></p>
-                      <p className={styles.eventTime}>12 Oct 2016, 10:00am - 07:00pm</p>
+                      <p className={styles.eventTime}>12 Oct 2018, 10:00am - 07:00pm</p>
                     </div>
                     <div className={styles.eventsBottomHalf}>
                       <div className={styles.eventsImageName}>
@@ -339,12 +339,8 @@ class Profile extends Component {
                         <p>Art Gallery</p>
                       </div>
                       <div className={styles.eventsInterested}>
-                        <div className={styles.eventsOptionButton}>
-                          INTERESTED
-                        </div>
-                        <div className={styles.eventsOptionButton}>
-                          GOING
-                        </div>
+                        <div className={styles.eventsOptionButton}>INTERESTED</div>
+                        <div className={styles.eventsOptionButton}>GOING</div>
                       </div>
                     </div>
                   </div>
@@ -366,7 +362,56 @@ class Profile extends Component {
             <p><SVG src={Dropdown} /></p>
           </div>
           <div className={styles.infoBoxBody}>
-            Body
+            <div className={styles.reviewsInnerWrapper}>
+              <ul>
+                <li>
+                  <div className={styles.reviewTitle}>
+                    Great renter, brought a friendly crowd
+                  </div>
+                  <div>
+                    <p className={styles.reviewStars}>
+                      <SVG src={ReviewFull} />
+                      <SVG src={ReviewFull} />
+                      <SVG src={ReviewFull} />
+                      <SVG src={ReviewFull} />
+                      <SVG src={ReviewFull} />
+                    </p>
+                    <p className={styles.reviewText}>
+                      They bought such a good group of people into
+                      the shop. Can recommend that they are considerate
+                      and resepct your space. Their products were also
+                      one of a kind.
+                    </p>
+                    <p className={styles.reviewSubmitter}>
+                      by Space Shop &nbsp; 22 May 2017
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <div className={styles.reviewTitle}>
+                    Pleasure to do business with
+                  </div>
+                  <div>
+                    <p className={styles.reviewStars}>
+                      <SVG src={ReviewFull} />
+                      <SVG src={ReviewFull} />
+                      <SVG src={ReviewFull} />
+                      <SVG src={ReviewFull} />
+                      <SVG src={ReviewFull} />
+                    </p>
+                    <p className={styles.reviewText}>
+                      Really nice people to have in the shop. Created
+                      a really nice atmosphere. I ended up buying a few
+                      of their products myself! Our local customers love
+                      seeing new popins appear weekly.
+                    </p>
+                    <p className={styles.reviewSubmitter}>
+                      by Chicken Soup &nbsp; 12 Oct 2017
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
           </div>
           <div className={styles.infoBoxBottom}>
             <p>SHOW ALL</p><p><SVG src={ArrowDown} /></p>
