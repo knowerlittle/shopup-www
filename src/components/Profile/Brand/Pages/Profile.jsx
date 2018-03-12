@@ -8,6 +8,8 @@ import SVG from 'react-inlinesvg';
 import Email from 'assets/icons/ic_email.svg';
 import BackgroundDemo from 'assets/img/demo/brandbg.png';
 import HatLady from 'assets/img/demo/hatdemo.png';
+import demoShop1 from 'assets/img/demo/demoshop1.jpg';
+import demoShop2 from 'assets/img/demo/demoshop2.jpg';
 import shoes1 from 'assets/img/demo/demoshoes1.png';
 import shoes2 from 'assets/img/demo/demoshoes2.png';
 import shoes3 from 'assets/img/demo/demoshoes3.png';
@@ -26,6 +28,7 @@ import People from 'assets/icons/ic_people.svg';
 import School from 'assets/icons/ic_school.svg';
 import Work from 'assets/icons/ic_work.svg';
 import Subscriptions from 'assets/icons/ic_subscriptions.svg';
+import Schedule from 'assets/icons/ic_schedule.svg';
 
 const divStyle = {
   backgroundImage: `url(${BackgroundDemo}`,
@@ -284,7 +287,38 @@ class Profile extends Component {
             <p><SVG src={Dropdown} /></p>
           </div>
           <div className={styles.infoBoxBody}>
-            Body
+            <div className={styles.eventsInnerWrapper}>
+              <ul>
+                <li>
+                  <div className={styles.eventsListContainer}>
+                    <div className={styles.eventsTopHalf}>
+                      <p><SVG src={Schedule} /></p>
+                      <p className={styles.eventTime}>11 Oct 2016, 10:00am - 07:00pm</p>
+                    </div>
+                    <div className={styles.eventsBottomHalf}>
+                      <div className={styles.eventsImageName}>
+                        <div className={styles.eventsImageWrapper}>
+                          <img src={demoShop1} alt="shop" width="180" />
+                        </div>
+                        <p>SPACE NAME</p>
+                      </div>
+                      <div className={styles.eventsInterested}>
+                        <div className={styles.eventsOptionButton}>
+                          INTERESTED
+                        </div>
+                        <div className={styles.eventsOptionButton}>
+                          GOING
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <img src={demoShop2} alt="shop" width="150" />
+                  Event 2
+                </li>
+              </ul>
+            </div>
           </div>
           <div className={styles.infoBoxBottom}>
             <p>SHOW ALL</p><p><SVG src={ArrowDown} /></p>

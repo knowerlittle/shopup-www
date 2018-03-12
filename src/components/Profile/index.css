@@ -9,7 +9,7 @@
 }
 
 .inner-wrapper {
-  width: 90%;
+  width: 85%;
   display: flex;
   flex-direction: row;
 }
@@ -577,4 +577,92 @@
 .product-description {
   color: #808080;
   text-align: center;
+}
+
+.events-inner-wrapper {
+  padding: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  ul {
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    li {
+      min-width: 90%;
+      height: 300px;
+      background: red;
+      margin-bottom: 5%;
+      border-radius: 6px;
+      display: flex;
+    }
+  }
+}
+
+.events-top-half {
+  width: 100%;
+  display: flex;
+  align-items: center;
+
+  g {
+    fill: white;
+  }
+}
+
+.events-bottom-half {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.events-image-name {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.events-image-wrapper {
+  height: 100px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 100%;
+}
+
+.events-interested {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.events-list-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  padding: 5%;
+}
+
+.event-time {
+  margin-top: 2%;
+  margin-left: 4%;
+  color: white;
+  font-weight: 500;
+}
+
+.events-option-button {
+  background-color: rgba(0,0,0,0.3);
+  padding: 15px 40px;
+  border-radius: 100px;
+  color: white;
+  font-weight: bold;
+  font-size: 11px;
+  margin-right: 20px;
 }
