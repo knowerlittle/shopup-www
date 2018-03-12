@@ -13,6 +13,8 @@ import ReviewHalf from 'assets/icons/ic_star_half.svg';
 import Instagram from 'assets/icons/ic_instagram.svg';
 import Twitter from 'assets/icons/ic_twitter.svg';
 import Facebook from 'assets/icons/ic_facebook.svg';
+import Dropdown from 'assets/icons/ic_more_horiz.svg';
+import ArrowDown from 'assets/icons/ic_arrow_downward.svg';
 
 const divStyle = {
   backgroundImage: `url(${BackgroundDemo}`,
@@ -127,15 +129,36 @@ class Profile extends Component {
             </div>
           </div>
         </section>
-        <section className={styles.overviewInfo}>
-          Overview
+
+        <section
+          id="overview"
+          className={styles.overviewInfo}
+        >
+          <div className={styles.infoBoxTop}>
+            <p>Overview</p>
+            <p><SVG src={Dropdown} /></p>
+          </div>
+          <div className={styles.infoBoxBody}>
+            Body
+          </div>
         </section>
+
         <section
           id="products"
           className={styles.productInfo}
         >
-          Product
+          <div className={styles.infoBoxTop}>
+            <p>My products<span>&nbsp;&nbsp;&nbsp; 43</span></p>
+            <p><SVG src={Dropdown} /></p>
+          </div>
+          <div className={styles.infoBoxBody}>
+            Body
+          </div>
+          <div className={styles.infoBoxBottom}>
+            <p>SHOW ALL</p><p><SVG src={ArrowDown} /></p>
+          </div>
         </section>
+
         <section
           id="events"
           className={styles.productInfo}

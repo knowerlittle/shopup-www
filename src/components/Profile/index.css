@@ -372,11 +372,59 @@
 }
 
 .overview-info {
-  height: 50vh;
-  background-color: red;
+  margin-top: 2%;
+  height: 30vh;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  border-radius: 6px;
 }
 
 .product-info {
-  height: 50vh;
-  background-color: blue;
+  margin-top: 2%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  border-radius: 6px;
+}
+
+.info-box-top {
+  font-size: 13px;
+  min-height: 15%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
+  border-bottom: 2px solid #F5F5F5;
+  p {
+    color: #666666;
+    font-weight: 500;
+  }
+  span {
+    color: #999999;
+    font-weight: 300;
+  }
+}
+
+.info-box-body {
+  width: 100%;
+  max-height: 70%;
+}
+
+.info-box-bottom {
+  height: 15%;
+  border-top: 2px solid #F5F5F5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #999999;
+  font-size: 12px;
+  p {
+    span {
+      svg {
+        padding-top: 1px;
+        width: 25px;
+      }
+    }
+  }
 }
