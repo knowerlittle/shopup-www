@@ -163,13 +163,35 @@ class Profile extends Component {
           id="events"
           className={styles.productInfo}
         >
-         Events
+          <div className={styles.infoBoxTop}>
+            <div className={styles.eventsTabWrapper}>
+              <div className={styles.eventsTabOptionsSelected}>Upcoming Events</div>
+              <div className={styles.eventsTabOptions}>Past Events</div>
+            </div>
+            <p><SVG src={Dropdown} /></p>
+          </div>
+          <div className={styles.infoBoxBody}>
+            Body
+          </div>
+          <div className={styles.infoBoxBottom}>
+            <p>SHOW ALL</p><p><SVG src={ArrowDown} /></p>
+          </div>
         </section>
+
         <section
           id="reviews"
           className={styles.productInfo}
         >
-         Reviews
+          <div className={styles.infoBoxTop}>
+            <p>Reviews</p>
+            <p><SVG src={Dropdown} /></p>
+          </div>
+          <div className={styles.infoBoxBody}>
+            Body
+          </div>
+          <div className={styles.infoBoxBottom}>
+            <p>SHOW ALL</p><p><SVG src={ArrowDown} /></p>
+          </div>
         </section>
       </div>
     );
