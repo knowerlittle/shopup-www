@@ -9,9 +9,9 @@ const title = {
 };
 
 const body = {
-  A: 'We will get the information required to do something special. All good.',
-  B: 'Here you tell us who your products attracts. Where you want to be etc...',
-  C: 'You will be asked to list your products and upload images, list prices, etc...',
+  A: 'Tell us who you are ... we all want to know!',
+  B: 'Here you tell us who your products attracts and where it fits in...',
+  C: 'You will be asked to list your products with images and prices...',
 };
 
 const BrandExplainer = ({ option, width, height }) => (
