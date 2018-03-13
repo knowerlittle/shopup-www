@@ -171,6 +171,7 @@ module.exports = {
                   {
                     loader: require.resolve('css-loader'),
                     options: {
+                      camelCase: true,
                       importLoaders: 1,
                       minimize: true,
                       sourceMap: shouldUseSourceMap,
@@ -185,7 +186,7 @@ module.exports = {
                       // https://github.com/facebookincubator/create-react-app/issues/2677
                       ident: 'postcss',
                       plugins: () => [
-                        require('postcss-import'),
+                        require('postcss-import')({ path: ["src/app"]}),
                         require('postcss-simple-vars'),
                         require('postcss-extend'),
                         require('postcss-nested'),
