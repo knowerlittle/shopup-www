@@ -40,7 +40,7 @@ Logo.propTypes = {
 };
 
 Logo.defaultProps = {
-  width: '140',
+  width: '160',
   logo: 'red',
   shadow: 'black',
 };

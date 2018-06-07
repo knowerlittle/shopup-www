@@ -73,7 +73,8 @@
   color: #292929;	
   letter-spacing: 3px;
 }
-/* We rely on source order for mobile-first approach
+
+/* Source order for mobile-first approach
  * in this case:
  * 1. header
  * 2. article
