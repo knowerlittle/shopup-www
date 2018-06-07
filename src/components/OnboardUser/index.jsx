@@ -13,6 +13,7 @@ const options = {
 
 class OnboardUser extends Component {
   componentDidMount() {
+    console.log('mount');
     this.fetchData();
   }
 

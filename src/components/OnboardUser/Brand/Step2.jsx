@@ -45,7 +45,7 @@ const Step2 = ({
             width="150"
             onClick={() => {
               dispatch(addDataToSignup(inputValue));
-              push('/onboard/brand1');
+              push('/onboard/brand/1');
             }}
           />
           <Button
