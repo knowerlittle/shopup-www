@@ -13,7 +13,7 @@ const Hero = () => (
         <p className={styles.introText}>{introText}</p>
         <p className={styles.mainText}>The best way</p>
         <p className={styles.mainText}>to find space</p>
-        <p className={styles.mainTextLast}>for your passion.</p>
+        <p className={styles.mainText}>for your passion.</p>
         <div className={styles.buttonWrapper}>
           <Link to="/signup">
             <Button

@@ -12,7 +12,7 @@
                 <use xlink:href="#path-1"></use>
             </mask>
             <g id="Icon"></g>
-            <g id="5.-Colors/Red" mask="url(#mask-2)" fill="#FF0808">
+            <g id="5.-Colors/Red" mask="url(#mask-2)" fill="$primary">
                 <g transform="translate(2.000000, 2.000000)" id="Red">
                     <rect x="0" y="0" width="26" height="26"></rect>
                 </g>

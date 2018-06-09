@@ -35,7 +35,7 @@ const Step3 = ({
       </div>
 
       <div className={styles.middleWrapper}>
-        <p className={styles.inputP}>
+        <p className={styles.inputText}>
           I create
           <input
             className={styles.firstField}
@@ -45,7 +45,7 @@ const Step3 = ({
           />
           to
         </p>
-        <p className={styles.inputP}>
+        <p className={styles.inputText}>
           <input
             className={styles.inputField}
             type="text"
@@ -54,7 +54,7 @@ const Step3 = ({
           />
           for
         </p>
-        <p className={styles.inputP}>
+        <p className={styles.inputText}>
           <input
             className={styles.inputField}
             type="text"
@@ -63,7 +63,7 @@ const Step3 = ({
           />
           that
         </p>
-        <p className={styles.inputP}>
+        <p className={styles.inputText}>
           <input
             className={styles.lastField}
             type="text"

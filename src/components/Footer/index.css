@@ -29,7 +29,7 @@
   text-align: center
 }
 
-.logoWrapper {
+.logo-wrapper {
   padding: 15px 0px;
 }
 
@@ -41,19 +41,13 @@
   padding: 20px;
 }
 
-@media all and (min-width: 600px) {
-  .aside { flex: 1 0%; }
+.title-font {
+  height: 15px;
+  color: #292929;	
+  letter-spacing: 3px;
 }
 
-@media all and (min-width: 850px) {
-  .main { flex: 2 0px }
-  .aside1 { order: 1; }
-  .main { order: 2; }
-  .aside2 { order: 3; }
-  .footer { order: 4; }
-}
-
-.footerNav {
+.footer-nav {
   text-align: center;
   justify-content: space-between;
   flex: 1 1 130px;
@@ -68,11 +62,21 @@
   }
 }
 
-.titleFont {
-  height: 15px;
-  color: #292929;	
-  letter-spacing: 3px;
+@media all and (min-width: 600px) {
+  .aside { flex: 1 0%; }
 }
+
+@media all and (min-width: 850px) {
+  .main { flex: 2 0px }
+  .aside1 { order: 1; }
+  .main { order: 2; }
+  .aside2 { order: 3; }
+  .footer { order: 4; }
+}
+
+
+
+
 
 /* Source order for mobile-first approach
  * in this case:

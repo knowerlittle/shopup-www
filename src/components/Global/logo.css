@@ -1,9 +1,13 @@
-.blackShadow:hover {
+.black-shadow {
+  transition: all 2s ease-in-out;
+}
+
+.black-shadow:hover {
   -webkit-filter: drop-shadow(0.15px 0.15px 0.15px rgba(34, 34, 34, 0.8));
   filter: drop-shadow(0.15px 0.15px 0.15px rgba(34, 34, 34, 0.8));
 }
 
-.redShadow:hover {
-  -webkit-filter: drop-shadow(1px 1px 1px rgba(255, 0, 0, 0.3));
-  filter: drop-shadow(1px 1px 1px rgba(255, 0, 0, 0.3));
+.red-shadow:hover {
+  -webkit-filter: drop-shadow(1px 1px 1px rgba(255, 0, 0, 0.3)); 
+  filter: drop-shadow(1px 1px 1px rgba(255, 0, 0, 0.3)); 
 }

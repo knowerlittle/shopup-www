@@ -9,6 +9,7 @@
   background: white;
   border-radius: 30px;
   font-size: 12px;
+  transition: all 0.2s;
 
   p {
     color: black;
@@ -29,12 +30,12 @@
   }
 }
 
-.whiteYellow {
+.white-yellow {
   display: flex;
   align-items: center;
   justify-content: center;
   box-sizing: border-box;	
-  border: 1px solid #FFC80A;	
+  border: 1px solid $tertiary;	
   background: #FFFFFF;
   border-radius: 30px;
   font-size: 12px;
@@ -48,10 +49,10 @@
   }
 }
 
-.whiteYellow:hover {
+.white-yellow:hover {
   cursor: pointer;
-  background: #FFC80A;
-  border: 1px solid #FFC80A;
+  background: $tertiary;
+  border: 1px solid $tertiary;
   
   p {
     color: white;
@@ -64,10 +65,11 @@
   align-items: center;
   justify-content: center;
   box-sizing: border-box;	
-  border: 1px solid #FFC80A;	
-  background: #FFC80A;
+  border: 1px solid $tertiary;	
+  background: $tertiary;
   border-radius: 30px;
   font-size: 12px;
+  transition: all 0.2s;
 
   p {
     color: black;
@@ -80,8 +82,8 @@
 
 .yellow:hover {
   cursor: pointer;
-  background: #8D76BE;
-  border: 1px solid #8D76BE;
+  background: $secondary;
+  border: 1px solid $secondary;
   
   p {
     color: white;
@@ -93,10 +95,11 @@
   align-items: center;
   justify-content: center;
   box-sizing: border-box;	
-  border: 1px solid #8D76BE;	
-  background: #8D76BE;
+  border: 1px solid $secondary;	
+  background: $secondary;
   border-radius: 30px;
   font-size: 12px;
+  transition: all 0.2s;
 
   p {
     color: black;
@@ -109,8 +112,8 @@
 
 .purple:hover {
   cursor: pointer;
-  background: #FFC80A;
-  border: 1px solid #FFC80A;
+  background: $tertiary;
+  border: 1px solid $tertiary;
   
   p {
     color: white;

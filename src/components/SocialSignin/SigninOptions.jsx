@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import SocialButton from 'components/SocialSignin/SocialButton';
 import { withRouter } from 'react-router-dom';
+import SocialButton from 'components/SocialSignin/SocialButton';
 import styles from 'components/SocialSignin/index.css';
 import handleSocialLoginFailure from 'components/SocialSignin/handleSocialLoginFailure';
 import { handleSocialLoginSuccess } from 'components/SocialSignin/handleSocialLoginSuccess';

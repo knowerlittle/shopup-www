@@ -1,3 +1,5 @@
+@import 'variables';
+
 .wrapper {
   display: flex;
   justify-content: space-evenly;
@@ -5,14 +7,14 @@
   height: 80vh;
 }
 
-.signinButton {
+.signin-button {
   display: flex;
   align-items: center;
   justify-content: center;
   box-sizing: border-box;	
   height: 61px;	
   width: 300px;	
-  border: 1px solid #FFC80A;	
+  border: 1px solid $tertiary;	
   background: #FFFFFF;
   border-radius: 30px;
 
@@ -25,10 +27,10 @@
   }
 }
 
-.signinButton:hover {
+.signin-button:hover {
   cursor: pointer;
-  background: #8D76BE;
-  border: 1px solid #8D76BE;
+  background: $secondary;
+  border: 1px solid $secondary;
   
   p {
     color: white;

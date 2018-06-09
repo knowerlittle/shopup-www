@@ -13,12 +13,12 @@ const HomeNav = () => (
       <div className={styles.menuContainer}>
         <ul className={styles.ul}>
           <li>
-            <NavLink to="/mission" className={styles.menuLink} activeClassName={styles.current}>
+            <NavLink to="/mission" className={styles.menuLink} activeClassName={styles.currentPage}>
              Mission
             </NavLink>
           </li>
           <li>
-            <NavLink to="/signin" className={styles.menuLink} activeClassName={styles.current}>
+            <NavLink to="/signin" className={styles.menuLink} activeClassName={styles.currentPage}>
               Sign in
             </NavLink>
           </li>

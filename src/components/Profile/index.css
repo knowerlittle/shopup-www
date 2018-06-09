@@ -1,3 +1,5 @@
+@import 'variables';
+
 .body-wrapper {
   background: #FAFAFA;
   display: flex;
@@ -159,7 +161,7 @@
 }
 
 .purple-circle-small {
-  background-color: #8D76BE;
+  background-color: $secondary;
   border-radius: 50px;
   height: 50px;
   width: 50px;
@@ -211,11 +213,11 @@
   width: 100%;
   align-items: center;
   justify-content: center;   
-  border-bottom: 4px solid #8D76BE;;
+  border-bottom: 4px solid $secondary;;
   margin-bottom: 4px;
   cursor: pointer;
   p {
-    color: #8D76BE;
+    color: $secondary;
   }
 }
 
@@ -241,7 +243,7 @@
 }
 
 .purple-circle {
-  background-color: #8D76BE;
+  background-color: $secondary;
   border-radius: 50px;
   height: 60px;
   width: 60px;
@@ -312,7 +314,7 @@
 }
 
 .border-list-selected {
-  border: 2px solid #8D76BE;
+  border: 2px solid $secondary;
   border-radius: 6px;
   padding: 10px;
 }
@@ -320,7 +322,7 @@
 .preview-box {
   height: 80px;
   width: 80px;
-  background-color: #8D76BE;
+  background-color: $secondary;
   border-radius: 6px;
   position: relative;
   overflow: hidden;
@@ -445,8 +447,8 @@
 .events-tab-options-selected {
   margin-right: 21px;
   padding: 21px 0px 21px 0px;
-  border-bottom: 4px solid #8D76BE;
-  color: #8D76BE;
+  border-bottom: 4px solid $secondary;
+  color: $secondary;
   font-weight: 500;
   font-size: 13px;
 }
@@ -476,66 +478,65 @@
   }
 }
 
-.overviewDescription {
+.overview-description {
   color: #808080;
 }
 
-.overviewSubject {
+.overview-subject {
   font-size: 12px;
   color: #D8D8D8;
 }
 
-.cakeIcon {
+.cake-icon {
   g {
     fill: #F9AD3D;
   }
 }
 
-.favoriteIcon {
+.favorite-icon {
   g {
-    fill: #FF0808;
+    fill: $primary;
   }
 }
 
 
-.cityIcon {
+.city-icon {
   g {
     fill: #5553CE;
   }
 }
 
-.peopleIcon {
+.people-icon {
   g {
     fill: #3AA4D2;
   }
 }
 
-
-.schoolIcon {
+.school-icon {
   g {
     fill: #FFF080;
   }
 }
 
-.workIcon {
+.work-icon {
   g {
     fill: #34CB49;
   }
 }
 
-.subscriptionsIcon {
+.subscriptions-icon {
   g {
     fill: #3AA4D2;
   }
 }
 
-.languageIcon {
+.language-icon {
   g {
     fill: #F9AD3D;
   }
 }
 
-.productInnerWrapper {
+.product-inner-wrapper {
   padding: 2%;
   display: flex;
   flex-wrap: wrap;
@@ -557,7 +558,7 @@
   }
 }
 
-.productInformation {
+.product-information {
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -715,12 +716,12 @@
   font-size: 14px;
 }
 
-.reviewText {
+.review-text {
   color: #999999;
   line-height: 30px;
 }
 
-.reviewSubmitter {
+.review-submitter {
   color: #D8D8D8;
   // font-size: 12px;
 }

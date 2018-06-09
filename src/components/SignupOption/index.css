@@ -1,3 +1,5 @@
+@import 'variables';
+
 .body {
   height: 85vh;
   display: flex;
@@ -11,7 +13,7 @@
   bottom: 0px;
   height: 15vh;
   width: 100%;
-  background-color: #8D76BE;
+  background-color: $secondary;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -23,7 +25,7 @@
   }
 }
 
-.buttonWrapper {
+.button-wrapper {
   padding: 50px;
 }
 
@@ -31,14 +33,15 @@
 	height: 462.14px;
 	width: 402px;
 	border-radius: 23px;
-  background-color: #FF0808;
+  background-color: $primary;
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 0.2s;
 }
 
 .rectangle:hover {
-  background-color: #FFC80A;
+  background-color: $tertiary;
 }
 
 .text {
@@ -52,6 +55,6 @@
   text-align: center;
 }
 
-.footerButton {
+.footer-button {
   
 }
