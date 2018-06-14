@@ -3,11 +3,11 @@
 ## Front-end
 A web application for leasing and renting areas in retail spaces for showcasing products. The search feature  utilizes 360 video for an immersive view of the rented space.
 
-Built with REACT.
+**Built with REACT**
 
 To be used with backend `shopup-api`
 
-** ENV **
+**ENV**
 ```
 PORT=
 API_URL=
@@ -15,10 +15,10 @@ FACEBOOK_APP_ID=
 GOOGLE_APP_ID=
 ```
 
-** TEST **
+**TEST**
 <br>`yarn test` 
 
-** SERVE **
+**SERVE**
 <br>`yarn start`
 
 ## How it works
