@@ -1,7 +1,7 @@
 # shopup-www
 
 ## Front-end
-A web application for leasing and renting areas in retail spaces for showcasing products. The search feature  utilizes 360 video for an immersive view of the rented space.
+A web application for leasing and renting areas in retail spaces for showcasing products. The search feature  utilizes 360 video for an immersive view of available spaces.
 
 **Built with REACT**
 
@@ -27,7 +27,7 @@ GOOGLE_APP_ID=
 
 ## Known Issues
 * Currently account creation is only available for 'Brands'
-* Platform is still in development
+* Platform is still under development
 
 ---
 No Copyright 2018
