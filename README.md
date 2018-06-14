@@ -5,7 +5,7 @@ A web application for leasing and renting areas in retail spaces for showcasing 
 
 **Built with REACT**
 
-To be used with backend `shopup-api`
+To be used with back-end `shopup-api`
 
 **ENV**
 ```
