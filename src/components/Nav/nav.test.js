@@ -13,9 +13,9 @@ describe('<Nav />', () => {
     const optionsCount = Object.keys(options).length;
     
     expect(optionsCount).toEqual(3);
-    expect(options['home']).toBeTruthy();
-    expect(options['signup']).toBeTruthy();
-    expect(options['profile']).toBeTruthy();
+    expect(options.home).toBeTruthy();
+    expect(options.signup).toBeTruthy();
+    expect(options.profile).toBeTruthy();
   });
 
   it('prop: { nav: \'home\' } mounts <Home /> Nav', () => {
@@ -34,15 +34,20 @@ describe('<Nav />', () => {
 
   it('prop: { nav: \'profile\' } mounts <Profile /> Nav', () => {
     const profileNav = Nav({ nav: 'profile' });
-    const navId = profileNav.type['WrappedComponent']({user: 'Test User'}).props.id;
+    const navId = profileNav.type.WrappedComponent({user: 'Test User'}).props.id;
     const expected = 'nav-profile';
 
     expect(navId).toEqual(expected);
   });
 
+  it('defaultProps: has 1', () => {
+    const propCount = Object.keys(Nav.defaultProps).length;
+    expect(propCount).toEqual(1);
+  });
+
   it('defaultProps: nav is set to \'home\'', () => {
     const navDefault = 'home';
-    expect(Nav.defaultProps['nav']).toEqual(navDefault);
+    expect(Nav.defaultProps.nav).toEqual(navDefault);
   });
 
   it('renders correctly', () => {
@@ -53,5 +58,4 @@ describe('<Nav />', () => {
     expect(toJson(signupTree)).toMatchSnapshot();
     expect(toJson(profileTree)).toMatchSnapshot();
   });
-
 });

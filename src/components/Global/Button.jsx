@@ -2,7 +2,7 @@ import React from 'react';
 import styles from 'components/Global/button.css';
 import PropTypes from 'prop-types';
 
-const option = {
+export const options = {
   white: 'white',
   yellow: 'yellow',
   purple: 'purple',
@@ -11,11 +11,11 @@ const option = {
 };
 
 const getStyle = (color) => {
-  const styleColor = option[color];
+  const styleColor = options[color];
   return styles[styleColor];
 };
 
-const setDimensions = (height, width) => ({
+export const setDimensions = (height, width) => ({
   height: `${height}px`,
   width: `${width}px`,
 });
@@ -51,7 +51,7 @@ Button.propTypes = {
 Button.defaultProps = {
   height: '50',
   width: '200',
-  onClick: () => {},
+  onClick: () => ({}),
 };
 
 export default Button;

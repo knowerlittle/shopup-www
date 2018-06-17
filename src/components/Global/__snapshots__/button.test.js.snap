@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Button /> Snapshot renders correctly 1`] = `
+<div>
+  <div
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="presentation"
+    style={
+      Object {
+        "height": "100px",
+        "width": "40px",
+      }
+    }
+  >
+    <p>
+      white button
+    </p>
+  </div>
+</div>
+`;
+
+exports[`<Button /> Snapshot renders correctly 2`] = `
+<div>
+  <div
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="presentation"
+    style={
+      Object {
+        "height": "300px",
+        "width": "30px",
+      }
+    }
+  >
+    <p>
+      yellow button
+    </p>
+  </div>
+</div>
+`;

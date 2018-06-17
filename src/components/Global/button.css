@@ -39,6 +39,7 @@
   background: #FFFFFF;
   border-radius: 30px;
   font-size: 12px;
+  transition: all 0.2s;
 
   p {
     color: black;
@@ -58,7 +59,6 @@
     color: white;
   }
 }
-
 
 .yellow {
   display: flex;
