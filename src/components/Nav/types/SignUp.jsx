@@ -4,7 +4,7 @@ import Logo from 'components/Global/Logo';
 import styles from 'components/Nav/index.css';
 
 const SignUpNav = () => (
-  <nav className={styles.nav}>
+  <nav id="nav-signup" className={styles.nav}>
     <div className={styles.wrapper}>
       <div className={styles.logoContainer}>
         <Logo shadow="red" />

@@ -4,7 +4,7 @@ import Home from 'components/Nav/types/Home';
 import SignUp from 'components/Nav/types/SignUp';
 import Profile from 'components/Nav/types/Profile';
 
-const options = {
+export const options = {
   home: <Home />,
   signup: <SignUp />,
   profile: <Profile />,

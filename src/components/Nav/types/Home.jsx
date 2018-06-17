@@ -5,7 +5,7 @@ import Button from 'components/Global/Button';
 import styles from 'components/Nav/index.css';
 
 const HomeNav = () => (
-  <nav className={styles.redNav}>
+  <nav id="nav-home" className={styles.redNav}>
     <div className={styles.wrapper}>
       <div className={styles.logoContainer}>
         <Logo logo="white" />

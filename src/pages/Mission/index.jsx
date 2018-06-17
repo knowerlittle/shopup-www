@@ -4,7 +4,7 @@ import MissionComp from 'components/Mission/index';
 import Footer from 'components/Footer/index';
 
 const MissionPage = () => (
-  <div className="Mission">
+  <div className="mission">
     <Nav nav="home" />
     <MissionComp />
     <Footer />

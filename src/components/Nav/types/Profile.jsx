@@ -10,7 +10,7 @@ import DownArrow from 'assets/icons/ic_keyboard_arrow_down.svg';
 import ProfileDemo from 'assets/img/demo/profiledemo.png';
 
 const ProfileNav = ({ user }) => (
-  <nav className={styles.navProfile}>
+  <nav id="nav-profile" className={styles.navProfile}>
     <div className={styles.profileWrapper}>
       <div className={styles.logoContainer}>
         <Logo shadow="red" />
